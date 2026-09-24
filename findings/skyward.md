@@ -16,7 +16,7 @@
 ## Findings
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2058 (setAllowUniversalAccessFromFileURLs)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2058 (setAllowUniversalAccessFromFileURLs)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -27,7 +27,7 @@ move-result-object p1
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (argument unresolved)
-_analysis/skyward/work/smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:434 (setAllowFileAccess)_
+_smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:434 (setAllowFileAccess)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -38,7 +38,7 @@ move-result-object v0
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (argument unresolved)
-_analysis/skyward/work/smali/androidx/webkit/internal/ApiHelperForN.smali:144 (setAllowFileAccess)_
+_smali/androidx/webkit/internal/ApiHelperForN.smali:144 (setAllowFileAccess)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -48,7 +48,7 @@ setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the 
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1308 (createViewInstance)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1308 (createViewInstance)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -58,7 +58,7 @@ setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1325 (createViewInstance)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1325 (createViewInstance)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -68,7 +68,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2015 (setAllowFileAccess)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2015 (setAllowFileAccess)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -79,7 +79,7 @@ move-result-object p1
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2037 (setAllowFileAccessFromFileURLs)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2037 (setAllowFileAccessFromFileURLs)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -90,7 +90,7 @@ move-result-object p1
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2996 (setMixedContentMode)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2996 (setMixedContentMode)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -101,7 +101,7 @@ const/4 p2, 0x1
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/skyward/work/smali_classes3/expo/modules/webview/DomWebView.smali:437 (createWebView)_
+_smali_classes3/expo/modules/webview/DomWebView.smali:437 (createWebView)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -112,7 +112,7 @@ move-result-object v1
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/skyward/work/smali_classes3/expo/modules/webview/DomWebView.smali:444 (createWebView)_
+_smali_classes3/expo/modules/webview/DomWebView.smali:444 (createWebView)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -123,7 +123,7 @@ move-result-object v1
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/skyward/work/smali_classes3/expo/modules/webview/DomWebView.smali:1311 (setWebviewDebuggingEnabled)_
+_smali_classes3/expo/modules/webview/DomWebView.smali:1311 (setWebviewDebuggingEnabled)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -133,7 +133,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/skyward/work/smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:189 (<init>)_
+_smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:189 (<init>)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -170,7 +170,7 @@ WebView.setWebContentsDebuggingEnabled(true)
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (argument unresolved)
-_analysis/skyward/work/smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:386 (setAllowContentAccess)_
+_smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:386 (setAllowContentAccess)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -181,7 +181,7 @@ move-result-object v0
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (argument unresolved)
-_analysis/skyward/work/smali/androidx/webkit/internal/ApiHelperForN.smali:135 (setAllowContentAccess)_
+_smali/androidx/webkit/internal/ApiHelperForN.smali:135 (setAllowContentAccess)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -191,7 +191,7 @@ setAllowContentAccess(true) lets the WebView follow content:// URLs, widening th
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2765 (setJavaScriptCanOpenWindowsAutomatically)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2765 (setJavaScriptCanOpenWindowsAutomatically)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -202,7 +202,7 @@ move-result-object p1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2787 (setJavaScriptEnabled)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2787 (setJavaScriptEnabled)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -213,7 +213,7 @@ move-result-object p1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/skyward/work/smali_classes3/expo/modules/webview/DomWebView.smali:430 (createWebView)_
+_smali_classes3/expo/modules/webview/DomWebView.smali:430 (createWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -224,7 +224,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/skyward/work/smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:186 (<init>)_
+_smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:186 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -235,7 +235,7 @@ const/4 p3, 0x1
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1290 (createViewInstance)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1290 (createViewInstance)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -245,7 +245,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1293 (createViewInstance)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1293 (createViewInstance)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -255,7 +255,7 @@ setSupportMultipleWindows(true) is required for popups/new tabs.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2447 (setDomStorageEnabled)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2447 (setDomStorageEnabled)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -266,7 +266,7 @@ move-result-object p1
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (argument unresolved)
-_analysis/skyward/work/smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:3328 (setSetSupportMultipleWindows)_
+_smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:3328 (setSetSupportMultipleWindows)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 

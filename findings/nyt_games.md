@@ -16,7 +16,7 @@
 ## Findings
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:152 (<init>)_
+_smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:152 (<init>)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -26,7 +26,7 @@ setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin 
 ```
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:997 (j)_
+_smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:997 (j)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -37,7 +37,7 @@ invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFil
 ```
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:106 (a)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:106 (a)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -75,7 +75,7 @@ setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/nyt_games/work/smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:446 (e)_
+_smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:446 (e)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -86,7 +86,7 @@ move-result p1
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:307 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:307 (<init>)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -97,7 +97,7 @@ if-eqz p3, :cond_1
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:149 (<init>)_
+_smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:149 (<init>)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -107,7 +107,7 @@ setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files 
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:995 (j)_
+_smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:995 (j)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -118,7 +118,7 @@ invoke-virtual {p1, p4}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:104 (a)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:104 (a)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -129,7 +129,7 @@ invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/view/BaseHybridFragment.smali:2569 (h3)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/view/BaseHybridFragment.smali:2569 (h3)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -140,7 +140,7 @@ move-result p0
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/devsettings/GamesHybridDevSettingFactory$devSettings$2.smali:123 (invokeSuspend)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/devsettings/GamesHybridDevSettingFactory$devSettings$2.smali:123 (invokeSuspend)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -160,7 +160,7 @@ exported=true; intent extras -> getString(url) -> loadUrl
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes2/co/datadome/sdk/DataDomeWebView.smali:254 (<init>)_
+_smali_classes2/co/datadome/sdk/DataDomeWebView.smali:254 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -171,7 +171,7 @@ move-result-object p1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes2/co/datadome/sdk/ChallengeActivity.smali:889 (setupWebview)_
+_smali_classes2/co/datadome/sdk/ChallengeActivity.smali:889 (setupWebview)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -182,7 +182,7 @@ move-result-object v3
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:450 (e)_
+_smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:450 (e)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -193,7 +193,7 @@ const/4 p1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (True)
-_analysis/nyt_games/work/smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:452 (e)_
+_smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:452 (e)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -204,7 +204,7 @@ invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/ads/internal/zzs.smali:67 (<init>)_
+_smali_classes3/com/google/android/gms/ads/internal/zzs.smali:67 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -215,7 +215,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:265 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:265 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -226,7 +226,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:287 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:287 (<init>)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -237,7 +237,7 @@ invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzfty.smali:28 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzfty.smali:28 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -248,7 +248,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzfub.smali:54 (a)_
+_smali_classes3/com/google/android/gms/internal/ads/zzfub.smali:54 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -259,7 +259,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes4/com/iab/omid/library/amazon/publisher/a.smali:29 (<init>)_
+_smali_classes4/com/iab/omid/library/amazon/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -270,7 +270,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes4/com/iab/omid/library/amazon/publisher/b.smali:189 (t)_
+_smali_classes4/com/iab/omid/library/amazon/publisher/b.smali:189 (t)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -281,7 +281,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes4/com/iteratehq/iterate/view/SurveyView.smali:861 (o3)_
+_smali_classes4/com/iteratehq/iterate/view/SurveyView.smali:861 (o3)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -292,7 +292,7 @@ const/4 v3, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes4/com/nytimes/android/composeui/webview/WebviewScreenKt.smali:1811 (t)_
+_smali_classes4/com/nytimes/android/composeui/webview/WebviewScreenKt.smali:1811 (t)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -303,7 +303,7 @@ const/4 p9, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes4/com/google/android/gms/internal/consent_sdk/zzbc.smali:318 (g)_
+_smali_classes4/com/google/android/gms/internal/consent_sdk/zzbc.smali:318 (g)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -314,7 +314,7 @@ const/4 v3, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:135 (<init>)_
+_smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:135 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -324,7 +324,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:228 (onCreate)_
+_smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:228 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -335,7 +335,7 @@ const/4 v3, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:977 (j)_
+_smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:977 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -346,7 +346,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:84 (a)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:84 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -357,7 +357,7 @@ const/4 p1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/nyt_games/work/smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:104 (getConfiguredWebView)_
+_smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:104 (getConfiguredWebView)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -368,7 +368,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/nyt_games/work/smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:106 (getConfiguredWebView)_
+_smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:106 (getConfiguredWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -415,7 +415,7 @@ automatically -> True
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:454 (e)_
+_smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:454 (e)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -426,7 +426,7 @@ invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/ads/internal/util/zzn.smali:55 (call)_
+_smali_classes3/com/google/android/gms/ads/internal/util/zzn.smali:55 (call)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -437,7 +437,7 @@ invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/nyt_games/work/smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:285 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:285 (<init>)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -448,7 +448,7 @@ invoke-virtual {p2, p5}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:146 (<init>)_
+_smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:146 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -458,7 +458,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:230 (onCreate)_
+_smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:230 (onCreate)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -469,7 +469,7 @@ invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:985 (j)_
+_smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:985 (j)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -480,7 +480,7 @@ invoke-virtual {p1, p4}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindo
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/nyt_games/work/smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:999 (j)_
+_smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:999 (j)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -491,7 +491,7 @@ invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFr
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:92 (a)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:92 (a)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -502,7 +502,7 @@ invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindo
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/nyt_games/work/smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:108 (a)_
+_smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:108 (a)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -513,7 +513,7 @@ invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFr
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/nyt_games/work/smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:110 (getConfiguredWebView)_
+_smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:110 (getConfiguredWebView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 

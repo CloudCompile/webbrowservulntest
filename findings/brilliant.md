@@ -14,7 +14,7 @@
 ## Findings
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/brilliant/work/smali/dka.smali:1107 (f)_
+_smali/dka.smali:1107 (f)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -25,7 +25,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/brilliant/work/smali/com/braze/ui/BrazeWebViewActivity.smali:289 (onCreate)_
+_smali/com/braze/ui/BrazeWebViewActivity.smali:289 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -36,7 +36,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/brilliant/work/smali/com/braze/ui/support/WebViewUtilsKt.smali:306 (setWebViewSettings)_
+_smali/com/braze/ui/support/WebViewUtilsKt.smali:306 (setWebViewSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -46,7 +46,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/brilliant/work/smali/com/google/android/recaptcha/internal/zzil.smali:246 (invokeSuspend)_
+_smali/com/google/android/recaptcha/internal/zzil.smali:246 (invokeSuspend)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -56,7 +56,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/brilliant/work/smali_classes4/n91.smali:215 (<init>)_
+_smali_classes4/n91.smali:215 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -67,7 +67,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/brilliant/work/smali/com/braze/ui/BrazeWebViewActivity.smali:309 (onCreate)_
+_smali/com/braze/ui/BrazeWebViewActivity.smali:309 (onCreate)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -78,7 +78,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/brilliant/work/smali/com/braze/ui/support/WebViewUtilsKt.smali:329 (setWebViewSettings)_
+_smali/com/braze/ui/support/WebViewUtilsKt.smali:329 (setWebViewSettings)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -89,7 +89,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/brilliant/work/smali/com/braze/ui/inappmessage/views/InAppMessageHtmlBaseView.smali:954 (getMessageWebView)_
+_smali/com/braze/ui/inappmessage/views/InAppMessageHtmlBaseView.smali:954 (getMessageWebView)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -99,7 +99,7 @@ setSupportMultipleWindows(true) is required for popups/new tabs.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/brilliant/work/smali_classes4/n91.smali:220 (<init>)_
+_smali_classes4/n91.smali:220 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -135,6 +135,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 ```
 addJavascriptInterface((s76) nv9Var.f, "brilliantBridge")
 ```
+
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
 
 ## WebView hosts
 

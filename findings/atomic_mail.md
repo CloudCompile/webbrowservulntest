@@ -16,7 +16,7 @@
 ## Findings
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:7404 (p)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:7404 (p)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -26,7 +26,7 @@ setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin 
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:3895 (R)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:3895 (R)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -36,7 +36,7 @@ setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:5609 (e)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:5609 (e)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -47,7 +47,7 @@ setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:5639 (e)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:5639 (e)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -58,7 +58,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:7064 (h0)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:7064 (h0)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -69,7 +69,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:7258 (n)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:7258 (n)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -79,7 +79,7 @@ setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the 
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:7331 (o)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:7331 (o)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -98,7 +98,7 @@ WebView.setWebContentsDebuggingEnabled(true)
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:3237 (J)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:3237 (J)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -108,7 +108,7 @@ setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows un
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:3310 (K)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:3310 (K)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -127,7 +127,7 @@ networkSecurityConfig=network_security_config.xml cleartextTrafficPermitted=true
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:5087 (Z)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:5087 (Z)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -137,7 +137,7 @@ setSupportMultipleWindows(true) is required for popups/new tabs.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:5579 (e)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:5579 (e)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -148,7 +148,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:5584 (e)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:5584 (e)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -159,7 +159,7 @@ setSupportMultipleWindows(true) is required for popups/new tabs.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (argument unresolved)
-_analysis/atomic_mail/work/smali_classes2/com/reactnativecommunity/webview/k.smali:8474 (x)_
+_smali_classes2/com/reactnativecommunity/webview/k.smali:8474 (x)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -176,6 +176,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 ```
 addJavascriptInterface(eVar, "ReactNativeWebView")  methods=['postMessage']
 ```
+
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
 
 ## WebView hosts
 

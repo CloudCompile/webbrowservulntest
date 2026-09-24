@@ -16,7 +16,7 @@
 ## Findings
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:249 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:249 (initializeWebView)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -35,7 +35,7 @@ setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/fly_delta/work/smali_classes2/com/delta/bridge/WebViewPage.smali:972 (load)_
+_smali_classes2/com/delta/bridge/WebViewPage.smali:972 (load)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -45,7 +45,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:82 (setTripInsurancePage)_
+_smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:82 (setTripInsurancePage)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -55,7 +55,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:136 (addJellyBeanSettings)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:136 (addJellyBeanSettings)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -65,7 +65,7 @@ setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files 
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:155 (addKitKatSettings)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:155 (addKitKatSettings)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -75,7 +75,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:171 (addKitKatSettings)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:171 (addKitKatSettings)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -85,7 +85,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:239 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:239 (initializeWebView)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -131,7 +131,7 @@ onReceivedSslError -> handler.proceed()
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes2/com/delta/bridge/WebViewPage.smali:912 (load)_
+_smali_classes2/com/delta/bridge/WebViewPage.smali:912 (load)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -142,7 +142,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes2/com/delta/mobile/android/WebPage.smali:90 (onCreate)_
+_smali_classes2/com/delta/mobile/android/WebPage.smali:90 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -153,7 +153,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:71 (run)_
+_smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:71 (run)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -164,7 +164,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:125 (run)_
+_smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:125 (run)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -174,7 +174,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:956 (run)_
+_smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:956 (run)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -184,7 +184,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:90 (initializeBrowser)_
+_smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:90 (initializeBrowser)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -194,7 +194,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:107 (initializeBrowser)_
+_smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:107 (initializeBrowser)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -205,7 +205,7 @@ iget-object v0, p0, Lcom/delta/mobile/android/traveling/AircraftLayout;->browser
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1567 (initializeWebView)_
+_smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1567 (initializeWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -215,7 +215,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2085 (setDeltaDotComLinkOutBrowserSettings)_
+_smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2085 (setDeltaDotComLinkOutBrowserSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -225,7 +225,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/merchandise/MerchandiseDetailsActivity.smali:136 (getHtmlData)_
+_smali_classes3/com/delta/mobile/android/merchandise/MerchandiseDetailsActivity.smali:136 (getHtmlData)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -235,7 +235,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:77 (initializeBrowser)_
+_smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:77 (initializeBrowser)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -245,7 +245,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:94 (initializeBrowser)_
+_smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:94 (initializeBrowser)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -256,7 +256,7 @@ iget-object v0, p0, Lcom/delta/mobile/android/citydetail/CityAirportMapDetail;->
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/extras/TermsAndConditions.smali:39 (onCreate)_
+_smali_classes3/com/delta/mobile/android/extras/TermsAndConditions.smali:39 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -267,7 +267,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:47 (setTripInsurancePage)_
+_smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:47 (setTripInsurancePage)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -278,7 +278,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/feeds/fragments/NewsFragment.smali:218 (renderInfo)_
+_smali_classes3/com/delta/mobile/android/feeds/fragments/NewsFragment.smali:218 (renderInfo)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -288,7 +288,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:97 (invoke)_
+_smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:97 (invoke)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -299,7 +299,7 @@ const/4 v3, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/checkin/view/AmexView.smali:93 (loadBanner)_
+_smali_classes3/com/delta/mobile/android/checkin/view/AmexView.smali:93 (loadBanner)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -310,7 +310,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/foresee/sdk/common/ui/a/c.smali:69 (<init>)_
+_smali_classes4/com/foresee/sdk/common/ui/a/c.smali:69 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -321,7 +321,7 @@ move-result-object p2
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/foresee/sdk/cxMeasure/tracker/app/survey/SurveyActivity.smali:155 (Z)_
+_smali_classes4/com/foresee/sdk/cxMeasure/tracker/app/survey/SurveyActivity.smali:155 (Z)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -332,7 +332,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/dynatrace/android/agent/Dynatrace.smali:614 (instrumentWebView)_
+_smali_classes4/com/dynatrace/android/agent/Dynatrace.smali:614 (instrumentWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -343,7 +343,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/ads/internal/zzbp.smali:111 (<init>)_
+_smali_classes4/com/google/android/gms/ads/internal/zzbp.smali:111 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -354,7 +354,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzass.smali:114 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzass.smali:114 (<init>)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -365,7 +365,7 @@ invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzass.smali:150 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzass.smali:150 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -377,7 +377,7 @@ move-result-object v0
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzari.smali:303 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzari.smali:303 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -388,7 +388,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzari.smali:321 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzari.smali:321 (<init>)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -399,7 +399,7 @@ invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setSupportMultipleWindows
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:227 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:227 (initializeWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -409,7 +409,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:253 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:253 (initializeWebView)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -420,7 +420,7 @@ setAllowContentAccess(true) lets the WebView follow content:// URLs, widening th
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:267 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:267 (initializeWebView)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -430,7 +430,7 @@ setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows un
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/fly_delta/work/smali_classes5/io/branch/referral/BranchViewHandler.smali:172 (createAndShowBranchView)_
+_smali_classes5/io/branch/referral/BranchViewHandler.smali:172 (createAndShowBranchView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -468,7 +468,7 @@ enabled -> True
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes2/com/delta/bridge/WebViewPage.smali:921 (load)_
+_smali_classes2/com/delta/bridge/WebViewPage.smali:921 (load)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -479,7 +479,7 @@ move-result-object v0
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:83 (run)_
+_smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:83 (run)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -490,7 +490,7 @@ move-result-object v0
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:131 (run)_
+_smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:131 (run)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -500,7 +500,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:966 (run)_
+_smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:966 (run)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -511,7 +511,7 @@ iget-object v1, p0, Lcom/adobe/marketing/mobile/services/ui/MessageWebViewRunner
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1580 (initializeWebView)_
+_smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1580 (initializeWebView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -521,7 +521,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2088 (setDeltaDotComLinkOutBrowserSettings)_
+_smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2088 (setDeltaDotComLinkOutBrowserSettings)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -531,7 +531,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:54 (setTripInsurancePage)_
+_smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:54 (setTripInsurancePage)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -542,7 +542,7 @@ move-result-object v0
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:104 (invoke)_
+_smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:104 (invoke)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -553,7 +553,7 @@ move-result-object v2
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes4/com/foresee/sdk/common/ui/a/c.smali:81 (<init>)_
+_smali_classes4/com/foresee/sdk/common/ui/a/c.smali:81 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -564,7 +564,7 @@ move-result-object p2
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzass.smali:112 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzass.smali:112 (<init>)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -575,7 +575,7 @@ const/4 p1, 0x1
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzari.smali:319 (<init>)_
+_smali_classes4/com/google/android/gms/internal/ads/zzari.smali:319 (<init>)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -586,7 +586,7 @@ invoke-virtual {p2, p5}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes4/com/google/android/gms/internal/ads/zzaku.smali:106 (call)_
+_smali_classes4/com/google/android/gms/internal/ads/zzaku.smali:106 (call)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -597,7 +597,7 @@ iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaku;->zzcrw:Landroid/
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/fly_delta/work/smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:233 (initializeWebView)_
+_smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:233 (initializeWebView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 

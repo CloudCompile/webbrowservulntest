@@ -14,7 +14,7 @@
 ## Findings
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:336 (onCreateView)_
+_smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:336 (onCreateView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -24,7 +24,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/calm/work/smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:339 (onCreateView)_
+_smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:339 (onCreateView)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -34,7 +34,7 @@ setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows un
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:463 (initView)_
+_smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:463 (initView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -45,7 +45,7 @@ const/4 v7, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:296 (initView)_
+_smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:296 (initView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -56,7 +56,7 @@ move-result-object v6
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes6/com/facebook/internal/WebDialog.smali:943 (setUpWebView)_
+_smali_classes6/com/facebook/internal/WebDialog.smali:943 (setUpWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -66,7 +66,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:203 (setupWebSettings)_
+_smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:203 (setupWebSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -76,7 +76,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes8/com/perimeterx/mobile_sdk/PerimeterX.smali:1304 (setupWebView)_
+_smali_classes8/com/perimeterx/mobile_sdk/PerimeterX.smali:1304 (setupWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -87,7 +87,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/calm/work/smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:595 (onCreate)_
+_smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:595 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -98,7 +98,7 @@ move-result-object v0
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/calm/work/smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:477 (initView)_
+_smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:477 (initView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -109,7 +109,7 @@ move-result-object v6
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/calm/work/smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:310 (initView)_
+_smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:310 (initView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -120,7 +120,7 @@ move-result-object v6
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/calm/work/smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:206 (setupWebSettings)_
+_smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:206 (setupWebSettings)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -130,7 +130,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/calm/work/smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:602 (onCreate)_
+_smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:602 (onCreate)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -158,6 +158,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(pXJavaScriptInterface, "pxCaptcha")
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.calm.android.ui.profile.WebSubscriptionActivity`
@@ -168,6 +172,7 @@ addJavascriptInterface(pXJavaScriptInterface, "pxCaptcha")
   - `allow_file_access_from_file_urls` = `False`
   - `dom_storage_enabled` = `True`
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.calm.android.ui.webview.WebviewActivity`
 - sources: smali
@@ -177,6 +182,7 @@ addJavascriptInterface(pXJavaScriptInterface, "pxCaptcha")
   - `allow_file_access_from_file_urls` = `False`
   - `dom_storage_enabled` = `True`
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.iterable.iterableapi.IterableWebView`
 - sources: smali
@@ -198,6 +204,7 @@ addJavascriptInterface(pXJavaScriptInterface, "pxCaptcha")
 - settings:
   - `dom_storage_enabled` = `True`
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.perimeterx.mobile_sdk.block.PXBlockActivity`
 - sources: smali

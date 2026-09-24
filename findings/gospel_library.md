@@ -15,7 +15,7 @@
 ## Findings
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/gospel_library/work/smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:298 (initView$default)_
+_smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:298 (initView$default)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -26,7 +26,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/gospel_library/work/smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:385 (initView$default)_
+_smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:385 (initView$default)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -55,7 +55,7 @@ WebView.setWebContentsDebuggingEnabled(true)
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/gospel_library/work/smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:137 (run)_
+_smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:137 (run)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -65,7 +65,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/gospel_library/work/smali/com/google/android/recaptcha/internal/zzda.smali:210 (<init>)_
+_smali/com/google/android/recaptcha/internal/zzda.smali:210 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -75,7 +75,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/gospel_library/work/smali_classes2/org/lds/documentedit/widget/DocumentEditorWebView.smali:510 (configureWebView)_
+_smali_classes2/org/lds/documentedit/widget/DocumentEditorWebView.smali:510 (configureWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -85,7 +85,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/gospel_library/work/smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:380 (initView$default)_
+_smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:380 (initView$default)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -113,7 +113,7 @@ networkSecurityConfig=None cleartextTrafficPermitted=true
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/gospel_library/work/smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:147 (run)_
+_smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:147 (run)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 

@@ -14,7 +14,7 @@
 ## Findings
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:325 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:325 (<init>)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -24,7 +24,7 @@ setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali/com/active/passport2/webview/LoginFragment.smali:669 (onViewCreated)_
+_smali/com/active/passport2/webview/LoginFragment.smali:669 (onViewCreated)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -34,7 +34,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali/com/facebook/internal/WebDialog.smali:814 (setUpWebView)_
+_smali/com/facebook/internal/WebDialog.smali:814 (setUpWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -44,7 +44,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali/com/google/android/gms/ads/internal/zzs.smali:107 (<init>)_
+_smali/com/google/android/gms/ads/internal/zzs.smali:107 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -54,7 +54,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/consent_sdk/zzbe.smali:680 (zzf)_
+_smali_classes3/com/google/android/gms/internal/consent_sdk/zzbe.smali:680 (zzf)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -64,7 +64,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzfva.smali:52 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzfva.smali:52 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -74,7 +74,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:275 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:275 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -86,7 +86,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:302 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:302 (<init>)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -96,7 +96,7 @@ setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows un
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzfvd.smali:84 (zza)_
+_smali_classes3/com/google/android/gms/internal/ads/zzfvd.smali:84 (zza)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -106,7 +106,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/meet_mobile/work/smali/com/active/passport2/webview/LoginFragment.smali:689 (onViewCreated)_
+_smali/com/active/passport2/webview/LoginFragment.smali:689 (onViewCreated)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -117,7 +117,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/meet_mobile/work/smali/com/google/android/gms/ads/internal/util/zzn.smali:87 (call)_
+_smali/com/google/android/gms/ads/internal/util/zzn.smali:87 (call)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -128,7 +128,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/meet_mobile/work/smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:299 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:299 (<init>)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 

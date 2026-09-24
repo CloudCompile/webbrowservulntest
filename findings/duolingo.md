@@ -16,7 +16,7 @@
 ## Findings
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (argument unresolved)
-_analysis/duolingo/work/smali_classes4/xg90.smali:100 (applyWebSettings)_
+_smali_classes4/xg90.smali:100 (applyWebSettings)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -26,7 +26,7 @@ setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin 
 ```
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/duolingo/work/smali_classes7/com/duolingo/web/WebViewActivity.smali:173 (onCreate)_
+_smali_classes7/com/duolingo/web/WebViewActivity.smali:173 (onCreate)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -37,7 +37,7 @@ move-result-object v3
 ```
 
 ### [CRITICAL] WV-SET-004 - file:// pages may load arbitrary remote origins (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebView.smali:171 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebView.smali:171 (<init>)_
 
 setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server.
 
@@ -66,7 +66,7 @@ setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (argument unresolved)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:1588 (setAllowFileAccess)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:1588 (setAllowFileAccess)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -78,7 +78,7 @@ move-result-object p0
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (argument unresolved)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:1927 (setMixedContentMode)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:1927 (setMixedContentMode)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -90,7 +90,7 @@ move-result-object p0
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_assets/audience_network/com/facebook/ads/redexgen/X/cz.smali:405 (A04)_
+_smali_assets/audience_network/com/facebook/ads/redexgen/X/cz.smali:405 (A04)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -100,7 +100,7 @@ setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the 
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/duolingo/work/smali_assets/audience_network/com/facebook/ads/redexgen/X/cz.smali:408 (A04)_
+_smali_assets/audience_network/com/facebook/ads/redexgen/X/cz.smali:408 (A04)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -110,7 +110,7 @@ setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files 
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_assets/audience_network/com/facebook/ads/redexgen/X/I5.smali:107 (<init>)_
+_smali_assets/audience_network/com/facebook/ads/redexgen/X/I5.smali:107 (<init>)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -121,7 +121,7 @@ const/4 v0, 0x1
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_classes3/com/ironsource/Og.smali:107 (a)_
+_smali_classes3/com/ironsource/Og.smali:107 (a)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -132,7 +132,7 @@ invoke-virtual {p0, v2}, Landroid/view/View;->setHorizontalScrollBarEnabled(Z)V
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/duolingo/work/smali_classes3/com/ironsource/sdk/controller/v.smali:1806 (a)_
+_smali_classes3/com/ironsource/sdk/controller/v.smali:1806 (a)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -142,7 +142,7 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/duolingo/work/smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:293 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:293 (<init>)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -153,7 +153,7 @@ if-eqz p3, :cond_1
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_classes4/xg90.smali:60 (applyWebSettings)_
+_smali_classes4/xg90.smali:60 (applyWebSettings)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -164,7 +164,7 @@ invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/duolingo/work/smali_classes4/xg90.smali:80 (applyWebSettings)_
+_smali_classes4/xg90.smali:80 (applyWebSettings)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -174,7 +174,7 @@ setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files 
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/duolingo/work/smali_classes4/com/unity3d/ads/core/domain/HandleDebugSettings.smali:47 (invoke)_
+_smali_classes4/com/unity3d/ads/core/domain/HandleDebugSettings.smali:47 (invoke)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -185,7 +185,7 @@ move-result p0
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (argument unresolved)
-_analysis/duolingo/work/smali_classes5/ns1.smali:1046 (initWebView)_
+_smali_classes5/ns1.smali:1046 (initWebView)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -196,7 +196,7 @@ move-result v2
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/duolingo/work/smali_classes6/li0.smali:178 (invoke)_
+_smali_classes6/li0.smali:178 (invoke)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -207,7 +207,7 @@ invoke-direct {v9, v0}, Landroid/webkit/WebView;-><init>(Landroid/content/Contex
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/duolingo/work/smali_classes7/com/duolingo/web/WebViewActivity.smali:167 (onCreate)_
+_smali_classes7/com/duolingo/web/WebViewActivity.smali:167 (onCreate)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -218,7 +218,7 @@ move-result-object v3
 ```
 
 ### [HIGH] WV-SET-010 - WebView remote debugging enabled app-wide (True)
-_analysis/duolingo/work/smali_classes7/com/duolingo/web/WebViewActivity.smali:175 (onCreate)_
+_smali_classes7/com/duolingo/web/WebViewActivity.smali:175 (onCreate)_
 
 WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp.
 
@@ -229,7 +229,7 @@ invoke-virtual {v3, v4}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFr
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase$invoke$webview$1.smali:191 (invokeSuspend)_
+_smali_classes9/com/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase$invoke$webview$1.smali:191 (invokeSuspend)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -240,7 +240,7 @@ invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setMediaPlaybackRequiresU
 ```
 
 ### [HIGH] WV-SET-003 - file:// pages may load other file:// resources (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebView.smali:169 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebView.smali:169 (<init>)_
 
 setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch.
 
@@ -251,7 +251,7 @@ const/4 p4, 0x1
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebView.smali:173 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebView.smali:173 (<init>)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -262,7 +262,7 @@ invoke-virtual {p3, p4}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFr
 ```
 
 ### [HIGH] WV-SET-009 - Mixed content allowed (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebView.smali:209 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebView.smali:209 (<init>)_
 
 setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script.
 
@@ -273,7 +273,7 @@ invoke-virtual {p3, v0}, Landroid/webkit/WebSettings;->setMediaPlaybackRequiresU
 ```
 
 ### [HIGH] WV-SET-002 - Local file access enabled (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:86 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:86 (<init>)_
 
 setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read.
 
@@ -392,7 +392,7 @@ exported=true; intent extras -> getString(EXTRA_URL) -> loadUrl
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:488 (setJavaScriptEnabled)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:488 (setJavaScriptEnabled)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -404,7 +404,7 @@ const/4 p1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (argument unresolved)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:1800 (setJavaScriptCanOpenWindowsAutomatically)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:1800 (setJavaScriptCanOpenWindowsAutomatically)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -416,7 +416,7 @@ move-result-object p0
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (argument unresolved)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:1819 (setJavaScriptEnabled)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:1819 (setJavaScriptEnabled)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -428,7 +428,7 @@ move-result-object p0
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali/com/confiant/android/sdk/b.smali:979 (a)_
+_smali/com/confiant/android/sdk/b.smali:979 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -439,7 +439,7 @@ const/4 v8, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_assets/audience_network/com/facebook/ads/redexgen/X/Ze.smali:258 (A0E)_
+_smali_assets/audience_network/com/facebook/ads/redexgen/X/Ze.smali:258 (A0E)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -450,7 +450,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes10/org/prebid/mobile/rendering/views/browser/AdBrowserActivity.smali:346 (setWebViewSettings)_
+_smali_classes10/org/prebid/mobile/rendering/views/browser/AdBrowserActivity.smali:346 (setWebViewSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -461,7 +461,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes10/org/prebid/mobile/rendering/views/webview/AdWebView.smali:131 (initBaseWebSettings)_
+_smali_classes10/org/prebid/mobile/rendering/views/webview/AdWebView.smali:131 (initBaseWebSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -472,7 +472,7 @@ const/4 p0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes10/zendesk/support/guide/ViewArticleActivity.smali:996 (onCreate)_
+_smali_classes10/zendesk/support/guide/ViewArticleActivity.smali:996 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -483,7 +483,7 @@ move-result-object p1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes3/com/ironsource/Og.smali:111 (a)_
+_smali_classes3/com/ironsource/Og.smali:111 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -494,7 +494,7 @@ invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/duolingo/work/smali_classes3/com/ironsource/Og.smali:115 (a)_
+_smali_classes3/com/ironsource/Og.smali:115 (a)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -505,7 +505,7 @@ invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:251 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:251 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -516,7 +516,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-007 - Scripts may open windows without user interaction (True)
-_analysis/duolingo/work/smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:273 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:273 (<init>)_
 
 setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges.
 
@@ -527,7 +527,7 @@ invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes4/xg90.smali:52 (applyWebSettings)_
+_smali_classes4/xg90.smali:52 (applyWebSettings)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -538,7 +538,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes5/ns1.smali:1050 (initWebView)_
+_smali_classes5/ns1.smali:1050 (initWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -549,7 +549,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (True)
-_analysis/duolingo/work/smali_classes5/ns1.smali:1052 (initWebView)_
+_smali_classes5/ns1.smali:1052 (initWebView)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -560,7 +560,7 @@ invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/bxs/mtv.smali:92 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/bxs/mtv.smali:92 (uc)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -571,7 +571,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/core/widget/uc/phb.smali:232 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/core/widget/uc/phb.smali:232 (uc)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -582,7 +582,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:452 (qtm)_
+_smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:452 (qtm)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -592,7 +592,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:1209 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:1209 (uc)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -602,7 +602,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes6/xn20.smali:3969 (zzb)_
+_smali_classes6/xn20.smali:3969 (zzb)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -613,7 +613,7 @@ const/4 v4, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes6/li0.smali:192 (invoke)_
+_smali_classes6/li0.smali:192 (invoke)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -624,7 +624,7 @@ move-result-object v1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes7/com/duolingo/web/WebViewActivity.smali:147 (onCreate)_
+_smali_classes7/com/duolingo/web/WebViewActivity.smali:147 (onCreate)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -635,7 +635,7 @@ const/4 v4, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/d8b0.smali:50 (a)_
+_smali_classes8/d8b0.smali:50 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -646,7 +646,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/x8b0.smali:111 (<init>)_
+_smali_classes8/x8b0.smali:111 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -657,7 +657,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/com/facebook/internal/WebDialog.smali:742 (setUpWebView)_
+_smali_classes8/com/facebook/internal/WebDialog.smali:742 (setUpWebView)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -667,7 +667,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/com/google/android/gms/ads/internal/zzs.smali:62 (<init>)_
+_smali_classes8/com/google/android/gms/ads/internal/zzs.smali:62 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -678,7 +678,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/com/google/android/gms/internal/consent_sdk/zzbe.smali:382 (zzf)_
+_smali_classes8/com/google/android/gms/internal/consent_sdk/zzbe.smali:382 (zzf)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -689,7 +689,7 @@ const/4 v3, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/com/google/android/gms/internal/ads/zzfwm.smali:54 (zza)_
+_smali_classes8/com/google/android/gms/internal/ads/zzfwm.smali:54 (zza)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -700,7 +700,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes8/com/google/android/gms/internal/ads/zzfwj.smali:28 (<init>)_
+_smali_classes8/com/google/android/gms/internal/ads/zzfwj.smali:28 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -711,7 +711,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/ironsource/Mf.smali:138 (a)_
+_smali_classes9/com/ironsource/Mf.smali:138 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -721,7 +721,7 @@ setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expe
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/ironsource/Mf.smali:147 (a)_
+_smali_classes9/com/ironsource/Mf.smali:147 (a)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -732,7 +732,7 @@ move-result-object v0
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/ironsrc/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/ironsrc/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -743,7 +743,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/ironsrc/publisher/b.smali:207 (j)_
+_smali_classes9/com/iab/omid/library/ironsrc/publisher/b.smali:207 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -754,7 +754,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/amazon/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/amazon/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -765,7 +765,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/amazon/publisher/b.smali:207 (j)_
+_smali_classes9/com/iab/omid/library/amazon/publisher/b.smali:207 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -776,7 +776,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/unity3d/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/unity3d/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -787,7 +787,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/unity3d/publisher/b.smali:207 (j)_
+_smali_classes9/com/iab/omid/library/unity3d/publisher/b.smali:207 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -798,7 +798,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/vungle/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/vungle/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -809,7 +809,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/vungle/publisher/b.smali:207 (j)_
+_smali_classes9/com/iab/omid/library/vungle/publisher/b.smali:207 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -820,7 +820,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/prebidorg/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/prebidorg/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -831,7 +831,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/prebidorg/publisher/b.smali:206 (j)_
+_smali_classes9/com/iab/omid/library/prebidorg/publisher/b.smali:206 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -842,7 +842,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/bytedance2/publisher/a.smali:29 (<init>)_
+_smali_classes9/com/iab/omid/library/bytedance2/publisher/a.smali:29 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -853,7 +853,7 @@ const/4 v0, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/iab/omid/library/bytedance2/publisher/b.smali:207 (j)_
+_smali_classes9/com/iab/omid/library/bytedance2/publisher/b.smali:207 (j)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -864,7 +864,7 @@ const/4 v1, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase$invoke$webview$1.smali:183 (invokeSuspend)_
+_smali_classes9/com/unity3d/ads/core/domain/AndroidGetWebViewContainerUseCase$invoke$webview$1.smali:183 (invokeSuspend)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -875,7 +875,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebView.smali:199 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebView.smali:199 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -886,7 +886,7 @@ invoke-virtual {p3, v0}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindo
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/ads/webplayer/WebPlayerView.smali:107 (<init>)_
+_smali_classes9/com/unity3d/services/ads/webplayer/WebPlayerView.smali:107 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -897,7 +897,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/mraid/f0.smali:40 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/mraid/f0.smali:40 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -908,7 +908,7 @@ const/4 v2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/staticrenderer/c.smali:75 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/staticrenderer/c.smali:75 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -919,7 +919,7 @@ const/4 p2, 0x1
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:78 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:78 (<init>)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -930,7 +930,7 @@ invoke-virtual {p2, p1}, Landroid/webkit/WebSettings;->setSupportZoom(Z)V
 ```
 
 ### [MEDIUM] WV-SET-005 - content:// access enabled (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:88 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:88 (<init>)_
 
 setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set.
 
@@ -941,7 +941,7 @@ invoke-virtual {p2, p3}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
-_analysis/duolingo/work/smali_classes9/com/ironsource/sdk/controller/OpenUrlActivity.smali:204 (b)_
+_smali_classes9/com/ironsource/sdk/controller/OpenUrlActivity.smali:204 (b)_
 
 setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist.
 
@@ -997,7 +997,7 @@ enabled -> True
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (argument unresolved)
-_analysis/duolingo/work/smali/com/bytedance/sdk/component/mtv/dd.smali:1760 (setDomStorageEnabled)_
+_smali/com/bytedance/sdk/component/mtv/dd.smali:1760 (setDomStorageEnabled)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1009,7 +1009,7 @@ move-result-object p0
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_assets/audience_network/com/facebook/ads/redexgen/X/Ze.smali:265 (A0E)_
+_smali_assets/audience_network/com/facebook/ads/redexgen/X/Ze.smali:265 (A0E)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1020,7 +1020,7 @@ move-result-object v0
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/duolingo/work/smali_classes3/com/ironsource/Og.smali:113 (a)_
+_smali_classes3/com/ironsource/Og.smali:113 (a)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -1031,7 +1031,7 @@ invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes3/com/ironsource/Og.smali:119 (a)_
+_smali_classes3/com/ironsource/Og.smali:119 (a)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1042,7 +1042,7 @@ invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setGeolocationEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes3/com/google/android/gms/ads/internal/util/zzn.smali:55 (call)_
+_smali_classes3/com/google/android/gms/ads/internal/util/zzn.smali:55 (call)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1053,7 +1053,7 @@ invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-008 - Multiple windows supported (True)
-_analysis/duolingo/work/smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:271 (<init>)_
+_smali_classes3/com/google/android/gms/internal/ads/zzcme.smali:271 (<init>)_
 
 setSupportMultipleWindows(true) is required for popups/new tabs.
 
@@ -1064,7 +1064,7 @@ invoke-virtual {p2, p5}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes5/ns1.smali:1054 (initWebView)_
+_smali_classes5/ns1.smali:1054 (initWebView)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1075,7 +1075,7 @@ invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/bxs/mtv.smali:127 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/bxs/mtv.smali:127 (uc)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1086,7 +1086,7 @@ invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/core/widget/uc/phb.smali:285 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/core/widget/uc/phb.smali:285 (uc)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1097,7 +1097,7 @@ invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:454 (qtm)_
+_smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:454 (qtm)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1108,7 +1108,7 @@ invoke-virtual {p1, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:1211 (uc)_
+_smali_classes5/com/bytedance/sdk/openadsdk/activity/single/TTWebsiteActivity.smali:1211 (uc)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1119,7 +1119,7 @@ invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes6/xn20.smali:3975 (zzb)_
+_smali_classes6/xn20.smali:3975 (zzb)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1130,7 +1130,7 @@ move-result-object v3
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes6/li0.smali:198 (invoke)_
+_smali_classes6/li0.smali:198 (invoke)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1141,7 +1141,7 @@ move-result-object v1
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes7/com/duolingo/web/WebViewActivity.smali:153 (onCreate)_
+_smali_classes7/com/duolingo/web/WebViewActivity.smali:153 (onCreate)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1152,7 +1152,7 @@ move-result-object v3
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes9/com/unity3d/services/core/webview/WebViewWithCache.smali:49 (<init>)_
+_smali_classes9/com/unity3d/services/core/webview/WebViewWithCache.smali:49 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1163,7 +1163,7 @@ const/4 p1, 0x1
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/mraid/f0.smali:42 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/mraid/f0.smali:42 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1174,7 +1174,7 @@ invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/staticrenderer/c.smali:77 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/staticrenderer/c.smali:77 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
@@ -1185,7 +1185,7 @@ invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 ```
 
 ### [LOW] WV-SET-006 - DOM storage enabled (True)
-_analysis/duolingo/work/smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:82 (<init>)_
+_smali_classes9/com/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/templates/renderer/e.smali:82 (<init>)_
 
 setDomStorageEnabled(true) persists origin-scoped localStorage.
 
