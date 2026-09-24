@@ -1,0 +1,4276 @@
+{
+ "target": "samples/fly_delta.apk",
+ "package": "com.delta.mobile.android",
+ "version_name": "5.21.1",
+ "version_code": "23080",
+ "min_sdk": "24",
+ "target_sdk": "30",
+ "facts": {
+  "package": "com.delta.mobile.android",
+  "version_name": "5.21.1",
+  "version_code": "23080",
+  "min_sdk": "24",
+  "target_sdk": "30",
+  "uses_cleartext": null,
+  "nsc": "@xml/network_security_config",
+  "debuggable": null,
+  "nsc_file": "network_security_config.xml",
+  "nsc_cleartext_permitted": false,
+  "nsc_base_trust_anchors": [
+   "system"
+  ],
+  "nsc_domains": [],
+  "nsc_pinned_apple_domains": []
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.SplashScreen",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "@string/my_trips_schema://*",
+    "@string/check_in_schema://*",
+    "@string/today_mode_schema://*",
+    "@string/flight_search_schema://*",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/news_feed_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/home_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_search_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/preselect_meals_deep_link_action_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/modify_flight_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/fly_ready_check_in_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_flight_info_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_results_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/find_trip_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_results_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/trip_overview_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/same_day_change_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/trip_summary_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/my_trips_seat_map_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/branch_alternate_link",
+    "@string/schema_deep_link://@string/branch_link",
+    "@string/link_attribution_schema://*"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/my_trips_schema",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/check_in_schema",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/today_mode_schema",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/flight_search_schema",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_search_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/news_feed_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/home_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_status_search_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/preselect_meals_deep_link_action_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/modify_flight_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/fly_ready_check_in_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_status_flight_info_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_search_results_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/find_trip_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_status_results_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/trip_overview_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/same_day_change_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/trip_summary_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/my_trips_seat_map_deep_link_for_manifest"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/schema_deep_link",
+       "@string/branch_alternate_link",
+       null
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/branch_link",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/link_attribution_schema",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.MilitaryBaggageActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.MobileCheckInStepsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.SelectBaggageActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.checkout.view.OutOfPolicyReasonActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.umnr.PinActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.SplashScreenActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.WebPage",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.JsInjectableWebPage",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.itineraries.MyTripsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.itineraries.CustomerFindTrips",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.MyReceipts",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.ReceiptsListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.filter.ReceiptsListFilterActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.filter.DateFilterSelectionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.FlightReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.WifiReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.SeatReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.UpgradeSeatReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.CarReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.BaggageReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.InsuranceReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.HotelReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.SkyMilesReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.SkyClubReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.MultiProductReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.ServiceFeeReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.receipts.views.MyTripReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.MyReceiptsFilter",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.MyReceiptsFilterDateRange",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.ReceiptDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.ConsolidateReceipts",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.accountactivity.AccountActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.accountactivity.ActivityDetails",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.accountactivity.AccountActivityFilter",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.SkymilesCard",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.SkyClubCard",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.LaunchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.settings.TogglesSettingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.flightstatus.FlightStatusActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.flightstatus.FlightStatusResultActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.schedules.CustFlightSchedulesResult",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.criticalalert.view.CriticalAlertActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.wifihelper.view.WiFiHelperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.schedules.CustFlightSchedulesResultDetails",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.webview.DeltaEmbeddedWeb",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.flightstatus.FlightTracker",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.itineraries.FlightDetailsPolaris",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.itineraries.UpgradeRequestActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.itineraries.TripOverview",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInPolaris",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckinPassengerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckinIntercept",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.legacy.CheckInConfirmation",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.legacy.CheckInPassportActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInPassportActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.navigationDrawer.OfflineModeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.IntlCheckInPolaris",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInReturnDateActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.cardScan.CardScanActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.USAddressActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.AdvisoryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.UsEntryAdvisoryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInTerms",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.irop.IropAffectedFlightReference",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.trips.irop.view.IropAlternativeSearchResultsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.legacycsm.SeatMapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.seatmap.MyTripsSeatMapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.upsell.PurchaseSummaryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.PredictiveCitySearch",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityDetailTabHost",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityDetailActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityAirportMap",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.airportmaps.MapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityAirportMapDetail",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityAirportMapKey",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityGoogleMapTransit",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityWeather",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CitySkyClubs",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CitySkyClubInfo",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageRecentSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.PassportInfoActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.AirLoyaltyActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.AddEditLoyaltyActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.SpecialItemsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.legacy.BaggageDisclaimer",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageDisclaimerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.CheckinPurchaseSummaryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.bookingconfirmation.ConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.legacy.pcr.BagsPurchaseConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.pcr.BagsPurchaseConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.pcr.EFirstUpgradePurchaseConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.upsell.UpsellPurchaseSummaryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.payment.pcr.UpsellPurchaseConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.traveling.AircraftList",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.traveling.AircraftDetail",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.traveling.AircraftLayout",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.traveling.DeltaPartners",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.recentsearches.RecentSearches",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.traveling.AirportsRecentSearch",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.upsell.UpSellInfoActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.ssrs.SSRActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.ssrs.AddSpecialServices",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.extras.TermsAndConditions",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.frequentflyer.FrequentFlyerNumber",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.EUpgradeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.MilitaryBags",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.merchandise.MerchandiseDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.FlightSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightsearch.FlightSearchResultsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.legacy.seatmap.LogicalSeatmapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.legacy.seatmap.InteractiveSeatmapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.bridge.WebViewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.bridge.WebViewHideAutofillActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.legacy.SeatsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightsearch.AddPassengerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.forceappupdate.ForceAppUpdatePageActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightchange.checkout.view.FlightChangeCheckoutActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightchange.purchaseconfirmation.view.FlightChangePurchaseConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightchange.search.view.FlightChangeSearchResultsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.scanner.view.ScannerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.productModalPages.flightSpecificProductModal.PostPurchaseFlightSpecificProductActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.productModalPages.flightSpecificProductModal.BookingFlightSpecificProductActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.MyWalletActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.appunavailable.AppUnavailableActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.navigationDrawer.NavigationDrawerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.UsernameActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.PasswordActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.citydetail.CityDetailSkyClubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.todaymode.views.TourActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.todaymode.views.TodayTripsListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.whatsnew.WhatsNewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.VoucherListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.RedeemBarcodeVoucherActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.RedeemPromoCodeVoucherActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.wallet.VoucherDisclaimerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.trips.irop.view.IropAlternateItinerariesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.trips.irop.view.IropAlternateItineraryDetailActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.asl.AirportStandbyListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.mydelta.profile.UpgradePreferenceActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageTrackingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.asl.UpgradeStandbyFlightSelectionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggagePassengerSelectionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageTrackingOnMapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.compareExperiences.ui.CompareExperiencesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.productModalPages.genericProductModal.ui.GenericProductModalActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.companionlist.CompanionListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.skyclub.AirportSkyClubsResultActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.skyMilesEnrollment.SkyMilesEnrollmentActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.skyMilesEnrollment.booking.SkyMilesEnrollmentBookingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.skyMilesEnrollment.EnrollmentConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.skyMilesEnrollment.trips.SkyMilesEnrollmentTripsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.minimalebp.ui.MinimalEbpActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.minimalebp.ui.MinimalEbpListActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.legacy.complimentaryupgrade.ComplimentaryUpgradeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.complimentaryupgrade.ComplimentaryUpgradeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.FileReportForBaggageActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.ReportConfirmationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BagTypeSelectionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageClaimStatusActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.expresscheckout.ExpressCheckoutActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.reshop.ReshopActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.checkout.CheckoutActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.seatmap.SeatMapActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.baggage.BaggageSelectionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.preselectmeal.views.PreSelectMealActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.payment.CreditCardEntryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightsearch.OnTimePerformanceActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.todaymode.views.BoardingStatusActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.inFlightMenu.InFlightMenuActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightdetails.FlightDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.passengerinformation.PassengerInformationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.expresscheckout.upgradePreference.CheckoutUpgradePreferenceActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.payment.PaymentInfoForPurchaserActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.passengerinformation.CompanionSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.SaferTravelAdvisoryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.BiometricConsentActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.seatmap.OnBoardUpdatesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.edocs.EdocsMainActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.legacy.CheckinAdvisoryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.CheckInAdvisoryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.bridge.FallbackNativeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.healthform.ContactTracingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.edocs.EdocsInformationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.edocs.GiftCardsInformationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightMessaging.FlightMessagingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.seatmap.DynamicSeatKeyActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.healthform.AttestationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.profile.SecureFlightInfoActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.checkin.nonrevcheckin.NonRevenueCheckInActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.settings.autofillcustomization.AutofillCustomizationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.checkout.view.InternalReferenceNumberActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.booking.flightsearch.view.TravelPolicyDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.todaymode.views.ConnectedCabinActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.todaymode.views.EntertainmentPreferencesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.login.LoginActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": true,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.login.ForceLoginActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.delta.mobile.android.login.ReshopVerifyAccountActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.GenericIdpActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "genericidp://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "genericidp",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.RecaptchaActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "recaptcha://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "recaptcha",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.AdActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.foresee.sdk.cxMeasure.tracker.app.invite.InviteActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.compose.ui.tooling.PreviewActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "io.card.payment.CardIOActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "io.card.payment.DataEntryActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.cardinalcommerce.shared.cs.userinterfaces.ChallengeNativeView",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.cyberfend.cyfsecurity.CCADialogActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.apiclient.DeltaSpiceService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.apiclient.DeltaSpiceImageDownloadService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.fcm.FCMIntentService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.cart.DeltaCartService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.shareablemoments.LocationMonitoringService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.ibeacon.DeltaBeaconJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.ibeacon.StopBeaconJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.radiusnetworks.ibeacon.service.IBeaconService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.radiusnetworks.ibeacon.IBeaconIntentProcessor",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.AirportImageDeleteService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.minimalebp.service.EbpCleanupJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.EbpNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.notification.AppNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.todaymode.notification.PnrNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.notification.display.CheckInNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.forceappupdate.ForceAppUpdateCheckJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.serversidetoggles.ServerSideTogglesJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.notificationbanner.NotificationBannerJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.android.notificationbanner.NotificationBannerDisplayJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.IropNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.VirtualQueueNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.action.IropFlightService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.delta.mobile.services.notification.CustomAppNotificationJobWorker",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.locuslabs.sdk.ibeacon.BeaconService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.locuslabs.sdk.ibeacon.service.IBeaconService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.locuslabs.sdk.ibeacon.IBeaconIntentProcessor",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.mlkit.common.internal.MlKitComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.delta.mobile.android.homewidget.TodayModeAppWidgetProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.delta.mobile.android.notification.display.AlarmNotificationReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [
+    "notify://com.delta.mobile.android"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "com.delta.mobile.android.DISPLAY_NOTIFICATION"
+     ],
+     "bindings": [
+      [
+       "notify",
+       "com.delta.mobile.android",
+       null
+      ]
+     ],
+     "is_browsable": false
+    }
+   ]
+  },
+  {
+   "kind": "receiver",
+   "name": "com.delta.mobile.android.notification.schedule.NotificationAlarmsSchedulerReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.delta.mobile.services.notification.NotificationActionReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.foresee.sdk.cxMeasure.tracker.services.NotificationReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.mlkit.common.internal.MlKitInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.cardinalcommerce.shared.cs.utils.CCInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment",
+   "source": "smali",
+   "settings": {
+    "allow_file_access_from_file_urls": true,
+    "web_contents_debugging": true,
+    "javascript_enabled": true,
+    "dom_storage_enabled": true,
+    "allow_file_access": true,
+    "allow_universal_access_from_file_urls": true,
+    "allow_content_access": true,
+    "support_multiple_windows": false,
+    "js_can_open_windows_automatically": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzass",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "support_multiple_windows": true,
+    "js_can_open_windows_automatically": true,
+    "mixed_content_mode": "2",
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzari",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "javascript_enabled": true,
+    "support_multiple_windows": true,
+    "js_can_open_windows_automatically": true,
+    "mixed_content_mode": "2"
+   },
+   "bridges": [
+    {
+     "name": "googleAdsJsInterface",
+     "java_class": "com.google.android.gms.internal.ads.zzari",
+     "line": 174,
+     "exposed_object": "zzaro.zzk(this)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.bridge.WebViewPage",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true,
+    "web_contents_debugging": true
+   },
+   "bridges": [
+    {
+     "name": "container",
+     "java_class": "com.delta.bridge.WebViewPage",
+     "line": 407,
+     "exposed_object": "this.jsContainer",
+     "has_getdata": false,
+     "methods": [
+      "enablePinchAndZoom",
+      "getJsObject",
+      "getRhino",
+      "getWebViewHeight",
+      "handleEvent",
+      "handleFooterEvent",
+      "hasField",
+      "init",
+      "onPageLoaded",
+      "onRenderComplete",
+      "provideValueFor",
+      "retrieveValueFor",
+      "setJsObject",
+      "setResult"
+     ]
+    },
+    {
+     "name": "resultHolder",
+     "java_class": "com.delta.bridge.WebViewPage",
+     "line": 408,
+     "exposed_object": "this.jsEvalResultHolder",
+     "has_getdata": false,
+     "methods": [
+      "enablePinchAndZoom",
+      "getJsObject",
+      "getRhino",
+      "getWebViewHeight",
+      "handleEvent",
+      "handleFooterEvent",
+      "hasField",
+      "init",
+      "onPageLoaded",
+      "onRenderComplete",
+      "provideValueFor",
+      "retrieveValueFor",
+      "setJsObject",
+      "setResult"
+     ]
+    }
+   ],
+   "loaded_urls": [
+    "file:///android_asset/hybrid/views/",
+    "javascript:(function() { interval = setInterval(function() { if (window.",
+    "javascript:(function() { window.deltaWindowHeight = window.innerHeight; })();",
+    "javascript:container.onPageLoaded();",
+    "javascript:container.onRenderComplete(window.",
+    "javascript:container.provideValueFor(",
+    "javascript:window.",
+    "javascript:window.footerView.bind("
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage$MessageFullScreenRunner",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.services.ui.MessageWebViewRunner",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.booking.checkout.viewmodel.TripInsuranceViewModel",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true,
+    "web_contents_debugging": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.cardinalcommerce.cardinalmobilesdk.a.c.a$1",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.DeltaEmbeddedWeb",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
+  },
+  {
+   "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt$UserAuthWebView$1",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.foresee.sdk.common.ui.a.c",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaky",
+   "source": "smali",
+   "settings": {
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaku",
+   "source": "smali",
+   "settings": {
+    "dom_storage_enabled": true,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.cardinalcommerce.cardinalmobilesdk.a.c.a",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.WebPage",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)"
+  },
+  {
+   "name": "com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.traveling.AircraftLayout",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
+  },
+  {
+   "name": "com.delta.mobile.android.merchandise.MerchandiseDetailsActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "coverageDetailInterface",
+     "java_class": "com.delta.mobile.android.merchandise.MerchandiseDetailsActivity",
+     "line": 60,
+     "exposed_object": "new MerchandiseJSInterface(str)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [
+    "file:///android_asset/html/merchandise/insuranceCoverage.html"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
+  },
+  {
+   "name": "com.delta.mobile.android.citydetail.CityAirportMapDetail",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
+  },
+  {
+   "name": "com.delta.mobile.android.extras.TermsAndConditions",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.feeds.fragments.NewsFragment",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "file:///android_asset/hybrid/views/noNewsContent.html"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.checkin.view.AmexView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "nativeBridge",
+     "java_class": "com.delta.mobile.android.checkin.view.AmexView",
+     "line": 39,
+     "exposed_object": "new AmexJavaScriptInterface(this.amexEligibilityView)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [
+    "displayBanner("
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "fsrTracker",
+     "java_class": "com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity",
+     "line": 76,
+     "exposed_object": "dVar",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
+  },
+  {
+   "name": "com.dynatrace.android.agent.Dynatrace",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzbp",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "io.branch.referral.BranchViewHandler",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.core.text.util.LinkifyCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.foresee.sdk.common.utils.Util",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.foresee.sdk.common.ui.a.a",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.locuslabs.sdk.maps.implementation.DefaultMap",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.locuslabs.sdk.internal.maps.view.DefaultMapViewController",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.bridge.WebViewFragment",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.bridge.WebViewActivity",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.JsInjectableWebPage",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.DeltaWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.AircraftLayoutWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.DeltaChromeClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.AirportMapWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.DeltaPartnersWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.DeltaPartnersLandingPageEmbeddedWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "document.body.innerHTML"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.webview.DeltaEmbeddedWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": true,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.databinding.ExpressCheckoutTripProtectionBinding",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.databinding.ExpressCheckoutTripProtectionBindingImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.booking.expresscheckout.ExpressCheckoutActivity",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.booking.checkout.CheckoutActivity",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.booking.checkout.TripProtectionActions",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.booking.checkout.viewmodel.CheckoutTripInsuranceViewModel",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt$UserAuthWebView$1$1$2",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:postOk()"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.delta.mobile.android.todaymode.views.TourContentFragment",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.services.ui.AEPMessage",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.services.ui.MessageWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.services.ui.MessageWebView",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.adobe.marketing.mobile.services.ui.WebViewGestureListener",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzy",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzbq",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzart",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaqx",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzasv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "about:blank"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzakk",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaru",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaqw",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzasj",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzgk",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzark",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzast",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaan",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzaqo",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzasq",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "googleAdsJsInterface",
+     "java_class": "com.google.android.gms.internal.ads.zzasq",
+     "line": 134,
+     "exposed_object": "zzaro.zzk(this)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzgm",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() { return  {text:document.body.innerText}})();"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzasy",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzarh",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzarv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzuf",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "GoogleJsInterface",
+     "java_class": "com.google.android.gms.internal.ads.zzuf",
+     "line": 45,
+     "exposed_object": "new zzun(this)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  }
+ ],
+ "findings": [
+  {
+   "severity": "CRITICAL",
+   "rule": "WV-SET-004",
+   "title": "file:// pages may load arbitrary remote origins (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:249 (initializeWebView)",
+   "evidence": ".line 9\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V",
+   "detail": "setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "CORR-001",
+   "title": "com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment: file:// pages can reach any remote origin with JS on",
+   "location": "com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment",
+   "evidence": "setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)",
+   "detail": "A local file rendered in this WebView can exfiltrate itself to any attacker-controlled host. This is the worst-case WebView configuration."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes2/com/delta/bridge/WebViewPage.smali:972 (load)",
+   "evidence": ".line 9\n    invoke-static {v1}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:82 (setTripInsurancePage)",
+   "evidence": ".line 6\n    invoke-static {v1}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:136 (addJellyBeanSettings)",
+   "evidence": ".line 2\n    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:155 (addKitKatSettings)",
+   "evidence": ".line 2\n    invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:171 (addKitKatSettings)",
+   "evidence": ".line 4\n    invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:239 (initializeWebView)",
+   "evidence": ".line 7\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment: remote WebView debugging enabled",
+   "location": "com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "com.delta.bridge.WebViewPage: remote WebView debugging enabled",
+   "location": "com.delta.bridge.WebViewPage",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "com.delta.mobile.android.booking.checkout.viewmodel.TripInsuranceViewModel: remote WebView debugging enabled",
+   "location": "com.delta.mobile.android.booking.checkout.viewmodel.TripInsuranceViewModel",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-006",
+   "title": "com.delta.mobile.android.webview.DeltaEmbeddedWebViewClient: proceeds past TLS errors",
+   "location": "com.delta.mobile.android.webview.DeltaEmbeddedWebViewClient",
+   "evidence": "onReceivedSslError -> handler.proceed()",
+   "detail": "Invalid certificates are accepted; enables man-in-the-middle."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/delta/bridge/WebViewPage.smali:912 (load)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/delta/mobile/android/WebPage.smali:90 (onCreate)",
+   "evidence": "const/4 v0, 0x1\n\n    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:71 (run)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:125 (run)",
+   "evidence": ".line 8\n    invoke-virtual {v2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:956 (run)",
+   "evidence": ".line 20\n    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:90 (initializeBrowser)",
+   "evidence": ".line 4\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/traveling/AircraftLayout.smali:107 (initializeBrowser)",
+   "evidence": "iget-object v0, p0, Lcom/delta/mobile/android/traveling/AircraftLayout;->browserSettings:Landroid/webkit/WebSettings;\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1567 (initializeWebView)",
+   "evidence": ".line 2\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2085 (setDeltaDotComLinkOutBrowserSettings)",
+   "evidence": ".line 2\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/merchandise/MerchandiseDetailsActivity.smali:136 (getHtmlData)",
+   "evidence": ".line 2\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:77 (initializeBrowser)",
+   "evidence": ".line 3\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/citydetail/CityAirportMapDetail.smali:94 (initializeBrowser)",
+   "evidence": "iget-object v0, p0, Lcom/delta/mobile/android/citydetail/CityAirportMapDetail;->browserSettings:Landroid/webkit/WebSettings;\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/extras/TermsAndConditions.smali:39 (onCreate)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:47 (setTripInsurancePage)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/feeds/fragments/NewsFragment.smali:218 (renderInfo)",
+   "evidence": ".line 2\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:97 (invoke)",
+   "evidence": "const/4 v3, 0x1\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/delta/mobile/android/checkin/view/AmexView.smali:93 (loadBanner)",
+   "evidence": "const/4 v2, 0x1\n\n    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/foresee/sdk/common/ui/a/c.smali:69 (<init>)",
+   "evidence": "move-result-object p2\n\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/foresee/sdk/cxMeasure/tracker/app/survey/SurveyActivity.smali:155 (Z)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/dynatrace/android/agent/Dynatrace.smali:614 (instrumentWebView)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/google/android/gms/ads/internal/zzbp.smali:111 (<init>)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzass.smali:114 (<init>)",
+   "evidence": "invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V\n\n    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzass.smali:150 (<init>)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n    :try_end_0",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzari.smali:303 (<init>)",
+   "evidence": ":try_start_0\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n    :try_end_0",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzari.smali:321 (<init>)",
+   "evidence": "invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V\n\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:227 (initializeWebView)",
+   "evidence": ".line 3\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-005",
+   "title": "content:// access enabled (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:253 (initializeWebView)",
+   "evidence": ".line 10\n    :cond_0\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V",
+   "detail": "setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:267 (initializeWebView)",
+   "evidence": ".line 14\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/io/branch/referral/BranchViewHandler.smali:172 (createAndShowBranchView)",
+   "evidence": "const/4 v0, 0x1\n\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.cardinalcommerce.cardinalmobilesdk.a.c.a",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes2/com/delta/bridge/WebViewPage.smali:921 (load)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes2/com/cardinalcommerce/cardinalmobilesdk/a/c/a$1.smali:83 (run)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes2/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:131 (run)",
+   "evidence": ".line 10\n    invoke-virtual {v2, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes2/com/adobe/marketing/mobile/services/ui/MessageWebViewRunner.smali:966 (run)",
+   "evidence": "iget-object v1, p0, Lcom/adobe/marketing/mobile/services/ui/MessageWebViewRunner;->webviewSettings:Landroid/webkit/WebSettings;\n\n    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:1580 (initializeWebView)",
+   "evidence": ".line 5\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/delta/mobile/android/webview/DeltaEmbeddedWeb.smali:2088 (setDeltaDotComLinkOutBrowserSettings)",
+   "evidence": ".line 3\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/delta/mobile/android/booking/checkout/viewmodel/TripInsuranceViewModel.smali:54 (setTripInsurancePage)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/delta/mobile/android/todaymode/composables/ConnectedCabinPasscodeViewKt$UserAuthWebView$1.smali:104 (invoke)",
+   "evidence": "move-result-object v2\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes4/com/foresee/sdk/common/ui/a/c.smali:81 (<init>)",
+   "evidence": "move-result-object p2\n\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzass.smali:112 (<init>)",
+   "evidence": "const/4 p1, 0x1\n\n    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzari.smali:319 (<init>)",
+   "evidence": "invoke-virtual {p2, p5}, Landroid/webkit/WebSettings;->setSavePassword(Z)V\n\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/ads/zzaku.smali:106 (call)",
+   "evidence": "iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzaku;->zzcrw:Landroid/webkit/WebSettings;\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/locuslabs/sdk/javascriptintegration/JavaScriptEnvironment.smali:233 (initializeWebView)",
+   "evidence": ".line 5\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.cardinalcommerce.cardinalmobilesdk.a.c.a",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `googleAdsJsInterface` exposed by com.google.android.gms.internal.ads.zzari",
+   "location": "com.google.android.gms.internal.ads.zzari:174",
+   "evidence": "addJavascriptInterface(zzaro.zzk(this), \"googleAdsJsInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `container` exposed by com.delta.bridge.WebViewPage",
+   "location": "com.delta.bridge.WebViewPage:407",
+   "evidence": "addJavascriptInterface(this.jsContainer, \"container\")  methods=['enablePinchAndZoom', 'getJsObject', 'getRhino', 'getWebViewHeight', 'handleEvent', 'handleFooterEvent', 'hasField', 'init', 'onPageLoaded', 'onRenderComplete', 'provideValueFor', 'retrieveValueFor', 'setJsObject', 'setResult']",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `resultHolder` exposed by com.delta.bridge.WebViewPage",
+   "location": "com.delta.bridge.WebViewPage:408",
+   "evidence": "addJavascriptInterface(this.jsEvalResultHolder, \"resultHolder\")  methods=['enablePinchAndZoom', 'getJsObject', 'getRhino', 'getWebViewHeight', 'handleEvent', 'handleFooterEvent', 'hasField', 'init', 'onPageLoaded', 'onRenderComplete', 'provideValueFor', 'retrieveValueFor', 'setJsObject', 'setResult']",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `coverageDetailInterface` exposed by com.delta.mobile.android.merchandise.MerchandiseDetailsActivity",
+   "location": "com.delta.mobile.android.merchandise.MerchandiseDetailsActivity:60",
+   "evidence": "addJavascriptInterface(new MerchandiseJSInterface(str), \"coverageDetailInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `nativeBridge` exposed by com.delta.mobile.android.checkin.view.AmexView",
+   "location": "com.delta.mobile.android.checkin.view.AmexView:39",
+   "evidence": "addJavascriptInterface(new AmexJavaScriptInterface(this.amexEligibilityView), \"nativeBridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `fsrTracker` exposed by com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity",
+   "location": "com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity:76",
+   "evidence": "addJavascriptInterface(dVar, \"fsrTracker\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `googleAdsJsInterface` exposed by com.google.android.gms.internal.ads.zzasq",
+   "location": "com.google.android.gms.internal.ads.zzasq:134",
+   "evidence": "addJavascriptInterface(zzaro.zzk(this), \"googleAdsJsInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `GoogleJsInterface` exposed by com.google.android.gms.internal.ads.zzuf",
+   "location": "com.google.android.gms.internal.ads.zzuf:45",
+   "evidence": "addJavascriptInterface(new zzun(this), \"GoogleJsInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}

@@ -105,6 +105,9 @@ class HostInfo:
     unrestricted_navigation: bool = False
     ssl_proceed: bool = False
     is_exported_component: bool = False
+    # non-empty when the class feeds a URL taken from the launching Intent into
+    # loadUrl; the value names the intent source (e.g. getStringExtra("url")).
+    intent_url_source: str = ""
 
 
 @dataclass
@@ -541,6 +544,77 @@ SHOULD_OVERRIDE_RE = re.compile(r"shouldOverrideUrlLoading\(WebView[^)]*\)")
 EVALJS_RE = re.compile(r"evaluateJavascript\(\s*[\"'](.*?)[\"']", re.S)
 LOAD_URL_LIT_RE = re.compile(r"\.loadUrl\(\s*[\"'](.*?)[\"']", re.S)
 SSL_PROCEED_RE = re.compile(r"\.proceed\(\)")
+
+# Intent sources that carry an attacker-chosen URL. An exported component that
+# reads one of these and hands it to loadUrl is drivable from any app on the
+# device (explicit intent), a browsed web page, or an ad — no in-app user
+# action required.
+INTENT_READ_RE = re.compile(
+    r"(?:getIntent\(\)|\bintent)\s*\.\s*(getExtras|getData|getDataString|"
+    r"getStringExtra|getCharSequenceExtra|getParcelableExtra|getSerializableExtra)\s*\("
+)
+ASSIGN_RE = re.compile(r"(?:[\w<>\[\].]+\s+)?(\w+)\s*=\s*([^;{}\n]+)")
+EXTRAS_STRING_RE = re.compile(r"\.\s*get(?:String|CharSequence)\s*\(")
+URL_GETTER_RE = re.compile(r"\.\s*get\w*(?:Url|URL|Uri|URI)\s*\(")
+LOAD_URL_VAR_RE = re.compile(r"\.loadUrl\(\s*([\w.]+)\s*\)")
+LOAD_URL_INLINE_INTENT_RE = re.compile(
+    r"\.loadUrl\(\s*((?:getIntent\(\)|\bintent)\s*\.\s*get\w+\s*\([^)]*\))\s*\)"
+)
+# Bare `.loadUrl(...)` presence, used to decide whether the taint pass is worth
+# running at all.
+LOAD_URL_ANY_RE = re.compile(r"\.loadUrl\s*\(")
+
+
+def _intent_url_flow(text: str) -> str:
+    """Return a description when an Intent-supplied value reaches loadUrl.
+
+    A bounded taint pass over `;`-separated statements: a local assigned from
+    `getIntent()` (directly, from its Extras bundle, or via a `get*Url()`
+    accessor on an intent extra) is tainted, and taint propagates through
+    string/URL-extraction calls. If a tainted local is then loadUrl'd — or the
+    intent read is inlined — the URL is attacker-controlled. For an exported
+    component that means any app on the device, with no user action.
+    """
+    norm = re.sub(r"\s+", " ", text)
+    tainted: dict[str, str] = {}
+    for stmt in norm.split(";"):
+        am = ASSIGN_RE.search(stmt)
+        if not am:
+            continue
+        lhs, rhs = am.group(1), am.group(2)
+        direct = INTENT_READ_RE.search(rhs)
+        if direct:
+            tainted[lhs] = f"intent.{direct.group(1)}(...) -> {lhs}"
+            continue
+        for t, why in list(tainted.items()):
+            if re.search(r"\b" + re.escape(t) + r"\b", rhs) and (
+                EXTRAS_STRING_RE.search(rhs) or URL_GETTER_RE.search(rhs) or rhs.strip() == t
+            ):
+                tainted[lhs] = f"{why} -> {lhs}"
+                break
+    for m in LOAD_URL_VAR_RE.finditer(norm):
+        arg = m.group(1)
+        tail = arg.rsplit(".", 1)[-1]
+        if arg in tainted:
+            return f"{tainted[arg]} -> loadUrl({arg})"
+        if tail in tainted:
+            return f"{tainted[tail]} -> loadUrl({arg})"
+    inline = LOAD_URL_INLINE_INTENT_RE.search(norm)
+    if inline:
+        return f"loadUrl({inline.group(1)[:80]})"
+    # Looser net for the bundle/field shape (e.g. claimExtras(getIntent().getExtras())
+    # then this.url = bundle.getString("EXTRA_URL")): an intent read of the extras
+    # bundle alongside a URL-keyed extras read and any loadUrl.
+    intent_read = INTENT_READ_RE.search(norm)
+    has_load = re.search(r"\.loadUrl\(", norm)
+    if intent_read and has_load:
+        key = re.search(r"\.getString\(\s*\"?([A-Za-z_]*[Uu][Rr][Ll][A-Za-z_]*)\"?", norm)
+        if key:
+            return f"intent extras -> getString({key.group(1)}) -> loadUrl"
+        if URL_GETTER_RE.search(norm):
+            return "intent extra -> get*Url() -> loadUrl"
+    return ""
+
 SETTING_JAVA_RE = {
     "javascript_enabled": r"setJavaScriptEnabled\(\s*(true|false)",
     "allow_file_access": r"setAllowFileAccess\(\s*(true|false)",
@@ -622,6 +696,10 @@ def scan_java(java_root: Optional[Path]) -> tuple[Dict[str, HostInfo], List[Brid
                 break
         if SSL_PROCEED_RE.search(text) and "onReceivedSslError" in text:
             host.ssl_proceed = True
+        if not host.intent_url_source and LOAD_URL_ANY_RE.search(text):
+            src = _intent_url_flow(text)
+            if src:
+                host.intent_url_source = src
     return hosts, bridges
 
 
@@ -662,6 +740,8 @@ def merge_hosts(a: Dict[str, HostInfo], b: Dict[str, HostInfo]) -> Dict[str, Hos
             m.injected_script.extend(v.injected_script)
             m.unrestricted_navigation |= v.unrestricted_navigation
             m.ssl_proceed |= v.ssl_proceed
+            if not m.intent_url_source:
+                m.intent_url_source = v.intent_url_source
         else:
             merged[k] = v
     return merged
@@ -801,6 +881,39 @@ def build_findings(report: Report) -> List[dict]:
                 "by another app on the device via an Intent.",
                 host.name,
             )
+
+    # 3b. the reachability chain: an exported entry point that loads a URL taken
+    # from the launching Intent. Reachable by an explicit intent from any app on
+    # the device (no intent-filter needed), a browsed link, or an ad; the sender
+    # chooses the URL, so this is a general-purpose in-app browser with a remote
+    # trigger. Escalate when the same host also exposes a JS bridge or local file
+    # access, because the attacker-chosen page then reaches those too.
+    for host in report.hosts:
+        if not (host.is_exported_component and host.intent_url_source):
+            continue
+        dangerous = bool(host.bridges) or host.settings.get("allow_file_access") is True
+        add(
+            "CRITICAL" if dangerous else "HIGH",
+            "CORR-023",
+            f"{host.name}: exported entry point loads an Intent-supplied URL into a WebView",
+            f"exported=true; {host.intent_url_source}"
+            + (f"; bridges={[b.name for b in host.bridges]}" if host.bridges else "")
+            + ("; allow_file_access=true" if host.settings.get("allow_file_access") is True else ""),
+            "This exported activity derives the URL it displays from the Intent that "
+            "started it (extra, data, or an extra's URL field) and passes it straight to "
+            "WebView.loadUrl. Any app on the device can start it with an explicit intent "
+            "and an arbitrary URL — no intent-filter is required, and no in-app user "
+            "action is involved — so attacker-controlled web content renders inside the "
+            "app's own WebView."
+            + (
+                " The host also exposes a JS bridge and/or local file access, so that "
+                "content can reach the native bridge rather than being confined to a "
+                "plain browser."
+                if dangerous
+                else ""
+            ),
+            host.name,
+        )
 
     # 4. exported, browsable deep links that accept arbitrary web URLs.
     # A filter is only a finding if it declares http/https AND leaves the host
