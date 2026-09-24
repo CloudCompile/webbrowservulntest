@@ -1,0 +1,1485 @@
+{
+ "target": "samples/meet_mobile.apk",
+ "package": "com.active.aps.meetmobile",
+ "version_name": "5.3.1.2549",
+ "version_code": "167",
+ "min_sdk": "33",
+ "target_sdk": "36",
+ "facts": {
+  "package": "com.active.aps.meetmobile",
+  "version_name": "5.3.1.2549",
+  "version_code": "167",
+  "min_sdk": "33",
+  "target_sdk": "36",
+  "uses_cleartext": null,
+  "nsc": "@xml/network_security_config",
+  "debuggable": null,
+  "nsc_file": "network_security_config.xml",
+  "nsc_cleartext_permitted": false,
+  "nsc_base_trust_anchors": [
+   "@raw/charles_ssl_proxying_certificate_esther",
+   "@raw/charles_ssl_proxying_certificate_sophie",
+   "@raw/charles_ssl_proxying_certificate_rayman",
+   "@raw/charles_proxy_ssl_proxying_certificate",
+   "system"
+  ],
+  "nsc_domains": [],
+  "nsc_pinned_apple_domains": []
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.SplashActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": true,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.MainActivity",
+   "exported": true,
+   "permission": "com.active.aps.meetmobile.permission.START_MAIN",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.v2.common.view.ContainerActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.FacebookActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.ShareActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.settings.SettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.settings.GoogleAccountActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.settings.OtherAppsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.activities.settings.NoResultsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.feedback.presentation.linkedswimmer.SwimmersActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.feedback.presentation.linkedcoach.CoachesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.passport.view.RoleActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.search.MeetSearchFilterActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.search.SwimmerSearchFilterActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.search.SwimmerSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.search.MeetSearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.search.SearchActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.aps.meetmobile.lib.basic.view.activity.WebViewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.consumer.passport.activity.FullLoginActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.consumer.passport.activity.WebAuthActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.appauth.AuthorizationManagementActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.active.appauth.RedirectUriReceiverActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "com.active.meetmobile://*"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "com.active.meetmobile",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabMainActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.AdActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.NotificationHandlerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.active.aps.meetmobile.notification.GcmIntentService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.active.aps.meetmobile.notification.GcmJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.active.aps.meetmobile.notification.MeetMobileMessagingService",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.active.aps.meetmobile.service.SyncJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+   "exported": true,
+   "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.sessions.SessionLifecycleService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.ads.AdService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.facebook.FacebookContentProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.core.content.FileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.active.aps.meetmobile.lib.network.NetworkInitContentProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.active.aps.meetmobile.lib.storage.db.MeetMobileContentProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.active.aps.meetmobile.lib.basic.BasicLibInitContentProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.android.gms.ads.MobileAdsInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.facebook.marketing.internal.MarketingInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.facebook.internal.FacebookInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.google.android.gms.internal.ads.zzclc",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "javascript_enabled": true,
+    "support_multiple_windows": true,
+    "js_can_open_windows_automatically": true,
+    "mixed_content_mode": "2"
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "about:blank"
+   ],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbe",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfvd",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_content_access": false,
+    "allow_file_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.active.passport2.webview.LoginFragment",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "about:blank"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.util.zzn",
+   "source": "smali",
+   "settings": {
+    "dom_storage_enabled": true,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.util.zzs",
+   "source": "smali",
+   "settings": {
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.internal.WebDialog",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzs",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfva",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "gb.g0",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "q2.d",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "q2.l",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "q2.k",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "p2.d",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "p2.e",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.appcompat.widget.g0",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.active.passport2.webview.a",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "javascript:function androidGetElOffset(el) {  const rect = el.getBoundingClientRect();  return {    left: rect.left + window.scrollX,     top: rect.top + window.scrollY  };}function onAndroidElementFo"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.active.passport2.webview.c",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.active.aps.meetmobile.lib.basic.view.activity.WebViewActivity",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.internal.FacebookWebFallbackDialog",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:(function() {  var event = document.createEvent(",
+    "javascript:(function() {  var event = document.createEvent(\\'Event\\');  event.initEvent(\\'fbPlatformDialogMustClose\\',true,true);  document.dispatchEvent(event);})();"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.appevents.AppEventsLogger",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.appevents.AppEventsLoggerImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.bumptech.glide.f",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.MobileAds",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzo",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.h5.H5AdsWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzap",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zza",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zze",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.TaggingLibraryJsInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzj",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzda",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:"
+   ],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbx",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbev",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftn",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcjy",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftx",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbet",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() { return  {text:document.body.innerText}})();"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzclo",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfuz",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbqe",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfup",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcly",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfvc",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfwb",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzclm",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcln",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbpr",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckx",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfvb",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzekn",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfuq",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcjz",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzekm",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbzd",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckk",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  }
+ ],
+ "findings": [
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-009",
+   "title": "Mixed content allowed (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:325 (<init>)",
+   "evidence": ".line 21\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V",
+   "detail": "setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/active/passport2/webview/LoginFragment.smali:669 (onViewCreated)",
+   "evidence": ".line 185\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/facebook/internal/WebDialog.smali:814 (setUpWebView)",
+   "evidence": ".line 48\n    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/google/android/gms/ads/internal/zzs.smali:107 (<init>)",
+   "evidence": ".line 40\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/consent_sdk/zzbe.smali:680 (zzf)",
+   "evidence": ".line 31\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzfva.smali:52 (<init>)",
+   "evidence": ".line 19\n    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:275 (<init>)",
+   "evidence": ".line 13\n    :try_start_0\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n    :try_end_0",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:302 (<init>)",
+   "evidence": ".line 18\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzfvd.smali:84 (zza)",
+   "evidence": ".line 21\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali/com/active/passport2/webview/LoginFragment.smali:689 (onViewCreated)",
+   "evidence": ".line 196\n    .line 197\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali/com/google/android/gms/ads/internal/util/zzn.smali:87 (call)",
+   "evidence": ".line 23\n    .line 24\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzclc.smali:299 (<init>)",
+   "evidence": ".line 17\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}

@@ -1,0 +1,1186 @@
+{
+ "target": "samples/gospel_library.apk",
+ "package": "org.lds.ldssa",
+ "version_name": "6.5.3-(653000.1027012)",
+ "version_code": "653000",
+ "min_sdk": "21",
+ "target_sdk": "33",
+ "facts": {
+  "package": "org.lds.ldssa",
+  "version_name": "6.5.3-(653000.1027012)",
+  "version_code": "653000",
+  "min_sdk": "21",
+  "target_sdk": "33",
+  "uses_cleartext": "true",
+  "nsc": null,
+  "debuggable": null
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.main.MainActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "gospellibraryapp://*"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "gospellibraryapp",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.signin.SignInActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.annotations.links.LinksActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ui.activity.UriRouterActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "gospellibrary://*",
+    "http://www.lds.org/study",
+    "http://www.lds.org/general-conference",
+    "http://www.lds.org/scriptures",
+    "https://www.lds.org/study",
+    "https://www.lds.org/general-conference",
+    "https://www.lds.org/scriptures",
+    "http://www.churchofjesuschrist.org/study",
+    "http://www.churchofjesuschrist.org/general-conference",
+    "http://www.churchofjesuschrist.org/scriptures",
+    "https://www.churchofjesuschrist.org/study",
+    "https://www.churchofjesuschrist.org/general-conference",
+    "https://www.churchofjesuschrist.org/scriptures"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "gospellibrary",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "http",
+       "www.lds.org",
+       "/study"
+      ],
+      [
+       "http",
+       "www.lds.org",
+       "/general-conference"
+      ],
+      [
+       "http",
+       "www.lds.org",
+       "/scriptures"
+      ],
+      [
+       "https",
+       "www.lds.org",
+       "/study"
+      ],
+      [
+       "https",
+       "www.lds.org",
+       "/general-conference"
+      ],
+      [
+       "https",
+       "www.lds.org",
+       "/scriptures"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "http",
+       "www.churchofjesuschrist.org",
+       "/study"
+      ],
+      [
+       "http",
+       "www.churchofjesuschrist.org",
+       "/general-conference"
+      ],
+      [
+       "http",
+       "www.churchofjesuschrist.org",
+       "/scriptures"
+      ],
+      [
+       "https",
+       "www.churchofjesuschrist.org",
+       "/study"
+      ],
+      [
+       "https",
+       "www.churchofjesuschrist.org",
+       "/general-conference"
+      ],
+      [
+       "https",
+       "www.churchofjesuschrist.org",
+       "/scriptures"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.video.VideoPlayerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.video.LegacyVideoPlayerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "org.lds.ldssa.ux.studyplans.wizard.StudyPlanWizardActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.compose.ui.tooling.PreviewActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.GenericIdpActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "genericidp://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "genericidp",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.RecaptchaActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "recaptcha://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "recaptcha",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.lds.ldssa.media.texttospeech.TextToSpeechService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.lds.ldssa.media.exomedia.service.MediaService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.lds.ldssa.service.BookmarkWidgetService",
+   "exported": false,
+   "permission": "android.permission.BIND_REMOTEVIEWS",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.lds.ldssa.service.VerseOfTheDayWidgetService",
+   "exported": false,
+   "permission": "android.permission.BIND_REMOTEVIEWS",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.lds.ldssa.service.QuoteOfTheDayWidgetService",
+   "exported": false,
+   "permission": "android.permission.BIND_REMOTEVIEWS",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.cast.framework.ReconnectionService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.gcm.WorkManagerGcmService",
+   "exported": false,
+   "permission": "com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.play.core.assetpacks.AssetPackExtractionService",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.widget.BookmarkWidgetProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.widget.ComeFollowMeWidgetTextProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.widget.ComeFollowMeWidgetIconProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.widget.VerseOfTheDayWidgetProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.widget.QuoteOfTheDayWidgetProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.StudyPlansReminderNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.QuoteOfTheDayNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.VerseOfTheDayNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.PrayerStudyNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.HymnsAdminNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.EldersQuorumAdminNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.ReliefSocietyAdminNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.EldersQuorumMemberNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.ReliefSocietyMemberNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.ui.notification.receiver.BannerEventNotificationReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.receiver.DownloadManagerReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.lds.ldssa.receiver.ShareIntentReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.cast.framework.media.MediaIntentReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.core.content.FileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage$MessageFullScreenRunner",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.ldssa.ui.web.ContentWebView",
+   "source": "smali",
+   "settings": {
+    "web_contents_debugging": true,
+    "javascript_enabled": true,
+    "allow_file_access": true
+   },
+   "bridges": [
+    {
+     "name": "glContentInterface",
+     "java_class": "org.lds.ldssa.ui.web.ContentWebView",
+     "line": 142,
+     "exposed_object": "contentJsInterface",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzda",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "RN",
+     "java_class": "com.google.android.recaptcha.internal.zzda",
+     "line": 68,
+     "exposed_object": "zzcuVar",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.documentedit.widget.DocumentEditorWebView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "documentEditorInterface",
+     "java_class": "org.lds.documentedit.widget.DocumentEditorWebView",
+     "line": 205,
+     "exposed_object": "this.documentEditorJsInterface",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.WebViewCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.compose.ui.geometry.RectKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForO",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzw",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzbc",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzcs",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.exoplayer2.ui.WebViewSubtitleOutput",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.documentedit.widget.DocumentEditor",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.ldssa.ux.content.item.web.ContentItemWebFragment",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.ldssa.ux.content.item.web.ContentItemWebFragment$setupViewModelObservers$lambda$20$$inlined$collectWhenStarted$5",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.ldssa.ui.web.Hilt_ContentWebView",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.ldssa.ui.web.ContentWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.mobile.about.util.FeedbackUtil",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.mobile.about.ux.about.NewAcknowledgmentsWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.mobile.about.ux.about.AcknowledgmentsWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.lds.mobile.about.ux.about.AcknowledgementsKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  }
+ ],
+ "findings": [
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:298 (initView$default)",
+   "evidence": ".line 35\n    :cond_2\n    invoke-static {v2}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (True)",
+   "location": "smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:385 (initView$default)",
+   "evidence": ".line 76\n    .line 77\n    invoke-virtual {v4, v2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-002",
+   "title": "org.lds.ldssa.ui.web.ContentWebView: local file access + JS bridge",
+   "location": "org.lds.ldssa.ui.web.ContentWebView",
+   "evidence": "file access enabled + addJavascriptInterface + JS enabled",
+   "detail": "Page script can read local files and drive an exposed native bridge, so a file:// or navigated-to page escalates into native capability."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "org.lds.ldssa.ui.web.ContentWebView: remote WebView debugging enabled",
+   "location": "org.lds.ldssa.ui.web.ContentWebView",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:137 (run)",
+   "evidence": ".line 48\n    invoke-virtual {v4, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/google/android/recaptcha/internal/zzda.smali:210 (<init>)",
+   "evidence": ".line 73\n    invoke-virtual {p3, p4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/org/lds/documentedit/widget/DocumentEditorWebView.smali:510 (configureWebView)",
+   "evidence": ".line 6\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/org/lds/ldssa/ui/web/ContentWebView.smali:380 (initView$default)",
+   "evidence": ".line 74\n    invoke-virtual {v4, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "CORR-010",
+   "title": "Cleartext HTTP permitted globally",
+   "location": "AndroidManifest.xml",
+   "evidence": "networkSecurityConfig=None cleartextTrafficPermitted=true",
+   "detail": "The base-config permits http:// for every host, so any WebView navigation or API call can be downgraded to cleartext and modified on-path."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali/com/adobe/marketing/mobile/AndroidFullscreenMessage$MessageFullScreenRunner.smali:147 (run)",
+   "evidence": ".line 53\n    .line 54\n    invoke-virtual {v4, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `glContentInterface` exposed by org.lds.ldssa.ui.web.ContentWebView",
+   "location": "org.lds.ldssa.ui.web.ContentWebView:142",
+   "evidence": "addJavascriptInterface(contentJsInterface, \"glContentInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `RN` exposed by com.google.android.recaptcha.internal.zzda",
+   "location": "com.google.android.recaptcha.internal.zzda:68",
+   "evidence": "addJavascriptInterface(zzcuVar, \"RN\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `documentEditorInterface` exposed by org.lds.documentedit.widget.DocumentEditorWebView",
+   "location": "org.lds.documentedit.widget.DocumentEditorWebView:205",
+   "evidence": "addJavascriptInterface(this.documentEditorJsInterface, \"documentEditorInterface\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}

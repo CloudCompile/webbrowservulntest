@@ -1,0 +1,1096 @@
+{
+ "target": "samples/skyward.apk",
+ "package": "com.skyward.mobileaccess",
+ "version_name": "3.3.0",
+ "version_code": "339",
+ "min_sdk": "24",
+ "target_sdk": "36",
+ "facts": {
+  "package": "com.skyward.mobileaccess",
+  "version_name": "3.3.0",
+  "version_code": "339",
+  "min_sdk": "24",
+  "target_sdk": "36",
+  "uses_cleartext": null,
+  "nsc": "@xml/network_security_config",
+  "debuggable": null,
+  "nsc_file": "network_security_config.xml",
+  "nsc_cleartext_permitted": false,
+  "nsc_base_trust_anchors": [
+   "system",
+   "@raw/isrgrootx1",
+   "@raw/isrgrootx2",
+   "@raw/usertrustrsacertificationauthority"
+  ],
+  "nsc_domains": [],
+  "nsc_pinned_apple_domains": []
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "com.skyward.mobileaccess.MainActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "exp+mobileaccess://*"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "exp+mobileaccess",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "app.notifee.core.NotificationReceiverActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "app.notifee.core.ReceiverService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "app.notifee.core.ForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "expo.modules.location.services.LocationTaskService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+   "exported": true,
+   "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.sessions.SessionLifecycleService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "app.notifee.core.RebootBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "app.notifee.core.AlarmPermissionBroadcastReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "app.notifee.core.NotificationAlarmReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "app.notifee.core.BlockStateBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.invertase.notifee.NotifeeInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.reactnativecommunity.webview.RNCWebViewFileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "expo.modules.filesystem.FileSystemFileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "expo.modules.sharing.SharingFileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebViewManagerImpl",
+   "source": "smali",
+   "settings": {
+    "dom_storage_enabled": true,
+    "support_multiple_windows": true,
+    "allow_file_access": false,
+    "allow_content_access": false,
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false,
+    "mixed_content_mode": "2",
+    "web_contents_debugging": true,
+    "js_can_open_windows_automatically": null,
+    "javascript_enabled": null
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "expo.modules.webview.DomWebView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": true,
+    "allow_file_access_from_file_urls": true,
+    "web_contents_debugging": null
+   },
+   "bridges": [
+    {
+     "name": "ReactNativeWebView",
+     "java_class": "expo.modules.webview.DomWebView",
+     "line": 336,
+     "exposed_object": "this.rncWebViewBridge",
+     "has_getdata": false,
+     "methods": []
+    },
+    {
+     "name": "ExpoDomWebViewBridge",
+     "java_class": "expo.modules.webview.DomWebView",
+     "line": 337,
+     "exposed_object": "new DomWebViewBridge(this)",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ServiceWorkerWebSettingsImpl",
+   "source": "smali",
+   "settings": {
+    "allow_content_access": null,
+    "allow_file_access": null
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForN",
+   "source": "smali",
+   "settings": {
+    "allow_content_access": null,
+    "allow_file_access": null
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "expo.modules.logbox.ExpoLogBoxWebViewWrapper",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "web_contents_debugging": true
+   },
+   "bridges": [
+    {
+     "name": "rawMessage",
+     "java_class": "expo.modules.logbox.ExpoLogBoxWebViewWrapper",
+     "line": 60,
+     "exposed_object": "new Object() { // from class: expo.modules.logbox.ExpoLogBoxWebViewWrapper$webVi",
+     "has_getdata": false,
+     "methods": [
+      "postMessage"
+     ]
+    }
+   ],
+   "loaded_urls": [
+    "file:///android_asset/ExpoLogBox.bundle/index.html"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.ProcessGlobalConfig",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.WebViewRenderProcessClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.WebViewCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.WebViewBuilder",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.WebViewClientCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.core.text.util.LinkifyCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForP",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessClientFrameworkAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewProviderAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForO",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewProviderFactoryAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewGlueCommunicator",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForOMR1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForQ",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewProviderFactory",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebMessageListenerAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessClientAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForM",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.webkit.internal.IncompatibleApkWebViewProviderFactory",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.swmansion.rnscreens.Screen",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.react.uimanager.ReactAccessibilityDelegate",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebViewWrapper",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebView",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function(){return {selection: window.getSelection().toString()} })()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebViewModuleImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebViewConfig",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.reactnativecommunity.webview.RNCWebChromeClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  }
+ ],
+ "findings": [
+  {
+   "severity": "CRITICAL",
+   "rule": "WV-SET-004",
+   "title": "file:// pages may load arbitrary remote origins (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2058 (setAllowUniversalAccessFromFileURLs)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V",
+   "detail": "setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (argument unresolved)",
+   "location": "smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:434 (setAllowFileAccess)",
+   "evidence": "move-result-object v0\n\n    invoke-static {v0, p1}, Landroidx/webkit/internal/ApiHelperForN;->setAllowFileAccess(Landroid/webkit/ServiceWorkerWebSettings;Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (argument unresolved)",
+   "location": "smali/androidx/webkit/internal/ApiHelperForN.smali:144 (setAllowFileAccess)",
+   "evidence": ".line 132\n    invoke-virtual {p0, p1}, Landroid/webkit/ServiceWorkerWebSettings;->setAllowFileAccess(Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-009",
+   "title": "Mixed content allowed (True)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1308 (createViewInstance)",
+   "evidence": ".line 85\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V",
+   "detail": "setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1325 (createViewInstance)",
+   "evidence": ".line 93\n    invoke-static {v1}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2015 (setAllowFileAccess)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2037 (setAllowFileAccessFromFileURLs)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-009",
+   "title": "Mixed content allowed (True)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2996 (setMixedContentMode)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V",
+   "detail": "setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-002",
+   "title": "Local file access enabled (True)",
+   "location": "smali_classes3/expo/modules/webview/DomWebView.smali:437 (createWebView)",
+   "evidence": "move-result-object v1\n\n    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V",
+   "detail": "setAllowFileAccess(true) lets the WebView read file:// URLs, exposing files the app process can read."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (True)",
+   "location": "smali_classes3/expo/modules/webview/DomWebView.smali:444 (createWebView)",
+   "evidence": "move-result-object v1\n\n    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (argument unresolved)",
+   "location": "smali_classes3/expo/modules/webview/DomWebView.smali:1311 (setWebviewDebuggingEnabled)",
+   "evidence": ".line 41\n    invoke-static {p1}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (True)",
+   "location": "smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:189 (<init>)",
+   "evidence": ".line 27\n    invoke-static {p3}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "com.reactnativecommunity.webview.RNCWebViewManagerImpl: remote WebView debugging enabled",
+   "location": "com.reactnativecommunity.webview.RNCWebViewManagerImpl",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-002",
+   "title": "expo.modules.webview.DomWebView: local file access + JS bridge",
+   "location": "expo.modules.webview.DomWebView",
+   "evidence": "file access enabled + addJavascriptInterface + JS enabled",
+   "detail": "Page script can read local files and drive an exposed native bridge, so a file:// or navigated-to page escalates into native capability."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-004",
+   "title": "expo.modules.logbox.ExpoLogBoxWebViewWrapper: remote WebView debugging enabled",
+   "location": "expo.modules.logbox.ExpoLogBoxWebViewWrapper",
+   "evidence": "WebView.setWebContentsDebuggingEnabled(true)",
+   "detail": "Any WebView in the process is attachable via chrome://inspect. On a production build this is an instrumentation ramp for all in-app web content."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-005",
+   "title": "content:// access enabled (argument unresolved)",
+   "location": "smali/androidx/webkit/internal/ServiceWorkerWebSettingsImpl.smali:386 (setAllowContentAccess)",
+   "evidence": "move-result-object v0\n\n    invoke-static {v0, p1}, Landroidx/webkit/internal/ApiHelperForN;->setAllowContentAccess(Landroid/webkit/ServiceWorkerWebSettings;Z)V",
+   "detail": "setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-005",
+   "title": "content:// access enabled (argument unresolved)",
+   "location": "smali/androidx/webkit/internal/ApiHelperForN.smali:135 (setAllowContentAccess)",
+   "evidence": ".line 116\n    invoke-virtual {p0, p1}, Landroid/webkit/ServiceWorkerWebSettings;->setAllowContentAccess(Z)V",
+   "detail": "setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2765 (setJavaScriptCanOpenWindowsAutomatically)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2787 (setJavaScriptEnabled)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/expo/modules/webview/DomWebView.smali:430 (createWebView)",
+   "evidence": "const/4 v2, 0x1\n\n    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/expo/modules/logbox/ExpoLogBoxWebViewWrapper.smali:186 (<init>)",
+   "evidence": "const/4 p3, 0x1\n\n    invoke-virtual {p2, p3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1290 (createViewInstance)",
+   "evidence": ".line 79\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:1293 (createViewInstance)",
+   "evidence": ".line 80\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:2447 (setDomStorageEnabled)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (argument unresolved)",
+   "location": "smali_classes3/com/reactnativecommunity/webview/RNCWebViewManagerImpl.smali:3328 (setSetSupportMultipleWindows)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `ReactNativeWebView` exposed by expo.modules.webview.DomWebView",
+   "location": "expo.modules.webview.DomWebView:336",
+   "evidence": "addJavascriptInterface(this.rncWebViewBridge, \"ReactNativeWebView\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `ExpoDomWebViewBridge` exposed by expo.modules.webview.DomWebView",
+   "location": "expo.modules.webview.DomWebView:337",
+   "evidence": "addJavascriptInterface(new DomWebViewBridge(this), \"ExpoDomWebViewBridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `rawMessage` exposed by expo.modules.logbox.ExpoLogBoxWebViewWrapper",
+   "location": "expo.modules.logbox.ExpoLogBoxWebViewWrapper:60",
+   "evidence": "addJavascriptInterface(new Object() { // from class: expo.modules.logbox.ExpoLogBoxWebViewWrapper$webVi, \"rawMessage\")  methods=['postMessage']",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}

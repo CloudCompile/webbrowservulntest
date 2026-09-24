@@ -1,0 +1,4032 @@
+{
+ "target": "samples/calm.apk",
+ "package": "com.calm.android",
+ "version_name": "7.1.2",
+ "version_code": "4120462",
+ "min_sdk": "29",
+ "target_sdk": "36",
+ "facts": {
+  "package": "com.calm.android",
+  "version_name": "7.1.2",
+  "version_code": "4120462",
+  "min_sdk": "29",
+  "target_sdk": "36",
+  "uses_cleartext": null,
+  "nsc": "@xml/network_security_config",
+  "debuggable": null,
+  "nsc_file": "network_security_config.xml",
+  "nsc_cleartext_permitted": null,
+  "nsc_domains": [],
+  "nsc_pinned_apple_domains": []
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.splash.SplashActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "@string/deeplink_scheme://*",
+    "https://@string/deeplink_links_calm_com/a/",
+    "http://@string/deeplink_links_calm_com/a/",
+    "https://@string/deeplink_host/breathe",
+    "https://@string/deeplink_host/story-player-demo",
+    "https://@string/deeplink_host/goal-setup",
+    "https://@string/deeplink_host/settings",
+    "https://@string/deeplink_host/gratitude-check-in",
+    "https://@string/deeplink_host/packs/feeds",
+    "https://@string/deeplink_host/scenes",
+    "https://@string/deeplink_host/subscribe",
+    "https://@string/deeplink_host/language",
+    "https://@string/deeplink_host/program",
+    "https://@string/deeplink_host/packs/class",
+    "https://@string/deeplink_host/freetrial",
+    "https://@string/deeplink_host/session-history",
+    "https://@string/deeplink_host/meditate",
+    "https://@string/deeplink_host/sleep",
+    "https://@string/deeplink_host/daily-jay",
+    "https://@string/deeplink_host/login",
+    "https://@string/deeplink_host/profile",
+    "https://@string/deeplink_host/upsell",
+    "https://@string/deeplink_host/checkin",
+    "https://@string/deeplink_host/work",
+    "https://@string/deeplink_host/session",
+    "https://@string/deeplink_host/movement",
+    "https://@string/deeplink_host/player",
+    "https://@string/deeplink_host/masterclass",
+    "https://@string/deeplink_host/music",
+    "https://@string/deeplink_host/signup",
+    "https://@string/deeplink_host/jay-shetty",
+    "https://@string/deeplink_host/guest-pass",
+    "https://@string/deeplink_host/mood-check-in",
+    "https://@string/deeplink_host/search",
+    "https://@string/deeplink_host/daily-reminder",
+    "https://@string/deeplink_host/story",
+    "https://@string/deeplink_host/homepage",
+    "https://@string/deeplink_branch_host/breathe",
+    "https://@string/deeplink_branch_host/story-player-demo",
+    "https://@string/deeplink_branch_host/goal-setup",
+    "https://@string/deeplink_branch_host/settings",
+    "https://@string/deeplink_branch_host/gratitude-check-in",
+    "https://@string/deeplink_branch_host/packs/feeds",
+    "https://@string/deeplink_branch_host/scenes",
+    "https://@string/deeplink_branch_host/subscribe",
+    "https://@string/deeplink_branch_host/language",
+    "https://@string/deeplink_branch_host/program",
+    "https://@string/deeplink_branch_host/packs/class",
+    "https://@string/deeplink_branch_host/freetrial",
+    "https://@string/deeplink_branch_host/session-history",
+    "https://@string/deeplink_branch_host/meditate",
+    "https://@string/deeplink_branch_host/sleep",
+    "https://@string/deeplink_branch_host/daily-jay",
+    "https://@string/deeplink_branch_host/login",
+    "https://@string/deeplink_branch_host/profile",
+    "https://@string/deeplink_branch_host/upsell",
+    "https://@string/deeplink_branch_host/checkin",
+    "https://@string/deeplink_branch_host/work",
+    "https://@string/deeplink_branch_host/session",
+    "https://@string/deeplink_branch_host/movement",
+    "https://@string/deeplink_branch_host/player",
+    "https://@string/deeplink_branch_host/masterclass",
+    "https://@string/deeplink_branch_host/music",
+    "https://@string/deeplink_branch_host/signup",
+    "https://@string/deeplink_branch_host/jay-shetty",
+    "https://@string/deeplink_branch_host/guest-pass",
+    "https://@string/deeplink_branch_host/mood-check-in",
+    "https://@string/deeplink_branch_host/search",
+    "https://@string/deeplink_branch_host/daily-reminder",
+    "https://@string/deeplink_branch_host/story",
+    "https://@string/deeplink_branch_host/homepage",
+    "https://@string/deeplink_app_www_host/breathe",
+    "https://@string/deeplink_app_www_host/story-player-demo",
+    "https://@string/deeplink_app_www_host/goal-setup",
+    "https://@string/deeplink_app_www_host/settings",
+    "https://@string/deeplink_app_www_host/gratitude-check-in",
+    "https://@string/deeplink_app_www_host/packs/feeds",
+    "https://@string/deeplink_app_www_host/scenes",
+    "https://@string/deeplink_app_www_host/subscribe",
+    "https://@string/deeplink_app_www_host/language",
+    "https://@string/deeplink_app_www_host/program",
+    "https://@string/deeplink_app_www_host/packs/class",
+    "https://@string/deeplink_app_www_host/freetrial",
+    "https://@string/deeplink_app_www_host/session-history",
+    "https://@string/deeplink_app_www_host/meditate",
+    "https://@string/deeplink_app_www_host/sleep",
+    "https://@string/deeplink_app_www_host/daily-jay",
+    "https://@string/deeplink_app_www_host/login",
+    "https://@string/deeplink_app_www_host/profile",
+    "https://@string/deeplink_app_www_host/upsell",
+    "https://@string/deeplink_app_www_host/checkin",
+    "https://@string/deeplink_app_www_host/work",
+    "https://@string/deeplink_app_www_host/session",
+    "https://@string/deeplink_app_www_host/movement",
+    "https://@string/deeplink_app_www_host/player",
+    "https://@string/deeplink_app_www_host/masterclass",
+    "https://@string/deeplink_app_www_host/music",
+    "https://@string/deeplink_app_www_host/signup",
+    "https://@string/deeplink_app_www_host/jay-shetty",
+    "https://@string/deeplink_app_www_host/guest-pass",
+    "https://@string/deeplink_app_www_host/mood-check-in",
+    "https://@string/deeplink_app_www_host/search",
+    "https://@string/deeplink_app_www_host/daily-reminder",
+    "https://@string/deeplink_app_www_host/story",
+    "https://@string/deeplink_app_www_host/homepage",
+    "https://@string/deeplink_www_host/breathe",
+    "https://@string/deeplink_www_host/story-player-demo",
+    "https://@string/deeplink_www_host/goal-setup",
+    "https://@string/deeplink_www_host/settings",
+    "https://@string/deeplink_www_host/gratitude-check-in",
+    "https://@string/deeplink_www_host/packs/feeds",
+    "https://@string/deeplink_www_host/scenes",
+    "https://@string/deeplink_www_host/subscribe",
+    "https://@string/deeplink_www_host/language",
+    "https://@string/deeplink_www_host/program",
+    "https://@string/deeplink_www_host/packs/class",
+    "https://@string/deeplink_www_host/freetrial",
+    "https://@string/deeplink_www_host/session-history",
+    "https://@string/deeplink_www_host/meditate",
+    "https://@string/deeplink_www_host/sleep",
+    "https://@string/deeplink_www_host/daily-jay",
+    "https://@string/deeplink_www_host/login",
+    "https://@string/deeplink_www_host/profile",
+    "https://@string/deeplink_www_host/upsell",
+    "https://@string/deeplink_www_host/checkin",
+    "https://@string/deeplink_www_host/work",
+    "https://@string/deeplink_www_host/session",
+    "https://@string/deeplink_www_host/movement",
+    "https://@string/deeplink_www_host/player",
+    "https://@string/deeplink_www_host/masterclass",
+    "https://@string/deeplink_www_host/music",
+    "https://@string/deeplink_www_host/signup",
+    "https://@string/deeplink_www_host/jay-shetty",
+    "https://@string/deeplink_www_host/guest-pass",
+    "https://@string/deeplink_www_host/mood-check-in",
+    "https://@string/deeplink_www_host/search",
+    "https://@string/deeplink_www_host/daily-reminder",
+    "https://@string/deeplink_www_host/story",
+    "https://@string/deeplink_www_host/homepage",
+    "https://@string/deeplink_www_dev_1_host/breathe",
+    "https://@string/deeplink_www_dev_1_host/story-player-demo",
+    "https://@string/deeplink_www_dev_1_host/goal-setup",
+    "https://@string/deeplink_www_dev_1_host/settings",
+    "https://@string/deeplink_www_dev_1_host/gratitude-check-in",
+    "https://@string/deeplink_www_dev_1_host/packs/feeds",
+    "https://@string/deeplink_www_dev_1_host/scenes",
+    "https://@string/deeplink_www_dev_1_host/subscribe",
+    "https://@string/deeplink_www_dev_1_host/language",
+    "https://@string/deeplink_www_dev_1_host/program",
+    "https://@string/deeplink_www_dev_1_host/packs/class",
+    "https://@string/deeplink_www_dev_1_host/freetrial",
+    "https://@string/deeplink_www_dev_1_host/session-history",
+    "https://@string/deeplink_www_dev_1_host/meditate",
+    "https://@string/deeplink_www_dev_1_host/sleep",
+    "https://@string/deeplink_www_dev_1_host/daily-jay",
+    "https://@string/deeplink_www_dev_1_host/login",
+    "https://@string/deeplink_www_dev_1_host/profile",
+    "https://@string/deeplink_www_dev_1_host/upsell",
+    "https://@string/deeplink_www_dev_1_host/checkin",
+    "https://@string/deeplink_www_dev_1_host/work",
+    "https://@string/deeplink_www_dev_1_host/session",
+    "https://@string/deeplink_www_dev_1_host/movement",
+    "https://@string/deeplink_www_dev_1_host/player",
+    "https://@string/deeplink_www_dev_1_host/masterclass",
+    "https://@string/deeplink_www_dev_1_host/music",
+    "https://@string/deeplink_www_dev_1_host/signup",
+    "https://@string/deeplink_www_dev_1_host/jay-shetty",
+    "https://@string/deeplink_www_dev_1_host/guest-pass",
+    "https://@string/deeplink_www_dev_1_host/mood-check-in",
+    "https://@string/deeplink_www_dev_1_host/search",
+    "https://@string/deeplink_www_dev_1_host/daily-reminder",
+    "https://@string/deeplink_www_dev_1_host/story",
+    "https://@string/deeplink_www_dev_1_host/homepage",
+    "https://@string/deeplink_www_dev_host/breathe",
+    "https://@string/deeplink_www_dev_host/story-player-demo",
+    "https://@string/deeplink_www_dev_host/goal-setup",
+    "https://@string/deeplink_www_dev_host/settings",
+    "https://@string/deeplink_www_dev_host/gratitude-check-in",
+    "https://@string/deeplink_www_dev_host/packs/feeds",
+    "https://@string/deeplink_www_dev_host/scenes",
+    "https://@string/deeplink_www_dev_host/subscribe",
+    "https://@string/deeplink_www_dev_host/language",
+    "https://@string/deeplink_www_dev_host/program",
+    "https://@string/deeplink_www_dev_host/packs/class",
+    "https://@string/deeplink_www_dev_host/freetrial",
+    "https://@string/deeplink_www_dev_host/session-history",
+    "https://@string/deeplink_www_dev_host/meditate",
+    "https://@string/deeplink_www_dev_host/sleep",
+    "https://@string/deeplink_www_dev_host/daily-jay",
+    "https://@string/deeplink_www_dev_host/login",
+    "https://@string/deeplink_www_dev_host/profile",
+    "https://@string/deeplink_www_dev_host/upsell",
+    "https://@string/deeplink_www_dev_host/checkin",
+    "https://@string/deeplink_www_dev_host/work",
+    "https://@string/deeplink_www_dev_host/session",
+    "https://@string/deeplink_www_dev_host/movement",
+    "https://@string/deeplink_www_dev_host/player",
+    "https://@string/deeplink_www_dev_host/masterclass",
+    "https://@string/deeplink_www_dev_host/music",
+    "https://@string/deeplink_www_dev_host/signup",
+    "https://@string/deeplink_www_dev_host/jay-shetty",
+    "https://@string/deeplink_www_dev_host/guest-pass",
+    "https://@string/deeplink_www_dev_host/mood-check-in",
+    "https://@string/deeplink_www_dev_host/search",
+    "https://@string/deeplink_www_dev_host/daily-reminder",
+    "https://@string/deeplink_www_dev_host/story",
+    "https://@string/deeplink_www_dev_host/homepage",
+    "http://@string/deeplink_host/breathe",
+    "http://@string/deeplink_host/story-player-demo",
+    "http://@string/deeplink_host/goal-setup",
+    "http://@string/deeplink_host/settings",
+    "http://@string/deeplink_host/gratitude-check-in",
+    "http://@string/deeplink_host/packs/feeds",
+    "http://@string/deeplink_host/scenes",
+    "http://@string/deeplink_host/subscribe",
+    "http://@string/deeplink_host/language",
+    "http://@string/deeplink_host/program",
+    "http://@string/deeplink_host/packs/class",
+    "http://@string/deeplink_host/freetrial",
+    "http://@string/deeplink_host/session-history",
+    "http://@string/deeplink_host/meditate",
+    "http://@string/deeplink_host/sleep",
+    "http://@string/deeplink_host/daily-jay",
+    "http://@string/deeplink_host/login",
+    "http://@string/deeplink_host/profile",
+    "http://@string/deeplink_host/upsell",
+    "http://@string/deeplink_host/checkin",
+    "http://@string/deeplink_host/work",
+    "http://@string/deeplink_host/session",
+    "http://@string/deeplink_host/movement",
+    "http://@string/deeplink_host/player",
+    "http://@string/deeplink_host/masterclass",
+    "http://@string/deeplink_host/music",
+    "http://@string/deeplink_host/signup",
+    "http://@string/deeplink_host/jay-shetty",
+    "http://@string/deeplink_host/guest-pass",
+    "http://@string/deeplink_host/mood-check-in",
+    "http://@string/deeplink_host/search",
+    "http://@string/deeplink_host/daily-reminder",
+    "http://@string/deeplink_host/story",
+    "http://@string/deeplink_host/homepage",
+    "http://@string/deeplink_branch_host/breathe",
+    "http://@string/deeplink_branch_host/story-player-demo",
+    "http://@string/deeplink_branch_host/goal-setup",
+    "http://@string/deeplink_branch_host/settings",
+    "http://@string/deeplink_branch_host/gratitude-check-in",
+    "http://@string/deeplink_branch_host/packs/feeds",
+    "http://@string/deeplink_branch_host/scenes",
+    "http://@string/deeplink_branch_host/subscribe",
+    "http://@string/deeplink_branch_host/language",
+    "http://@string/deeplink_branch_host/program",
+    "http://@string/deeplink_branch_host/packs/class",
+    "http://@string/deeplink_branch_host/freetrial",
+    "http://@string/deeplink_branch_host/session-history",
+    "http://@string/deeplink_branch_host/meditate",
+    "http://@string/deeplink_branch_host/sleep",
+    "http://@string/deeplink_branch_host/daily-jay",
+    "http://@string/deeplink_branch_host/login",
+    "http://@string/deeplink_branch_host/profile",
+    "http://@string/deeplink_branch_host/upsell",
+    "http://@string/deeplink_branch_host/checkin",
+    "http://@string/deeplink_branch_host/work",
+    "http://@string/deeplink_branch_host/session",
+    "http://@string/deeplink_branch_host/movement",
+    "http://@string/deeplink_branch_host/player",
+    "http://@string/deeplink_branch_host/masterclass",
+    "http://@string/deeplink_branch_host/music",
+    "http://@string/deeplink_branch_host/signup",
+    "http://@string/deeplink_branch_host/jay-shetty",
+    "http://@string/deeplink_branch_host/guest-pass",
+    "http://@string/deeplink_branch_host/mood-check-in",
+    "http://@string/deeplink_branch_host/search",
+    "http://@string/deeplink_branch_host/daily-reminder",
+    "http://@string/deeplink_branch_host/story",
+    "http://@string/deeplink_branch_host/homepage",
+    "http://@string/deeplink_app_www_host/breathe",
+    "http://@string/deeplink_app_www_host/story-player-demo",
+    "http://@string/deeplink_app_www_host/goal-setup",
+    "http://@string/deeplink_app_www_host/settings",
+    "http://@string/deeplink_app_www_host/gratitude-check-in",
+    "http://@string/deeplink_app_www_host/packs/feeds",
+    "http://@string/deeplink_app_www_host/scenes",
+    "http://@string/deeplink_app_www_host/subscribe",
+    "http://@string/deeplink_app_www_host/language",
+    "http://@string/deeplink_app_www_host/program",
+    "http://@string/deeplink_app_www_host/packs/class",
+    "http://@string/deeplink_app_www_host/freetrial",
+    "http://@string/deeplink_app_www_host/session-history",
+    "http://@string/deeplink_app_www_host/meditate",
+    "http://@string/deeplink_app_www_host/sleep",
+    "http://@string/deeplink_app_www_host/daily-jay",
+    "http://@string/deeplink_app_www_host/login",
+    "http://@string/deeplink_app_www_host/profile",
+    "http://@string/deeplink_app_www_host/upsell",
+    "http://@string/deeplink_app_www_host/checkin",
+    "http://@string/deeplink_app_www_host/work",
+    "http://@string/deeplink_app_www_host/session",
+    "http://@string/deeplink_app_www_host/movement",
+    "http://@string/deeplink_app_www_host/player",
+    "http://@string/deeplink_app_www_host/masterclass",
+    "http://@string/deeplink_app_www_host/music",
+    "http://@string/deeplink_app_www_host/signup",
+    "http://@string/deeplink_app_www_host/jay-shetty",
+    "http://@string/deeplink_app_www_host/guest-pass",
+    "http://@string/deeplink_app_www_host/mood-check-in",
+    "http://@string/deeplink_app_www_host/search",
+    "http://@string/deeplink_app_www_host/daily-reminder",
+    "http://@string/deeplink_app_www_host/story",
+    "http://@string/deeplink_app_www_host/homepage",
+    "http://@string/deeplink_www_host/breathe",
+    "http://@string/deeplink_www_host/story-player-demo",
+    "http://@string/deeplink_www_host/goal-setup",
+    "http://@string/deeplink_www_host/settings",
+    "http://@string/deeplink_www_host/gratitude-check-in",
+    "http://@string/deeplink_www_host/packs/feeds",
+    "http://@string/deeplink_www_host/scenes",
+    "http://@string/deeplink_www_host/subscribe",
+    "http://@string/deeplink_www_host/language",
+    "http://@string/deeplink_www_host/program",
+    "http://@string/deeplink_www_host/packs/class",
+    "http://@string/deeplink_www_host/freetrial",
+    "http://@string/deeplink_www_host/session-history",
+    "http://@string/deeplink_www_host/meditate",
+    "http://@string/deeplink_www_host/sleep",
+    "http://@string/deeplink_www_host/daily-jay",
+    "http://@string/deeplink_www_host/login",
+    "http://@string/deeplink_www_host/profile",
+    "http://@string/deeplink_www_host/upsell",
+    "http://@string/deeplink_www_host/checkin",
+    "http://@string/deeplink_www_host/work",
+    "http://@string/deeplink_www_host/session",
+    "http://@string/deeplink_www_host/movement",
+    "http://@string/deeplink_www_host/player",
+    "http://@string/deeplink_www_host/masterclass",
+    "http://@string/deeplink_www_host/music",
+    "http://@string/deeplink_www_host/signup",
+    "http://@string/deeplink_www_host/jay-shetty",
+    "http://@string/deeplink_www_host/guest-pass",
+    "http://@string/deeplink_www_host/mood-check-in",
+    "http://@string/deeplink_www_host/search",
+    "http://@string/deeplink_www_host/daily-reminder",
+    "http://@string/deeplink_www_host/story",
+    "http://@string/deeplink_www_host/homepage",
+    "http://@string/deeplink_www_dev_1_host/breathe",
+    "http://@string/deeplink_www_dev_1_host/story-player-demo",
+    "http://@string/deeplink_www_dev_1_host/goal-setup",
+    "http://@string/deeplink_www_dev_1_host/settings",
+    "http://@string/deeplink_www_dev_1_host/gratitude-check-in",
+    "http://@string/deeplink_www_dev_1_host/packs/feeds",
+    "http://@string/deeplink_www_dev_1_host/scenes",
+    "http://@string/deeplink_www_dev_1_host/subscribe",
+    "http://@string/deeplink_www_dev_1_host/language",
+    "http://@string/deeplink_www_dev_1_host/program",
+    "http://@string/deeplink_www_dev_1_host/packs/class",
+    "http://@string/deeplink_www_dev_1_host/freetrial",
+    "http://@string/deeplink_www_dev_1_host/session-history",
+    "http://@string/deeplink_www_dev_1_host/meditate",
+    "http://@string/deeplink_www_dev_1_host/sleep",
+    "http://@string/deeplink_www_dev_1_host/daily-jay",
+    "http://@string/deeplink_www_dev_1_host/login",
+    "http://@string/deeplink_www_dev_1_host/profile",
+    "http://@string/deeplink_www_dev_1_host/upsell",
+    "http://@string/deeplink_www_dev_1_host/checkin",
+    "http://@string/deeplink_www_dev_1_host/work",
+    "http://@string/deeplink_www_dev_1_host/session",
+    "http://@string/deeplink_www_dev_1_host/movement",
+    "http://@string/deeplink_www_dev_1_host/player",
+    "http://@string/deeplink_www_dev_1_host/masterclass",
+    "http://@string/deeplink_www_dev_1_host/music",
+    "http://@string/deeplink_www_dev_1_host/signup",
+    "http://@string/deeplink_www_dev_1_host/jay-shetty",
+    "http://@string/deeplink_www_dev_1_host/guest-pass",
+    "http://@string/deeplink_www_dev_1_host/mood-check-in",
+    "http://@string/deeplink_www_dev_1_host/search",
+    "http://@string/deeplink_www_dev_1_host/daily-reminder",
+    "http://@string/deeplink_www_dev_1_host/story",
+    "http://@string/deeplink_www_dev_1_host/homepage",
+    "http://@string/deeplink_www_dev_host/breathe",
+    "http://@string/deeplink_www_dev_host/story-player-demo",
+    "http://@string/deeplink_www_dev_host/goal-setup",
+    "http://@string/deeplink_www_dev_host/settings",
+    "http://@string/deeplink_www_dev_host/gratitude-check-in",
+    "http://@string/deeplink_www_dev_host/packs/feeds",
+    "http://@string/deeplink_www_dev_host/scenes",
+    "http://@string/deeplink_www_dev_host/subscribe",
+    "http://@string/deeplink_www_dev_host/language",
+    "http://@string/deeplink_www_dev_host/program",
+    "http://@string/deeplink_www_dev_host/packs/class",
+    "http://@string/deeplink_www_dev_host/freetrial",
+    "http://@string/deeplink_www_dev_host/session-history",
+    "http://@string/deeplink_www_dev_host/meditate",
+    "http://@string/deeplink_www_dev_host/sleep",
+    "http://@string/deeplink_www_dev_host/daily-jay",
+    "http://@string/deeplink_www_dev_host/login",
+    "http://@string/deeplink_www_dev_host/profile",
+    "http://@string/deeplink_www_dev_host/upsell",
+    "http://@string/deeplink_www_dev_host/checkin",
+    "http://@string/deeplink_www_dev_host/work",
+    "http://@string/deeplink_www_dev_host/session",
+    "http://@string/deeplink_www_dev_host/movement",
+    "http://@string/deeplink_www_dev_host/player",
+    "http://@string/deeplink_www_dev_host/masterclass",
+    "http://@string/deeplink_www_dev_host/music",
+    "http://@string/deeplink_www_dev_host/signup",
+    "http://@string/deeplink_www_dev_host/jay-shetty",
+    "http://@string/deeplink_www_dev_host/guest-pass",
+    "http://@string/deeplink_www_dev_host/mood-check-in",
+    "http://@string/deeplink_www_dev_host/search",
+    "http://@string/deeplink_www_dev_host/daily-reminder",
+    "http://@string/deeplink_www_dev_host/story",
+    "http://@string/deeplink_www_dev_host/homepage",
+    "https://calm.onelink.me"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/deeplink_scheme",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "https",
+       "@string/deeplink_links_calm_com",
+       "/a/"
+      ],
+      [
+       "http",
+       "@string/deeplink_links_calm_com",
+       "/a/"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "https",
+       "@string/deeplink_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/breathe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/breathe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/homepage"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "https",
+       "calm.onelink.me",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.auth0.android.provider.RedirectActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "calm-auth://oneid-dev-1.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-1.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-1.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-4.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-4.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-4.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-5.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-5.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-5.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android/callback"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "calm-auth",
+       "oneid-dev-1.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-1.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-1.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-4.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-4.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-4.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-5.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-5.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-5.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android/callback"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.home.MainActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.intro.OnboardingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.login.LoginActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.player.overlays.SessionPlayerOverlayActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.reminders.RemindersActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.profile.ManualSessionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.mood.MoodActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.profile.WebSubscriptionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.webview.WebviewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.player.VideoPlayerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.scenes.ScenesActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.debug.DebugActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.misc.ModalActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.FacebookActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "@string/facebook_protocol_scheme://*",
+    "fbconnect://cct.com.calm.android"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "@string/facebook_protocol_scheme",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "fbconnect",
+       "cct.com.calm.android",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.ui.onboarding.familyplan.FamilyPlanOnboardingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.feat.healthconnect.activity.HealthConnectPermissionsRationaleActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.calm.android.feat.glasses.grounding.ui.GroundingProjectedActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": true,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.activity.ComponentActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.perimeterx.mobile_sdk.block.PXBlockActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.perimeterx.mobile_sdk.doctor_app.ui.PXDoctorActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.iterable.iterableapi.IterableTrampolineActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabMainActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.jakewharton.processphoenix.PhoenixActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.auth0.android.provider.AuthenticationActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.credentials.playservices.HiddenActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.xr.projected.permissions.RequestPermissionsOnHostActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.xr.projected.permissions.GoToHostProjectedActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.compose.ui.tooling.PreviewActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity-alias",
+   "name": "com.calm.android.ViewPermissionUsageActivity",
+   "exported": true,
+   "permission": "android.permission.START_VIEW_PERMISSION_USAGE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.services.AudioService",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.util.CalmFirebaseService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.services.WearListenerService",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "wear://*"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "com.google.android.gms.wearable.DATA_CHANGED",
+      "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+     ],
+     "bindings": [
+      [
+       "wear",
+       "*",
+       null
+      ]
+     ],
+     "is_browsable": false
+    }
+   ]
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.widgets.DailyCalmWidgetUpdateJob",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.widgets.SleepStoryWidgetUpdateJob",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.widgets.DailyCalmWidget$UpdaterService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.calm.android.widgets.RecommendedSleepStoryWidget$UpdaterService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.cast.framework.ReconnectionService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.iterable.iterableapi.IterableFirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.jakewharton.processphoenix.PhoenixService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.credentials.playservices.CredentialProviderMetadataHolder",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+   "exported": true,
+   "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.sessions.SessionLifecycleService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.camera.core.impl.MetadataHolderService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.health.platform.client.impl.sdkservice.HealthDataSdkService",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.util.BootCompletedReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.util.UpgradeReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.util.reminders.trial.TrialReminderAlarmReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.util.reminders.RemindersAlarmReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.util.ShareBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.widgets.DailyCalmWidget",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.calm.android.widgets.RecommendedSleepStoryWidget",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.mediarouter.media.MediaTransferReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.cast.framework.media.MediaIntentReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.iterable.iterableapi.IterablePushActionReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.core.content.FileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.facebook.internal.FacebookInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.datadog.android.rum.DdRumContentProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.squareup.picasso.PicassoProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.calm.android.ui.profile.WebSubscriptionActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true,
+    "allow_file_access_from_file_urls": false,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.ui.webview.WebviewActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "dom_storage_enabled": true,
+    "allow_file_access_from_file_urls": false,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.iterable.iterableapi.IterableWebView",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false,
+    "allow_content_access": false,
+    "javascript_enabled": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.auth.apple.SignInWebViewDialogFragment",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "js_can_open_windows_automatically": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.androidbrowserhelper.trusted.WebViewFallbackActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.block.PXBlockActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "pxCaptcha",
+     "java_class": "com.perimeterx.mobile_sdk.block.PXBlockActivity",
+     "line": 124,
+     "exposed_object": "pXJavaScriptInterface",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.internal.WebDialog",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.PerimeterX",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "pxCaptcha",
+     "java_class": "com.perimeterx.mobile_sdk.PerimeterX",
+     "line": 349,
+     "exposed_object": "pXJavaScriptInterface",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "androidx.core.text.util.LinkifyCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.web_view_interception.c",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.web_view_interception.l",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.web_view_interception.m",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() { window.addEventListener(",
+    "(function(){try { sessionStorage.setItem(\\"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.perimeterx.mobile_sdk.block.e",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() { window.addEventListener("
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.internal.FacebookWebFallbackDialog",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.facebook.appevents.AppEventsLogger",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.exoplayer2.ui.WebViewSubtitleOutput",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.iterable.iterableapi.IterableWebChromeClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.iterable.iterableapi.IterableWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.util.CalmWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.databinding.ActivityWebSubscriptionBinding",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.databinding.ActivityWebviewBindingImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.databinding.ActivityWebSubscriptionBindingImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.databinding.ActivityWebviewBinding",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.calm.android.auth.apple.SignInWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript: (function() { "
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  }
+ ],
+ "findings": [
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:336 (onCreateView)",
+   "evidence": ".line 47\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes4/com/calm/android/auth/apple/SignInWebViewDialogFragment.smali:339 (onCreateView)",
+   "evidence": ".line 48\n    invoke-virtual {p2, v0}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:463 (initView)",
+   "evidence": "const/4 v7, 0x1\n\n    invoke-virtual {v6, v7}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:296 (initView)",
+   "evidence": "move-result-object v6\n\n    invoke-virtual {v6, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes6/com/facebook/internal/WebDialog.smali:943 (setUpWebView)",
+   "evidence": ":cond_5\n    invoke-virtual {v1, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:203 (setupWebSettings)",
+   "evidence": ".line 280\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes8/com/perimeterx/mobile_sdk/PerimeterX.smali:1304 (setupWebView)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p0, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:595 (onCreate)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/calm/android/ui/profile/WebSubscriptionActivity.smali:477 (initView)",
+   "evidence": "move-result-object v6\n\n    invoke-virtual {v6, v7}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/calm/android/ui/webview/WebviewActivity.smali:310 (initView)",
+   "evidence": "move-result-object v6\n\n    invoke-virtual {v6, v4}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes7/com/google/androidbrowserhelper/trusted/WebViewFallbackActivity.smali:206 (setupWebSettings)",
+   "evidence": ".line 281\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes8/com/perimeterx/mobile_sdk/block/PXBlockActivity.smali:602 (onCreate)",
+   "evidence": "move-result-object v0\n\n    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `pxCaptcha` exposed by com.perimeterx.mobile_sdk.block.PXBlockActivity",
+   "location": "com.perimeterx.mobile_sdk.block.PXBlockActivity:124",
+   "evidence": "addJavascriptInterface(pXJavaScriptInterface, \"pxCaptcha\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `pxCaptcha` exposed by com.perimeterx.mobile_sdk.PerimeterX",
+   "location": "com.perimeterx.mobile_sdk.PerimeterX:349",
+   "evidence": "addJavascriptInterface(pXJavaScriptInterface, \"pxCaptcha\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}

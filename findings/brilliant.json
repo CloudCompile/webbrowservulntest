@@ -1,0 +1,1162 @@
+{
+ "target": "samples/brilliant.xapk",
+ "package": "org.brilliant.android",
+ "version_name": "10.14.0",
+ "version_code": "1079",
+ "min_sdk": "32",
+ "target_sdk": "37",
+ "facts": {
+  "package": "org.brilliant.android",
+  "version_name": "10.14.0",
+  "version_code": "1079",
+  "min_sdk": "32",
+  "target_sdk": "37",
+  "uses_cleartext": null,
+  "nsc": "@xml/network_security_config",
+  "debuggable": null,
+  "nsc_file": "network_security_config.xml",
+  "nsc_cleartext_permitted": false,
+  "nsc_base_trust_anchors": [
+   "system"
+  ],
+  "nsc_domains": [],
+  "nsc_pinned_apple_domains": []
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "org.brilliant.android.ui.common.MainActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "http://click.brilliant.org",
+    "http://brilliant.org",
+    "https://click.brilliant.org",
+    "https://brilliant.org",
+    "https://link.brilliant.org",
+    "https://brilliant-alternate.app.link",
+    "https://brilliant.test-app.link",
+    "https://brilliant-alternate.test-app.link"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "http",
+       "click.brilliant.org",
+       null
+      ],
+      [
+       "http",
+       "brilliant.org",
+       null
+      ],
+      [
+       "https",
+       "click.brilliant.org",
+       null
+      ],
+      [
+       "https",
+       "brilliant.org",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "https",
+       "link.brilliant.org",
+       null
+      ],
+      [
+       "https",
+       "brilliant-alternate.app.link",
+       null
+      ],
+      [
+       "https",
+       "brilliant.test-app.link",
+       null
+      ],
+      [
+       "https",
+       "brilliant-alternate.test-app.link",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.FacebookActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.shakebugs.shake.ui.ShakeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.shakebugs.shake.ui.permissions.RequestPermissionActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.shakebugs.shake.ui.ChatLauncherActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.revenuecat.purchases.SimulatedStoreErrorDialogActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.GenericIdpActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "genericidp://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "genericidp",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.firebase.auth.internal.RecaptchaActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "recaptcha://firebase.auth/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "recaptcha",
+       "firebase.auth",
+       "/"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.credentials.playservices.HiddenActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabMainActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.facebook.CustomTabActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "fbconnect://cct.org.brilliant.android"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "fbconnect",
+       "cct.org.brilliant.android",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.braze.ui.BrazeWebViewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.braze.ui.activities.ContentCardsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.braze.push.NotificationTrampolineActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.pairip.licensecheck.LicenseActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "org.brilliant.android.data.network.message.notification.NotificationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.shakebugs.shake.internal.shake.recording.ScreenRecordingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.sessions.SessionLifecycleService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.credentials.playservices.CredentialProviderMetadataHolder",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+   "exported": true,
+   "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "org.brilliant.android.utils.AppUpdateReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.shakebugs.shake.internal.NotificationReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.braze.push.BrazePushReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.braze.BrazeFlushPushDeliveryReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.shakebugs.shake.internal.utils.FileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.facebook.internal.FacebookInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.sentry.android.core.SentryInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.sentry.android.core.SentryPerformanceProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "io.sentry.ndk.SentryNdkPreloadProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.braze.ui.BrazeWebViewActivity",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.support.WebViewUtilsKt",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true,
+    "allow_file_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "n91",
+   "source": "smali",
+   "settings": {
+    "web_contents_debugging": false,
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "dka",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.inappmessage.views.InAppMessageHtmlBaseView",
+   "source": "smali",
+   "settings": {
+    "support_multiple_windows": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "about:blank"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzil",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.xja",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.hh8",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.vka",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.ot",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.mq6",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "brilliantBridge",
+     "java_class": "defpackage.mq6",
+     "line": 176,
+     "exposed_object": "(s76) nv9Var.f",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.dca",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.od5",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.n88",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "brilliantBridge",
+     "java_class": "defpackage.n88",
+     "line": 35,
+     "exposed_object": "(s76) nv9Var.f",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.ik1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.xd5",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "brilliantBridge",
+     "java_class": "defpackage.xd5",
+     "line": 46,
+     "exposed_object": "(s76) nv9Var.f",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.cka",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "defpackage.h53",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.BrazeWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:"
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.inappmessage.HtmlInAppMessageSafeAreaInjector",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.inappmessage.InAppMessageWebViewPauseCoordinator",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.inappmessage.views.InAppMessageWebView",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.braze.ui.inappmessage.views.InAppMessageHtmlBaseView$messageWebView$6",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzik",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzja",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzjd",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "com.google.android.recaptcha.internal.zzfw",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  },
+  {
+   "name": "io.sentry.r6",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false
+  }
+ ],
+ "findings": [
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/dka.smali:1107 (f)",
+   "evidence": ".line 59\n    :cond_3\n    invoke-virtual {v2, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/braze/ui/BrazeWebViewActivity.smali:289 (onCreate)",
+   "evidence": ".line 98\n    .line 99\n    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/braze/ui/support/WebViewUtilsKt.smali:306 (setWebViewSettings)",
+   "evidence": ".line 8\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali/com/google/android/recaptcha/internal/zzil.smali:246 (invokeSuspend)",
+   "evidence": ".line 70\n    invoke-virtual {p1, v5}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/n91.smali:215 (<init>)",
+   "evidence": ".line 98\n    .line 99\n    invoke-virtual {p3, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali/com/braze/ui/BrazeWebViewActivity.smali:309 (onCreate)",
+   "evidence": ".line 110\n    .line 111\n    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali/com/braze/ui/support/WebViewUtilsKt.smali:329 (setWebViewSettings)",
+   "evidence": ".line 20\n    .line 21\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali/com/braze/ui/inappmessage/views/InAppMessageHtmlBaseView.smali:954 (getMessageWebView)",
+   "evidence": ".line 119\n    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes4/n91.smali:220 (<init>)",
+   "evidence": ".line 101\n    .line 102\n    invoke-virtual {p3, p2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `brilliantBridge` exposed by defpackage.mq6",
+   "location": "defpackage.mq6:176",
+   "evidence": "addJavascriptInterface((s76) nv9Var.f, \"brilliantBridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `brilliantBridge` exposed by defpackage.n88",
+   "location": "defpackage.n88:35",
+   "evidence": "addJavascriptInterface((s76) nv9Var.f, \"brilliantBridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `brilliantBridge` exposed by defpackage.xd5",
+   "location": "defpackage.xd5:46",
+   "evidence": "addJavascriptInterface((s76) nv9Var.f, \"brilliantBridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}
