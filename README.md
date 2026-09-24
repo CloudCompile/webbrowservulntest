@@ -48,7 +48,7 @@ Outputs `report.md` (human) and `report.json` (machine) in the `-o` directory.
 | `CORR-004` | HIGH | `WebView.setWebContentsDebuggingEnabled(true)` |
 | `CORR-006` | HIGH | `onReceivedSslError` proceeds past certificate failure |
 | `CORR-007` | HIGH | native JS bridge injected into a remote origin |
-| `CORR-005` | MEDIUM | `shouldOverrideUrlLoading` forwards every URL in-app, no host allowlist |
+| `CORR-005` | MEDIUM | `shouldOverrideUrlLoading` forwards every URL in-app (Java + smali), no host allowlist |
 | `CORR-010` | MEDIUM | cleartext HTTP permitted globally in the network security config |
 | `CORR-021` | MEDIUM | exported component accepts arbitrary `http(s)` URLs |
 | `CORR-022` | MEDIUM | exported deep-link handler routes on URL path without checking host |
@@ -96,6 +96,20 @@ another app can feed URLs into that same dispatch path.
 These are reported as `CORR-005` and `CORR-021`; the full report is in
 `analysis/webrecon/report.md` after running the pipeline.
 
+## Example finding: the Garmin Connect privacy-policy chain
+
+Same bug class, different shape. `com.garmin.android.lib.legal.a` renders the
+privacy policy and its client `legal.a$b` does *not* call `loadUrl` — in smali a
+handler that declines the override by returning zero lets the WebView navigate:
+if the URL is not `http(s)` it is handed to an external `VIEW` intent, but if it
+*is* `http(s)` the method returns false and the WebView loads it in-app. No host
+allowlist, so tapping the Instagram link on the Garmin privacy page opens
+Instagram's sign-in inside Garmin's WebView.
+
+The detector originally only recognised the Java shape (literal `loadUrl` +
+`return false`) and missed this; `smali_override_forwards_all()` plus cross-file
+`setWebViewClient` attribution now cover it. Full write-up:
+`analysis/garmin/findings.md`.
 ## Adding a target
 
 ```bash

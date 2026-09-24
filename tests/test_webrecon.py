@@ -151,6 +151,82 @@ HOST_CHECKED_SMALI = """.class public Lcom/example/HostCheckedHandler;
 .end method
 """
 
+UNRESTRICTED_CLIENT_SMALI = """.class public Lcom/example/UnrestrictedClient;
+.super Landroid/webkit/WebViewClient;
+
+.method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
+    .locals 4
+
+    const-string v1, "http"
+    const/4 v3, 0x0
+
+    invoke-static {p2, v1, v3}, Lm23/u;->y(Ljava/lang/String;Ljava/lang/String;Z)Z
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/4 v3, 0x0
+    return v3
+
+    :cond_2
+    return v3
+.end method
+"""
+
+PINNED_CLIENT_SMALI = """.class public Lcom/example/PinnedClient;
+.super Landroid/webkit/WebViewClient;
+
+.method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
+    .locals 4
+
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+    move-result-object v1
+
+    const-string v2, "garmin.com"
+    invoke-virtual {v1, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 v3, 0x0
+    return v3
+
+    :cond_0
+    return v3
+.end method
+"""
+
+WEB_OWNER_SMALI = """.class public Lcom/example/WebOwner;
+.super Landroid/app/Activity;
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 3
+
+    new-instance v0, Lcom/example/UnrestrictedClient;
+    invoke-direct {v0}, Lcom/example/UnrestrictedClient;-><init>()V
+    invoke-virtual {p0, v0}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
+
+    return-void
+.end method
+"""
+
+PINNED_OWNER_SMALI = """.class public Lcom/example/PinnedOwner;
+.super Landroid/app/Activity;
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 3
+
+    new-instance v0, Lcom/example/PinnedClient;
+    invoke-direct {v0}, Lcom/example/PinnedClient;-><init>()V
+    invoke-virtual {p0, v0}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
+
+    return-void
+.end method
+"""
+
 VULN_JAVA = """package com.example;
 
 import android.webkit.JavascriptInterface;
@@ -207,6 +283,10 @@ def build_work_dir(base: Path) -> Path:
     (work / "smali_classes3" / "com" / "example" / "Hardened.smali").write_text(HARDENED_SMALI)
     (work / "smali_classes3" / "com" / "example" / "PathOnlyHandler.smali").write_text(PATH_ONLY_SMALI)
     (work / "smali_classes3" / "com" / "example" / "HostCheckedHandler.smali").write_text(HOST_CHECKED_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "UnrestrictedClient.smali").write_text(UNRESTRICTED_CLIENT_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "PinnedClient.smali").write_text(PINNED_CLIENT_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "WebOwner.smali").write_text(WEB_OWNER_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "PinnedOwner.smali").write_text(PINNED_OWNER_SMALI)
     (work / "java" / "com" / "example" / "Vuln.java").write_text(VULN_JAVA)
     (work / "java" / "com" / "example" / "BadTls.java").write_text(SSL_PROCEED_JAVA)
     return work
@@ -303,6 +383,17 @@ class TestWebrecon(unittest.TestCase):
         self.assertIn("CORR-022", rule_set(self.report))
         titles = titles_for(self.report, "CORR-022")
         self.assertTrue(any("PathOnlyHandler" in t for t in titles))
+
+    def test_smali_unrestricted_navigation_detected(self):
+        # Garmin legal WebView shape: override declines (return false) with only a
+        # scheme check; the owner handed it to setWebViewClient in another file.
+        self.assertIn("CORR-005", rule_set(self.report))
+        self.assertTrue(
+            any("legal" in t or "WebOwner" in t for t in titles_for(self.report, "CORR-005"))
+        )
+
+    def test_smali_pinned_navigation_not_flagged(self):
+        self.assertFalse(any("PinnedOwner" in t for t in titles_for(self.report, "CORR-005")))
 
     def test_host_checked_handler_not_flagged(self):
         self.assertFalse(

@@ -380,6 +380,77 @@ def resolve_smali_register(lines: List[str], idx: int, register: str) -> Optiona
     return None
 
 
+def _method_body(lines: List[str], header_idx: int) -> List[str]:
+    for j in range(header_idx + 1, len(lines)):
+        if lines[j].startswith(".end method"):
+            return lines[header_idx + 1 : j]
+    return lines[header_idx + 1 :]
+
+
+def smali_override_forwards_all(text: str) -> bool:
+    """Detect a WebViewClient URL override that sends *every* http(s) URL back
+    into the WebView (return false) without a host allowlist.
+
+    Smali shape differs from Java: the handler usually does not call loadUrl on
+    the incoming URL (that is the default when it returns false); it only proves
+    the scheme is http(s) and returns a zero register. Match on a scheme check
+    plus a `return false`, and require the absence of any host read.
+    """
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if not line.startswith(".method") or "shouldOverrideUrlLoading" not in line:
+            continue
+        body = _method_body(lines, i)
+        body_text = "\n".join(body)
+        if "getHost(" in body_text or "getAuthority(" in body_text:
+            continue  # pinned: the handler checks the origin
+        has_scheme_check = (
+            re.search(r'const-string[A-Za-z_/]*\s+\S+,\s*"https?"', body_text) is not None
+            or re.search(r'const-string[A-Za-z_/]*\s+\S+,\s*"mailto"', body_text) is not None
+        )
+        returns_false = False
+        for k, bl in enumerate(body):
+            rm = re.match(r"\s*return\s+(v\d+|p\d+)\s*$", bl)
+            if not rm:
+                continue
+            if resolve_smali_register(body, k, rm.group(1)) is False:
+                returns_false = True
+                break
+        if has_scheme_check and returns_false:
+            return True
+    return False
+
+
+def smali_client_classes(text: str) -> List[str]:
+    """Classes instantiated and handed to setWebViewClient()/setWebChromeClient().
+
+    The client is the *argument* (last register in the invoke), which is either
+    the target of a preceding new-instance or an iget of a typed field.
+    """
+    out: List[str] = []
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if "->setWebViewClient(" not in line and "->setWebChromeClient(" not in line:
+            continue
+        rm = re.search(r"\{([^}]*)\}", line)
+        if not rm:
+            continue
+        regs = [r.strip() for r in rm.group(1).split(",")]
+        if len(regs) < 2:
+            continue
+        reg = regs[-1]  # the WebViewClient argument
+        for j in range(i, max(-1, i - 30), -1):
+            nm = re.search(rf"new-instance\s+{reg},\s+L([\w/$]+);", lines[j])
+            if nm:
+                out.append(nm.group(1).replace("/", "."))
+                break
+            ig = re.search(rf"iget-object\s+{reg},\s+\S+,\s+L[\w/$]+;->\w+:L([\w/$]+);", lines[j])
+            if ig:
+                out.append(ig.group(1).replace("/", "."))
+                break
+    return out
+
+
 def scan_smali_file(path: Path, class_name: str) -> List[Hit]:
     hits: List[Hit] = []
     lines = path.read_text(errors="replace").splitlines()
@@ -414,6 +485,10 @@ def scan_smali(smali_roots: Iterable[Path]) -> tuple[List[Hit], Dict[str, HostIn
     hits: List[Hit] = []
     hosts: Dict[str, HostInfo] = {}
     urls: List[str] = []
+    # pass 1: which classes define an unrestricted URL override
+    unrestricted_clients: set = set()
+    # pass 2: which class got handed to setWebViewClient()
+    client_bindings: List[tuple] = []
     for root in smali_roots:
         for path in root.rglob(f"*{SMALI_EXT}"):
             cls = to_class_name(path, root)
@@ -425,8 +500,16 @@ def scan_smali(smali_roots: Iterable[Path]) -> tuple[List[Hit], Dict[str, HostIn
                     rule = next(r for r in R.SETTING_RULES if r.id == h.rule_id)
                     if rule.setting:
                         host.settings[rule.setting] = h.literal
-            if "loadUrl" in path.read_text(errors="replace"):
+            text = path.read_text(errors="replace")
+            if "loadUrl" in text:
                 urls.extend(collect_smali_loadurl(path))
+            if "shouldOverrideUrlLoading" in text and smali_override_forwards_all(text):
+                unrestricted_clients.add(cls)
+            if "setWebViewClient" in text:
+                client_bindings.append((cls, smali_client_classes(text)))
+    for owner, clients in client_bindings:
+        if any(c in unrestricted_clients for c in clients):
+            hosts.setdefault(owner, HostInfo(owner, "smali")).unrestricted_navigation = True
     return hits, hosts, urls
 
 
