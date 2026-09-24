@@ -29,414 +29,414 @@
     "@string/deeplink_scheme://*",
     "https://@string/deeplink_links_calm_com/a/",
     "http://@string/deeplink_links_calm_com/a/",
-    "https://@string/deeplink_host/breathe",
-    "https://@string/deeplink_host/story-player-demo",
-    "https://@string/deeplink_host/goal-setup",
-    "https://@string/deeplink_host/settings",
-    "https://@string/deeplink_host/gratitude-check-in",
-    "https://@string/deeplink_host/packs/feeds",
-    "https://@string/deeplink_host/scenes",
-    "https://@string/deeplink_host/subscribe",
-    "https://@string/deeplink_host/language",
-    "https://@string/deeplink_host/program",
-    "https://@string/deeplink_host/packs/class",
-    "https://@string/deeplink_host/freetrial",
-    "https://@string/deeplink_host/session-history",
-    "https://@string/deeplink_host/meditate",
-    "https://@string/deeplink_host/sleep",
-    "https://@string/deeplink_host/daily-jay",
-    "https://@string/deeplink_host/login",
-    "https://@string/deeplink_host/profile",
-    "https://@string/deeplink_host/upsell",
-    "https://@string/deeplink_host/checkin",
-    "https://@string/deeplink_host/work",
-    "https://@string/deeplink_host/session",
-    "https://@string/deeplink_host/movement",
-    "https://@string/deeplink_host/player",
-    "https://@string/deeplink_host/masterclass",
-    "https://@string/deeplink_host/music",
-    "https://@string/deeplink_host/signup",
-    "https://@string/deeplink_host/jay-shetty",
-    "https://@string/deeplink_host/guest-pass",
-    "https://@string/deeplink_host/mood-check-in",
-    "https://@string/deeplink_host/search",
-    "https://@string/deeplink_host/daily-reminder",
-    "https://@string/deeplink_host/story",
-    "https://@string/deeplink_host/homepage",
-    "https://@string/deeplink_branch_host/breathe",
-    "https://@string/deeplink_branch_host/story-player-demo",
-    "https://@string/deeplink_branch_host/goal-setup",
-    "https://@string/deeplink_branch_host/settings",
-    "https://@string/deeplink_branch_host/gratitude-check-in",
-    "https://@string/deeplink_branch_host/packs/feeds",
-    "https://@string/deeplink_branch_host/scenes",
-    "https://@string/deeplink_branch_host/subscribe",
-    "https://@string/deeplink_branch_host/language",
-    "https://@string/deeplink_branch_host/program",
-    "https://@string/deeplink_branch_host/packs/class",
-    "https://@string/deeplink_branch_host/freetrial",
-    "https://@string/deeplink_branch_host/session-history",
-    "https://@string/deeplink_branch_host/meditate",
-    "https://@string/deeplink_branch_host/sleep",
-    "https://@string/deeplink_branch_host/daily-jay",
-    "https://@string/deeplink_branch_host/login",
-    "https://@string/deeplink_branch_host/profile",
-    "https://@string/deeplink_branch_host/upsell",
-    "https://@string/deeplink_branch_host/checkin",
-    "https://@string/deeplink_branch_host/work",
-    "https://@string/deeplink_branch_host/session",
-    "https://@string/deeplink_branch_host/movement",
-    "https://@string/deeplink_branch_host/player",
-    "https://@string/deeplink_branch_host/masterclass",
-    "https://@string/deeplink_branch_host/music",
-    "https://@string/deeplink_branch_host/signup",
-    "https://@string/deeplink_branch_host/jay-shetty",
-    "https://@string/deeplink_branch_host/guest-pass",
-    "https://@string/deeplink_branch_host/mood-check-in",
-    "https://@string/deeplink_branch_host/search",
-    "https://@string/deeplink_branch_host/daily-reminder",
-    "https://@string/deeplink_branch_host/story",
-    "https://@string/deeplink_branch_host/homepage",
-    "https://@string/deeplink_app_www_host/breathe",
-    "https://@string/deeplink_app_www_host/story-player-demo",
+    "https://@string/deeplink_app_www_host/work",
+    "https://@string/deeplink_app_www_host/session-history",
+    "https://@string/deeplink_app_www_host/signup",
     "https://@string/deeplink_app_www_host/goal-setup",
-    "https://@string/deeplink_app_www_host/settings",
+    "https://@string/deeplink_app_www_host/packs/class",
+    "https://@string/deeplink_app_www_host/checkin",
     "https://@string/deeplink_app_www_host/gratitude-check-in",
     "https://@string/deeplink_app_www_host/packs/feeds",
-    "https://@string/deeplink_app_www_host/scenes",
-    "https://@string/deeplink_app_www_host/subscribe",
-    "https://@string/deeplink_app_www_host/language",
-    "https://@string/deeplink_app_www_host/program",
-    "https://@string/deeplink_app_www_host/packs/class",
-    "https://@string/deeplink_app_www_host/freetrial",
-    "https://@string/deeplink_app_www_host/session-history",
-    "https://@string/deeplink_app_www_host/meditate",
-    "https://@string/deeplink_app_www_host/sleep",
-    "https://@string/deeplink_app_www_host/daily-jay",
-    "https://@string/deeplink_app_www_host/login",
-    "https://@string/deeplink_app_www_host/profile",
-    "https://@string/deeplink_app_www_host/upsell",
-    "https://@string/deeplink_app_www_host/checkin",
-    "https://@string/deeplink_app_www_host/work",
-    "https://@string/deeplink_app_www_host/session",
-    "https://@string/deeplink_app_www_host/movement",
-    "https://@string/deeplink_app_www_host/player",
-    "https://@string/deeplink_app_www_host/masterclass",
-    "https://@string/deeplink_app_www_host/music",
-    "https://@string/deeplink_app_www_host/signup",
-    "https://@string/deeplink_app_www_host/jay-shetty",
     "https://@string/deeplink_app_www_host/guest-pass",
-    "https://@string/deeplink_app_www_host/mood-check-in",
-    "https://@string/deeplink_app_www_host/search",
+    "https://@string/deeplink_app_www_host/meditate",
+    "https://@string/deeplink_app_www_host/breathe",
+    "https://@string/deeplink_app_www_host/upsell",
     "https://@string/deeplink_app_www_host/daily-reminder",
+    "https://@string/deeplink_app_www_host/freetrial",
+    "https://@string/deeplink_app_www_host/player",
+    "https://@string/deeplink_app_www_host/session",
+    "https://@string/deeplink_app_www_host/program",
+    "https://@string/deeplink_app_www_host/sleep",
+    "https://@string/deeplink_app_www_host/login",
+    "https://@string/deeplink_app_www_host/daily-jay",
     "https://@string/deeplink_app_www_host/story",
+    "https://@string/deeplink_app_www_host/profile",
+    "https://@string/deeplink_app_www_host/settings",
+    "https://@string/deeplink_app_www_host/masterclass",
+    "https://@string/deeplink_app_www_host/subscribe",
+    "https://@string/deeplink_app_www_host/search",
+    "https://@string/deeplink_app_www_host/scenes",
     "https://@string/deeplink_app_www_host/homepage",
-    "https://@string/deeplink_www_host/breathe",
-    "https://@string/deeplink_www_host/story-player-demo",
+    "https://@string/deeplink_app_www_host/music",
+    "https://@string/deeplink_app_www_host/story-player-demo",
+    "https://@string/deeplink_app_www_host/mood-check-in",
+    "https://@string/deeplink_app_www_host/movement",
+    "https://@string/deeplink_app_www_host/language",
+    "https://@string/deeplink_app_www_host/jay-shetty",
+    "https://@string/deeplink_branch_host/work",
+    "https://@string/deeplink_branch_host/session-history",
+    "https://@string/deeplink_branch_host/signup",
+    "https://@string/deeplink_branch_host/goal-setup",
+    "https://@string/deeplink_branch_host/packs/class",
+    "https://@string/deeplink_branch_host/checkin",
+    "https://@string/deeplink_branch_host/gratitude-check-in",
+    "https://@string/deeplink_branch_host/packs/feeds",
+    "https://@string/deeplink_branch_host/guest-pass",
+    "https://@string/deeplink_branch_host/meditate",
+    "https://@string/deeplink_branch_host/breathe",
+    "https://@string/deeplink_branch_host/upsell",
+    "https://@string/deeplink_branch_host/daily-reminder",
+    "https://@string/deeplink_branch_host/freetrial",
+    "https://@string/deeplink_branch_host/player",
+    "https://@string/deeplink_branch_host/session",
+    "https://@string/deeplink_branch_host/program",
+    "https://@string/deeplink_branch_host/sleep",
+    "https://@string/deeplink_branch_host/login",
+    "https://@string/deeplink_branch_host/daily-jay",
+    "https://@string/deeplink_branch_host/story",
+    "https://@string/deeplink_branch_host/profile",
+    "https://@string/deeplink_branch_host/settings",
+    "https://@string/deeplink_branch_host/masterclass",
+    "https://@string/deeplink_branch_host/subscribe",
+    "https://@string/deeplink_branch_host/search",
+    "https://@string/deeplink_branch_host/scenes",
+    "https://@string/deeplink_branch_host/homepage",
+    "https://@string/deeplink_branch_host/music",
+    "https://@string/deeplink_branch_host/story-player-demo",
+    "https://@string/deeplink_branch_host/mood-check-in",
+    "https://@string/deeplink_branch_host/movement",
+    "https://@string/deeplink_branch_host/language",
+    "https://@string/deeplink_branch_host/jay-shetty",
+    "https://@string/deeplink_www_host/work",
+    "https://@string/deeplink_www_host/session-history",
+    "https://@string/deeplink_www_host/signup",
     "https://@string/deeplink_www_host/goal-setup",
-    "https://@string/deeplink_www_host/settings",
+    "https://@string/deeplink_www_host/packs/class",
+    "https://@string/deeplink_www_host/checkin",
     "https://@string/deeplink_www_host/gratitude-check-in",
     "https://@string/deeplink_www_host/packs/feeds",
-    "https://@string/deeplink_www_host/scenes",
-    "https://@string/deeplink_www_host/subscribe",
-    "https://@string/deeplink_www_host/language",
-    "https://@string/deeplink_www_host/program",
-    "https://@string/deeplink_www_host/packs/class",
-    "https://@string/deeplink_www_host/freetrial",
-    "https://@string/deeplink_www_host/session-history",
-    "https://@string/deeplink_www_host/meditate",
-    "https://@string/deeplink_www_host/sleep",
-    "https://@string/deeplink_www_host/daily-jay",
-    "https://@string/deeplink_www_host/login",
-    "https://@string/deeplink_www_host/profile",
-    "https://@string/deeplink_www_host/upsell",
-    "https://@string/deeplink_www_host/checkin",
-    "https://@string/deeplink_www_host/work",
-    "https://@string/deeplink_www_host/session",
-    "https://@string/deeplink_www_host/movement",
-    "https://@string/deeplink_www_host/player",
-    "https://@string/deeplink_www_host/masterclass",
-    "https://@string/deeplink_www_host/music",
-    "https://@string/deeplink_www_host/signup",
-    "https://@string/deeplink_www_host/jay-shetty",
     "https://@string/deeplink_www_host/guest-pass",
-    "https://@string/deeplink_www_host/mood-check-in",
-    "https://@string/deeplink_www_host/search",
+    "https://@string/deeplink_www_host/meditate",
+    "https://@string/deeplink_www_host/breathe",
+    "https://@string/deeplink_www_host/upsell",
     "https://@string/deeplink_www_host/daily-reminder",
+    "https://@string/deeplink_www_host/freetrial",
+    "https://@string/deeplink_www_host/player",
+    "https://@string/deeplink_www_host/session",
+    "https://@string/deeplink_www_host/program",
+    "https://@string/deeplink_www_host/sleep",
+    "https://@string/deeplink_www_host/login",
+    "https://@string/deeplink_www_host/daily-jay",
     "https://@string/deeplink_www_host/story",
+    "https://@string/deeplink_www_host/profile",
+    "https://@string/deeplink_www_host/settings",
+    "https://@string/deeplink_www_host/masterclass",
+    "https://@string/deeplink_www_host/subscribe",
+    "https://@string/deeplink_www_host/search",
+    "https://@string/deeplink_www_host/scenes",
     "https://@string/deeplink_www_host/homepage",
-    "https://@string/deeplink_www_dev_1_host/breathe",
-    "https://@string/deeplink_www_dev_1_host/story-player-demo",
+    "https://@string/deeplink_www_host/music",
+    "https://@string/deeplink_www_host/story-player-demo",
+    "https://@string/deeplink_www_host/mood-check-in",
+    "https://@string/deeplink_www_host/movement",
+    "https://@string/deeplink_www_host/language",
+    "https://@string/deeplink_www_host/jay-shetty",
+    "https://@string/deeplink_www_dev_1_host/work",
+    "https://@string/deeplink_www_dev_1_host/session-history",
+    "https://@string/deeplink_www_dev_1_host/signup",
     "https://@string/deeplink_www_dev_1_host/goal-setup",
-    "https://@string/deeplink_www_dev_1_host/settings",
+    "https://@string/deeplink_www_dev_1_host/packs/class",
+    "https://@string/deeplink_www_dev_1_host/checkin",
     "https://@string/deeplink_www_dev_1_host/gratitude-check-in",
     "https://@string/deeplink_www_dev_1_host/packs/feeds",
-    "https://@string/deeplink_www_dev_1_host/scenes",
-    "https://@string/deeplink_www_dev_1_host/subscribe",
-    "https://@string/deeplink_www_dev_1_host/language",
-    "https://@string/deeplink_www_dev_1_host/program",
-    "https://@string/deeplink_www_dev_1_host/packs/class",
-    "https://@string/deeplink_www_dev_1_host/freetrial",
-    "https://@string/deeplink_www_dev_1_host/session-history",
-    "https://@string/deeplink_www_dev_1_host/meditate",
-    "https://@string/deeplink_www_dev_1_host/sleep",
-    "https://@string/deeplink_www_dev_1_host/daily-jay",
-    "https://@string/deeplink_www_dev_1_host/login",
-    "https://@string/deeplink_www_dev_1_host/profile",
-    "https://@string/deeplink_www_dev_1_host/upsell",
-    "https://@string/deeplink_www_dev_1_host/checkin",
-    "https://@string/deeplink_www_dev_1_host/work",
-    "https://@string/deeplink_www_dev_1_host/session",
-    "https://@string/deeplink_www_dev_1_host/movement",
-    "https://@string/deeplink_www_dev_1_host/player",
-    "https://@string/deeplink_www_dev_1_host/masterclass",
-    "https://@string/deeplink_www_dev_1_host/music",
-    "https://@string/deeplink_www_dev_1_host/signup",
-    "https://@string/deeplink_www_dev_1_host/jay-shetty",
     "https://@string/deeplink_www_dev_1_host/guest-pass",
-    "https://@string/deeplink_www_dev_1_host/mood-check-in",
-    "https://@string/deeplink_www_dev_1_host/search",
+    "https://@string/deeplink_www_dev_1_host/meditate",
+    "https://@string/deeplink_www_dev_1_host/breathe",
+    "https://@string/deeplink_www_dev_1_host/upsell",
     "https://@string/deeplink_www_dev_1_host/daily-reminder",
+    "https://@string/deeplink_www_dev_1_host/freetrial",
+    "https://@string/deeplink_www_dev_1_host/player",
+    "https://@string/deeplink_www_dev_1_host/session",
+    "https://@string/deeplink_www_dev_1_host/program",
+    "https://@string/deeplink_www_dev_1_host/sleep",
+    "https://@string/deeplink_www_dev_1_host/login",
+    "https://@string/deeplink_www_dev_1_host/daily-jay",
     "https://@string/deeplink_www_dev_1_host/story",
+    "https://@string/deeplink_www_dev_1_host/profile",
+    "https://@string/deeplink_www_dev_1_host/settings",
+    "https://@string/deeplink_www_dev_1_host/masterclass",
+    "https://@string/deeplink_www_dev_1_host/subscribe",
+    "https://@string/deeplink_www_dev_1_host/search",
+    "https://@string/deeplink_www_dev_1_host/scenes",
     "https://@string/deeplink_www_dev_1_host/homepage",
-    "https://@string/deeplink_www_dev_host/breathe",
-    "https://@string/deeplink_www_dev_host/story-player-demo",
+    "https://@string/deeplink_www_dev_1_host/music",
+    "https://@string/deeplink_www_dev_1_host/story-player-demo",
+    "https://@string/deeplink_www_dev_1_host/mood-check-in",
+    "https://@string/deeplink_www_dev_1_host/movement",
+    "https://@string/deeplink_www_dev_1_host/language",
+    "https://@string/deeplink_www_dev_1_host/jay-shetty",
+    "https://@string/deeplink_host/work",
+    "https://@string/deeplink_host/session-history",
+    "https://@string/deeplink_host/signup",
+    "https://@string/deeplink_host/goal-setup",
+    "https://@string/deeplink_host/packs/class",
+    "https://@string/deeplink_host/checkin",
+    "https://@string/deeplink_host/gratitude-check-in",
+    "https://@string/deeplink_host/packs/feeds",
+    "https://@string/deeplink_host/guest-pass",
+    "https://@string/deeplink_host/meditate",
+    "https://@string/deeplink_host/breathe",
+    "https://@string/deeplink_host/upsell",
+    "https://@string/deeplink_host/daily-reminder",
+    "https://@string/deeplink_host/freetrial",
+    "https://@string/deeplink_host/player",
+    "https://@string/deeplink_host/session",
+    "https://@string/deeplink_host/program",
+    "https://@string/deeplink_host/sleep",
+    "https://@string/deeplink_host/login",
+    "https://@string/deeplink_host/daily-jay",
+    "https://@string/deeplink_host/story",
+    "https://@string/deeplink_host/profile",
+    "https://@string/deeplink_host/settings",
+    "https://@string/deeplink_host/masterclass",
+    "https://@string/deeplink_host/subscribe",
+    "https://@string/deeplink_host/search",
+    "https://@string/deeplink_host/scenes",
+    "https://@string/deeplink_host/homepage",
+    "https://@string/deeplink_host/music",
+    "https://@string/deeplink_host/story-player-demo",
+    "https://@string/deeplink_host/mood-check-in",
+    "https://@string/deeplink_host/movement",
+    "https://@string/deeplink_host/language",
+    "https://@string/deeplink_host/jay-shetty",
+    "https://@string/deeplink_www_dev_host/work",
+    "https://@string/deeplink_www_dev_host/session-history",
+    "https://@string/deeplink_www_dev_host/signup",
     "https://@string/deeplink_www_dev_host/goal-setup",
-    "https://@string/deeplink_www_dev_host/settings",
+    "https://@string/deeplink_www_dev_host/packs/class",
+    "https://@string/deeplink_www_dev_host/checkin",
     "https://@string/deeplink_www_dev_host/gratitude-check-in",
     "https://@string/deeplink_www_dev_host/packs/feeds",
-    "https://@string/deeplink_www_dev_host/scenes",
-    "https://@string/deeplink_www_dev_host/subscribe",
-    "https://@string/deeplink_www_dev_host/language",
-    "https://@string/deeplink_www_dev_host/program",
-    "https://@string/deeplink_www_dev_host/packs/class",
-    "https://@string/deeplink_www_dev_host/freetrial",
-    "https://@string/deeplink_www_dev_host/session-history",
-    "https://@string/deeplink_www_dev_host/meditate",
-    "https://@string/deeplink_www_dev_host/sleep",
-    "https://@string/deeplink_www_dev_host/daily-jay",
-    "https://@string/deeplink_www_dev_host/login",
-    "https://@string/deeplink_www_dev_host/profile",
-    "https://@string/deeplink_www_dev_host/upsell",
-    "https://@string/deeplink_www_dev_host/checkin",
-    "https://@string/deeplink_www_dev_host/work",
-    "https://@string/deeplink_www_dev_host/session",
-    "https://@string/deeplink_www_dev_host/movement",
-    "https://@string/deeplink_www_dev_host/player",
-    "https://@string/deeplink_www_dev_host/masterclass",
-    "https://@string/deeplink_www_dev_host/music",
-    "https://@string/deeplink_www_dev_host/signup",
-    "https://@string/deeplink_www_dev_host/jay-shetty",
     "https://@string/deeplink_www_dev_host/guest-pass",
-    "https://@string/deeplink_www_dev_host/mood-check-in",
-    "https://@string/deeplink_www_dev_host/search",
+    "https://@string/deeplink_www_dev_host/meditate",
+    "https://@string/deeplink_www_dev_host/breathe",
+    "https://@string/deeplink_www_dev_host/upsell",
     "https://@string/deeplink_www_dev_host/daily-reminder",
+    "https://@string/deeplink_www_dev_host/freetrial",
+    "https://@string/deeplink_www_dev_host/player",
+    "https://@string/deeplink_www_dev_host/session",
+    "https://@string/deeplink_www_dev_host/program",
+    "https://@string/deeplink_www_dev_host/sleep",
+    "https://@string/deeplink_www_dev_host/login",
+    "https://@string/deeplink_www_dev_host/daily-jay",
     "https://@string/deeplink_www_dev_host/story",
+    "https://@string/deeplink_www_dev_host/profile",
+    "https://@string/deeplink_www_dev_host/settings",
+    "https://@string/deeplink_www_dev_host/masterclass",
+    "https://@string/deeplink_www_dev_host/subscribe",
+    "https://@string/deeplink_www_dev_host/search",
+    "https://@string/deeplink_www_dev_host/scenes",
     "https://@string/deeplink_www_dev_host/homepage",
-    "http://@string/deeplink_host/breathe",
-    "http://@string/deeplink_host/story-player-demo",
-    "http://@string/deeplink_host/goal-setup",
-    "http://@string/deeplink_host/settings",
-    "http://@string/deeplink_host/gratitude-check-in",
-    "http://@string/deeplink_host/packs/feeds",
-    "http://@string/deeplink_host/scenes",
-    "http://@string/deeplink_host/subscribe",
-    "http://@string/deeplink_host/language",
-    "http://@string/deeplink_host/program",
-    "http://@string/deeplink_host/packs/class",
-    "http://@string/deeplink_host/freetrial",
-    "http://@string/deeplink_host/session-history",
-    "http://@string/deeplink_host/meditate",
-    "http://@string/deeplink_host/sleep",
-    "http://@string/deeplink_host/daily-jay",
-    "http://@string/deeplink_host/login",
-    "http://@string/deeplink_host/profile",
-    "http://@string/deeplink_host/upsell",
-    "http://@string/deeplink_host/checkin",
-    "http://@string/deeplink_host/work",
-    "http://@string/deeplink_host/session",
-    "http://@string/deeplink_host/movement",
-    "http://@string/deeplink_host/player",
-    "http://@string/deeplink_host/masterclass",
-    "http://@string/deeplink_host/music",
-    "http://@string/deeplink_host/signup",
-    "http://@string/deeplink_host/jay-shetty",
-    "http://@string/deeplink_host/guest-pass",
-    "http://@string/deeplink_host/mood-check-in",
-    "http://@string/deeplink_host/search",
-    "http://@string/deeplink_host/daily-reminder",
-    "http://@string/deeplink_host/story",
-    "http://@string/deeplink_host/homepage",
-    "http://@string/deeplink_branch_host/breathe",
-    "http://@string/deeplink_branch_host/story-player-demo",
-    "http://@string/deeplink_branch_host/goal-setup",
-    "http://@string/deeplink_branch_host/settings",
-    "http://@string/deeplink_branch_host/gratitude-check-in",
-    "http://@string/deeplink_branch_host/packs/feeds",
-    "http://@string/deeplink_branch_host/scenes",
-    "http://@string/deeplink_branch_host/subscribe",
-    "http://@string/deeplink_branch_host/language",
-    "http://@string/deeplink_branch_host/program",
-    "http://@string/deeplink_branch_host/packs/class",
-    "http://@string/deeplink_branch_host/freetrial",
-    "http://@string/deeplink_branch_host/session-history",
-    "http://@string/deeplink_branch_host/meditate",
-    "http://@string/deeplink_branch_host/sleep",
-    "http://@string/deeplink_branch_host/daily-jay",
-    "http://@string/deeplink_branch_host/login",
-    "http://@string/deeplink_branch_host/profile",
-    "http://@string/deeplink_branch_host/upsell",
-    "http://@string/deeplink_branch_host/checkin",
-    "http://@string/deeplink_branch_host/work",
-    "http://@string/deeplink_branch_host/session",
-    "http://@string/deeplink_branch_host/movement",
-    "http://@string/deeplink_branch_host/player",
-    "http://@string/deeplink_branch_host/masterclass",
-    "http://@string/deeplink_branch_host/music",
-    "http://@string/deeplink_branch_host/signup",
-    "http://@string/deeplink_branch_host/jay-shetty",
-    "http://@string/deeplink_branch_host/guest-pass",
-    "http://@string/deeplink_branch_host/mood-check-in",
-    "http://@string/deeplink_branch_host/search",
-    "http://@string/deeplink_branch_host/daily-reminder",
-    "http://@string/deeplink_branch_host/story",
-    "http://@string/deeplink_branch_host/homepage",
-    "http://@string/deeplink_app_www_host/breathe",
-    "http://@string/deeplink_app_www_host/story-player-demo",
+    "https://@string/deeplink_www_dev_host/music",
+    "https://@string/deeplink_www_dev_host/story-player-demo",
+    "https://@string/deeplink_www_dev_host/mood-check-in",
+    "https://@string/deeplink_www_dev_host/movement",
+    "https://@string/deeplink_www_dev_host/language",
+    "https://@string/deeplink_www_dev_host/jay-shetty",
+    "http://@string/deeplink_app_www_host/work",
+    "http://@string/deeplink_app_www_host/session-history",
+    "http://@string/deeplink_app_www_host/signup",
     "http://@string/deeplink_app_www_host/goal-setup",
-    "http://@string/deeplink_app_www_host/settings",
+    "http://@string/deeplink_app_www_host/packs/class",
+    "http://@string/deeplink_app_www_host/checkin",
     "http://@string/deeplink_app_www_host/gratitude-check-in",
     "http://@string/deeplink_app_www_host/packs/feeds",
-    "http://@string/deeplink_app_www_host/scenes",
-    "http://@string/deeplink_app_www_host/subscribe",
-    "http://@string/deeplink_app_www_host/language",
-    "http://@string/deeplink_app_www_host/program",
-    "http://@string/deeplink_app_www_host/packs/class",
-    "http://@string/deeplink_app_www_host/freetrial",
-    "http://@string/deeplink_app_www_host/session-history",
-    "http://@string/deeplink_app_www_host/meditate",
-    "http://@string/deeplink_app_www_host/sleep",
-    "http://@string/deeplink_app_www_host/daily-jay",
-    "http://@string/deeplink_app_www_host/login",
-    "http://@string/deeplink_app_www_host/profile",
-    "http://@string/deeplink_app_www_host/upsell",
-    "http://@string/deeplink_app_www_host/checkin",
-    "http://@string/deeplink_app_www_host/work",
-    "http://@string/deeplink_app_www_host/session",
-    "http://@string/deeplink_app_www_host/movement",
-    "http://@string/deeplink_app_www_host/player",
-    "http://@string/deeplink_app_www_host/masterclass",
-    "http://@string/deeplink_app_www_host/music",
-    "http://@string/deeplink_app_www_host/signup",
-    "http://@string/deeplink_app_www_host/jay-shetty",
     "http://@string/deeplink_app_www_host/guest-pass",
-    "http://@string/deeplink_app_www_host/mood-check-in",
-    "http://@string/deeplink_app_www_host/search",
+    "http://@string/deeplink_app_www_host/meditate",
+    "http://@string/deeplink_app_www_host/breathe",
+    "http://@string/deeplink_app_www_host/upsell",
     "http://@string/deeplink_app_www_host/daily-reminder",
+    "http://@string/deeplink_app_www_host/freetrial",
+    "http://@string/deeplink_app_www_host/player",
+    "http://@string/deeplink_app_www_host/session",
+    "http://@string/deeplink_app_www_host/program",
+    "http://@string/deeplink_app_www_host/sleep",
+    "http://@string/deeplink_app_www_host/login",
+    "http://@string/deeplink_app_www_host/daily-jay",
     "http://@string/deeplink_app_www_host/story",
+    "http://@string/deeplink_app_www_host/profile",
+    "http://@string/deeplink_app_www_host/settings",
+    "http://@string/deeplink_app_www_host/masterclass",
+    "http://@string/deeplink_app_www_host/subscribe",
+    "http://@string/deeplink_app_www_host/search",
+    "http://@string/deeplink_app_www_host/scenes",
     "http://@string/deeplink_app_www_host/homepage",
-    "http://@string/deeplink_www_host/breathe",
-    "http://@string/deeplink_www_host/story-player-demo",
+    "http://@string/deeplink_app_www_host/music",
+    "http://@string/deeplink_app_www_host/story-player-demo",
+    "http://@string/deeplink_app_www_host/mood-check-in",
+    "http://@string/deeplink_app_www_host/movement",
+    "http://@string/deeplink_app_www_host/language",
+    "http://@string/deeplink_app_www_host/jay-shetty",
+    "http://@string/deeplink_branch_host/work",
+    "http://@string/deeplink_branch_host/session-history",
+    "http://@string/deeplink_branch_host/signup",
+    "http://@string/deeplink_branch_host/goal-setup",
+    "http://@string/deeplink_branch_host/packs/class",
+    "http://@string/deeplink_branch_host/checkin",
+    "http://@string/deeplink_branch_host/gratitude-check-in",
+    "http://@string/deeplink_branch_host/packs/feeds",
+    "http://@string/deeplink_branch_host/guest-pass",
+    "http://@string/deeplink_branch_host/meditate",
+    "http://@string/deeplink_branch_host/breathe",
+    "http://@string/deeplink_branch_host/upsell",
+    "http://@string/deeplink_branch_host/daily-reminder",
+    "http://@string/deeplink_branch_host/freetrial",
+    "http://@string/deeplink_branch_host/player",
+    "http://@string/deeplink_branch_host/session",
+    "http://@string/deeplink_branch_host/program",
+    "http://@string/deeplink_branch_host/sleep",
+    "http://@string/deeplink_branch_host/login",
+    "http://@string/deeplink_branch_host/daily-jay",
+    "http://@string/deeplink_branch_host/story",
+    "http://@string/deeplink_branch_host/profile",
+    "http://@string/deeplink_branch_host/settings",
+    "http://@string/deeplink_branch_host/masterclass",
+    "http://@string/deeplink_branch_host/subscribe",
+    "http://@string/deeplink_branch_host/search",
+    "http://@string/deeplink_branch_host/scenes",
+    "http://@string/deeplink_branch_host/homepage",
+    "http://@string/deeplink_branch_host/music",
+    "http://@string/deeplink_branch_host/story-player-demo",
+    "http://@string/deeplink_branch_host/mood-check-in",
+    "http://@string/deeplink_branch_host/movement",
+    "http://@string/deeplink_branch_host/language",
+    "http://@string/deeplink_branch_host/jay-shetty",
+    "http://@string/deeplink_www_host/work",
+    "http://@string/deeplink_www_host/session-history",
+    "http://@string/deeplink_www_host/signup",
     "http://@string/deeplink_www_host/goal-setup",
-    "http://@string/deeplink_www_host/settings",
+    "http://@string/deeplink_www_host/packs/class",
+    "http://@string/deeplink_www_host/checkin",
     "http://@string/deeplink_www_host/gratitude-check-in",
     "http://@string/deeplink_www_host/packs/feeds",
-    "http://@string/deeplink_www_host/scenes",
-    "http://@string/deeplink_www_host/subscribe",
-    "http://@string/deeplink_www_host/language",
-    "http://@string/deeplink_www_host/program",
-    "http://@string/deeplink_www_host/packs/class",
-    "http://@string/deeplink_www_host/freetrial",
-    "http://@string/deeplink_www_host/session-history",
-    "http://@string/deeplink_www_host/meditate",
-    "http://@string/deeplink_www_host/sleep",
-    "http://@string/deeplink_www_host/daily-jay",
-    "http://@string/deeplink_www_host/login",
-    "http://@string/deeplink_www_host/profile",
-    "http://@string/deeplink_www_host/upsell",
-    "http://@string/deeplink_www_host/checkin",
-    "http://@string/deeplink_www_host/work",
-    "http://@string/deeplink_www_host/session",
-    "http://@string/deeplink_www_host/movement",
-    "http://@string/deeplink_www_host/player",
-    "http://@string/deeplink_www_host/masterclass",
-    "http://@string/deeplink_www_host/music",
-    "http://@string/deeplink_www_host/signup",
-    "http://@string/deeplink_www_host/jay-shetty",
     "http://@string/deeplink_www_host/guest-pass",
-    "http://@string/deeplink_www_host/mood-check-in",
-    "http://@string/deeplink_www_host/search",
+    "http://@string/deeplink_www_host/meditate",
+    "http://@string/deeplink_www_host/breathe",
+    "http://@string/deeplink_www_host/upsell",
     "http://@string/deeplink_www_host/daily-reminder",
+    "http://@string/deeplink_www_host/freetrial",
+    "http://@string/deeplink_www_host/player",
+    "http://@string/deeplink_www_host/session",
+    "http://@string/deeplink_www_host/program",
+    "http://@string/deeplink_www_host/sleep",
+    "http://@string/deeplink_www_host/login",
+    "http://@string/deeplink_www_host/daily-jay",
     "http://@string/deeplink_www_host/story",
+    "http://@string/deeplink_www_host/profile",
+    "http://@string/deeplink_www_host/settings",
+    "http://@string/deeplink_www_host/masterclass",
+    "http://@string/deeplink_www_host/subscribe",
+    "http://@string/deeplink_www_host/search",
+    "http://@string/deeplink_www_host/scenes",
     "http://@string/deeplink_www_host/homepage",
-    "http://@string/deeplink_www_dev_1_host/breathe",
-    "http://@string/deeplink_www_dev_1_host/story-player-demo",
+    "http://@string/deeplink_www_host/music",
+    "http://@string/deeplink_www_host/story-player-demo",
+    "http://@string/deeplink_www_host/mood-check-in",
+    "http://@string/deeplink_www_host/movement",
+    "http://@string/deeplink_www_host/language",
+    "http://@string/deeplink_www_host/jay-shetty",
+    "http://@string/deeplink_www_dev_1_host/work",
+    "http://@string/deeplink_www_dev_1_host/session-history",
+    "http://@string/deeplink_www_dev_1_host/signup",
     "http://@string/deeplink_www_dev_1_host/goal-setup",
-    "http://@string/deeplink_www_dev_1_host/settings",
+    "http://@string/deeplink_www_dev_1_host/packs/class",
+    "http://@string/deeplink_www_dev_1_host/checkin",
     "http://@string/deeplink_www_dev_1_host/gratitude-check-in",
     "http://@string/deeplink_www_dev_1_host/packs/feeds",
-    "http://@string/deeplink_www_dev_1_host/scenes",
-    "http://@string/deeplink_www_dev_1_host/subscribe",
-    "http://@string/deeplink_www_dev_1_host/language",
-    "http://@string/deeplink_www_dev_1_host/program",
-    "http://@string/deeplink_www_dev_1_host/packs/class",
-    "http://@string/deeplink_www_dev_1_host/freetrial",
-    "http://@string/deeplink_www_dev_1_host/session-history",
-    "http://@string/deeplink_www_dev_1_host/meditate",
-    "http://@string/deeplink_www_dev_1_host/sleep",
-    "http://@string/deeplink_www_dev_1_host/daily-jay",
-    "http://@string/deeplink_www_dev_1_host/login",
-    "http://@string/deeplink_www_dev_1_host/profile",
-    "http://@string/deeplink_www_dev_1_host/upsell",
-    "http://@string/deeplink_www_dev_1_host/checkin",
-    "http://@string/deeplink_www_dev_1_host/work",
-    "http://@string/deeplink_www_dev_1_host/session",
-    "http://@string/deeplink_www_dev_1_host/movement",
-    "http://@string/deeplink_www_dev_1_host/player",
-    "http://@string/deeplink_www_dev_1_host/masterclass",
-    "http://@string/deeplink_www_dev_1_host/music",
-    "http://@string/deeplink_www_dev_1_host/signup",
-    "http://@string/deeplink_www_dev_1_host/jay-shetty",
     "http://@string/deeplink_www_dev_1_host/guest-pass",
-    "http://@string/deeplink_www_dev_1_host/mood-check-in",
-    "http://@string/deeplink_www_dev_1_host/search",
+    "http://@string/deeplink_www_dev_1_host/meditate",
+    "http://@string/deeplink_www_dev_1_host/breathe",
+    "http://@string/deeplink_www_dev_1_host/upsell",
     "http://@string/deeplink_www_dev_1_host/daily-reminder",
+    "http://@string/deeplink_www_dev_1_host/freetrial",
+    "http://@string/deeplink_www_dev_1_host/player",
+    "http://@string/deeplink_www_dev_1_host/session",
+    "http://@string/deeplink_www_dev_1_host/program",
+    "http://@string/deeplink_www_dev_1_host/sleep",
+    "http://@string/deeplink_www_dev_1_host/login",
+    "http://@string/deeplink_www_dev_1_host/daily-jay",
     "http://@string/deeplink_www_dev_1_host/story",
+    "http://@string/deeplink_www_dev_1_host/profile",
+    "http://@string/deeplink_www_dev_1_host/settings",
+    "http://@string/deeplink_www_dev_1_host/masterclass",
+    "http://@string/deeplink_www_dev_1_host/subscribe",
+    "http://@string/deeplink_www_dev_1_host/search",
+    "http://@string/deeplink_www_dev_1_host/scenes",
     "http://@string/deeplink_www_dev_1_host/homepage",
-    "http://@string/deeplink_www_dev_host/breathe",
-    "http://@string/deeplink_www_dev_host/story-player-demo",
+    "http://@string/deeplink_www_dev_1_host/music",
+    "http://@string/deeplink_www_dev_1_host/story-player-demo",
+    "http://@string/deeplink_www_dev_1_host/mood-check-in",
+    "http://@string/deeplink_www_dev_1_host/movement",
+    "http://@string/deeplink_www_dev_1_host/language",
+    "http://@string/deeplink_www_dev_1_host/jay-shetty",
+    "http://@string/deeplink_host/work",
+    "http://@string/deeplink_host/session-history",
+    "http://@string/deeplink_host/signup",
+    "http://@string/deeplink_host/goal-setup",
+    "http://@string/deeplink_host/packs/class",
+    "http://@string/deeplink_host/checkin",
+    "http://@string/deeplink_host/gratitude-check-in",
+    "http://@string/deeplink_host/packs/feeds",
+    "http://@string/deeplink_host/guest-pass",
+    "http://@string/deeplink_host/meditate",
+    "http://@string/deeplink_host/breathe",
+    "http://@string/deeplink_host/upsell",
+    "http://@string/deeplink_host/daily-reminder",
+    "http://@string/deeplink_host/freetrial",
+    "http://@string/deeplink_host/player",
+    "http://@string/deeplink_host/session",
+    "http://@string/deeplink_host/program",
+    "http://@string/deeplink_host/sleep",
+    "http://@string/deeplink_host/login",
+    "http://@string/deeplink_host/daily-jay",
+    "http://@string/deeplink_host/story",
+    "http://@string/deeplink_host/profile",
+    "http://@string/deeplink_host/settings",
+    "http://@string/deeplink_host/masterclass",
+    "http://@string/deeplink_host/subscribe",
+    "http://@string/deeplink_host/search",
+    "http://@string/deeplink_host/scenes",
+    "http://@string/deeplink_host/homepage",
+    "http://@string/deeplink_host/music",
+    "http://@string/deeplink_host/story-player-demo",
+    "http://@string/deeplink_host/mood-check-in",
+    "http://@string/deeplink_host/movement",
+    "http://@string/deeplink_host/language",
+    "http://@string/deeplink_host/jay-shetty",
+    "http://@string/deeplink_www_dev_host/work",
+    "http://@string/deeplink_www_dev_host/session-history",
+    "http://@string/deeplink_www_dev_host/signup",
     "http://@string/deeplink_www_dev_host/goal-setup",
-    "http://@string/deeplink_www_dev_host/settings",
+    "http://@string/deeplink_www_dev_host/packs/class",
+    "http://@string/deeplink_www_dev_host/checkin",
     "http://@string/deeplink_www_dev_host/gratitude-check-in",
     "http://@string/deeplink_www_dev_host/packs/feeds",
-    "http://@string/deeplink_www_dev_host/scenes",
-    "http://@string/deeplink_www_dev_host/subscribe",
-    "http://@string/deeplink_www_dev_host/language",
-    "http://@string/deeplink_www_dev_host/program",
-    "http://@string/deeplink_www_dev_host/packs/class",
-    "http://@string/deeplink_www_dev_host/freetrial",
-    "http://@string/deeplink_www_dev_host/session-history",
-    "http://@string/deeplink_www_dev_host/meditate",
-    "http://@string/deeplink_www_dev_host/sleep",
-    "http://@string/deeplink_www_dev_host/daily-jay",
-    "http://@string/deeplink_www_dev_host/login",
-    "http://@string/deeplink_www_dev_host/profile",
-    "http://@string/deeplink_www_dev_host/upsell",
-    "http://@string/deeplink_www_dev_host/checkin",
-    "http://@string/deeplink_www_dev_host/work",
-    "http://@string/deeplink_www_dev_host/session",
-    "http://@string/deeplink_www_dev_host/movement",
-    "http://@string/deeplink_www_dev_host/player",
-    "http://@string/deeplink_www_dev_host/masterclass",
-    "http://@string/deeplink_www_dev_host/music",
-    "http://@string/deeplink_www_dev_host/signup",
-    "http://@string/deeplink_www_dev_host/jay-shetty",
     "http://@string/deeplink_www_dev_host/guest-pass",
-    "http://@string/deeplink_www_dev_host/mood-check-in",
-    "http://@string/deeplink_www_dev_host/search",
+    "http://@string/deeplink_www_dev_host/meditate",
+    "http://@string/deeplink_www_dev_host/breathe",
+    "http://@string/deeplink_www_dev_host/upsell",
     "http://@string/deeplink_www_dev_host/daily-reminder",
+    "http://@string/deeplink_www_dev_host/freetrial",
+    "http://@string/deeplink_www_dev_host/player",
+    "http://@string/deeplink_www_dev_host/session",
+    "http://@string/deeplink_www_dev_host/program",
+    "http://@string/deeplink_www_dev_host/sleep",
+    "http://@string/deeplink_www_dev_host/login",
+    "http://@string/deeplink_www_dev_host/daily-jay",
     "http://@string/deeplink_www_dev_host/story",
+    "http://@string/deeplink_www_dev_host/profile",
+    "http://@string/deeplink_www_dev_host/settings",
+    "http://@string/deeplink_www_dev_host/masterclass",
+    "http://@string/deeplink_www_dev_host/subscribe",
+    "http://@string/deeplink_www_dev_host/search",
+    "http://@string/deeplink_www_dev_host/scenes",
     "http://@string/deeplink_www_dev_host/homepage",
+    "http://@string/deeplink_www_dev_host/music",
+    "http://@string/deeplink_www_dev_host/story-player-demo",
+    "http://@string/deeplink_www_dev_host/mood-check-in",
+    "http://@string/deeplink_www_dev_host/movement",
+    "http://@string/deeplink_www_dev_host/language",
+    "http://@string/deeplink_www_dev_host/jay-shetty",
     "https://calm.onelink.me"
    ],
    "is_launcher": true,
@@ -479,353 +479,18 @@
      "bindings": [
       [
        "https",
-       "@string/deeplink_host",
-       "/breathe"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/story-player-demo"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/goal-setup"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/settings"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/gratitude-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/packs/feeds"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/session-history"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/meditate"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/profile"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/upsell"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/checkin"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
+       "@string/deeplink_app_www_host",
        "/work"
       ],
       [
        "https",
-       "@string/deeplink_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/movement"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/player"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/masterclass"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/music"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/signup"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/jay-shetty"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/daily-reminder"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/story"
-      ],
-      [
-       "https",
-       "@string/deeplink_host",
-       "/homepage"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/breathe"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/story-player-demo"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/goal-setup"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/settings"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/gratitude-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/packs/feeds"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
+       "@string/deeplink_app_www_host",
        "/session-history"
       ],
       [
        "https",
-       "@string/deeplink_branch_host",
-       "/meditate"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/profile"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/upsell"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/checkin"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/work"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/movement"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/player"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/masterclass"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/music"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
+       "@string/deeplink_app_www_host",
        "/signup"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/jay-shetty"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/daily-reminder"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/story"
-      ],
-      [
-       "https",
-       "@string/deeplink_branch_host",
-       "/homepage"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/breathe"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/story-player-demo"
       ],
       [
        "https",
@@ -835,7 +500,12 @@
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/checkin"
       ],
       [
        "https",
@@ -850,37 +520,7 @@
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "https",
@@ -890,22 +530,7 @@
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "https",
@@ -915,22 +540,12 @@
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/work"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "https",
@@ -940,42 +555,27 @@
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/music"
+       "/program"
       ],
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "https",
        "@string/deeplink_app_www_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_app_www_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "https",
@@ -985,17 +585,252 @@
       [
        "https",
        "@string/deeplink_app_www_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
        "/homepage"
       ],
       [
        "https",
-       "@string/deeplink_www_host",
+       "@string/deeplink_app_www_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_app_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
        "/breathe"
       ],
       [
        "https",
-       "@string/deeplink_www_host",
+       "@string/deeplink_branch_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
        "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_branch_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/signup"
       ],
       [
        "https",
@@ -1005,7 +840,12 @@
       [
        "https",
        "@string/deeplink_www_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/checkin"
       ],
       [
        "https",
@@ -1020,37 +860,7 @@
       [
        "https",
        "@string/deeplink_www_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "https",
@@ -1060,22 +870,7 @@
       [
        "https",
        "@string/deeplink_www_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "https",
@@ -1085,22 +880,12 @@
       [
        "https",
        "@string/deeplink_www_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "https",
        "@string/deeplink_www_host",
-       "/work"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "https",
@@ -1110,42 +895,27 @@
       [
        "https",
        "@string/deeplink_www_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "https",
        "@string/deeplink_www_host",
-       "/music"
+       "/program"
       ],
       [
        "https",
        "@string/deeplink_www_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "https",
        "@string/deeplink_www_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "https",
        "@string/deeplink_www_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "https",
@@ -1155,17 +925,82 @@
       [
        "https",
        "@string/deeplink_www_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
        "/homepage"
       ],
       [
        "https",
-       "@string/deeplink_www_dev_1_host",
-       "/breathe"
+       "@string/deeplink_www_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_host",
+       "/jay-shetty"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/story-player-demo"
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/signup"
       ],
       [
        "https",
@@ -1175,7 +1010,12 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/checkin"
       ],
       [
        "https",
@@ -1190,37 +1030,7 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "https",
@@ -1230,22 +1040,7 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "https",
@@ -1255,22 +1050,12 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/work"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "https",
@@ -1280,42 +1065,27 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/music"
+       "/program"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "https",
        "@string/deeplink_www_dev_1_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_1_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "https",
@@ -1325,17 +1095,252 @@
       [
        "https",
        "@string/deeplink_www_dev_1_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
        "/homepage"
       ],
       [
        "https",
-       "@string/deeplink_www_dev_host",
+       "@string/deeplink_www_dev_1_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_1_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/signup"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/goal-setup"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/checkin"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/packs/feeds"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/guest-pass"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/meditate"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
        "/breathe"
       ],
       [
        "https",
-       "@string/deeplink_www_dev_host",
+       "@string/deeplink_host",
+       "/upsell"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/daily-reminder"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/freetrial"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/player"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/session"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/program"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/sleep"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/login"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/daily-jay"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/story"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/profile"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/settings"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/masterclass"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/subscribe"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
        "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/language"
+      ],
+      [
+       "https",
+       "@string/deeplink_host",
+       "/jay-shetty"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/work"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/session-history"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/signup"
       ],
       [
        "https",
@@ -1345,7 +1350,12 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/checkin"
       ],
       [
        "https",
@@ -1360,37 +1370,7 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/scenes"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/subscribe"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/language"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/program"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/packs/class"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/freetrial"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "https",
@@ -1400,22 +1380,7 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/sleep"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/daily-jay"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/login"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "https",
@@ -1425,22 +1390,12 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/work"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/session"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "https",
@@ -1450,42 +1405,27 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/music"
+       "/program"
       ],
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/guest-pass"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/mood-check-in"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/search"
-      ],
-      [
-       "https",
-       "@string/deeplink_www_dev_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "https",
@@ -1495,367 +1435,97 @@
       [
        "https",
        "@string/deeplink_www_dev_host",
-       "/homepage"
+       "/profile"
       ],
       [
-       "http",
-       "@string/deeplink_host",
-       "/breathe"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/story-player-demo"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/goal-setup"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
+       "https",
+       "@string/deeplink_www_dev_host",
        "/settings"
       ],
       [
-       "http",
-       "@string/deeplink_host",
-       "/gratitude-check-in"
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/masterclass"
       ],
       [
-       "http",
-       "@string/deeplink_host",
-       "/packs/feeds"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
+       "https",
+       "@string/deeplink_www_dev_host",
        "/subscribe"
       ],
       [
-       "http",
-       "@string/deeplink_host",
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/search"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/scenes"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/homepage"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/music"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/story-player-demo"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/mood-check-in"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/movement"
+      ],
+      [
+       "https",
+       "@string/deeplink_www_dev_host",
        "/language"
       ],
       [
-       "http",
-       "@string/deeplink_host",
-       "/program"
+       "https",
+       "@string/deeplink_www_dev_host",
+       "/jay-shetty"
       ],
       [
        "http",
-       "@string/deeplink_host",
-       "/packs/class"
+       "@string/deeplink_app_www_host",
+       "/work"
       ],
       [
        "http",
-       "@string/deeplink_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
+       "@string/deeplink_app_www_host",
        "/session-history"
       ],
       [
        "http",
-       "@string/deeplink_host",
-       "/meditate"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/profile"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/upsell"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/checkin"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/movement"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/player"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/masterclass"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/music"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
+       "@string/deeplink_app_www_host",
        "/signup"
       ],
       [
        "http",
-       "@string/deeplink_host",
-       "/jay-shetty"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/daily-reminder"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/story"
-      ],
-      [
-       "http",
-       "@string/deeplink_host",
-       "/homepage"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/breathe"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/story-player-demo"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
+       "@string/deeplink_app_www_host",
        "/goal-setup"
       ],
       [
        "http",
-       "@string/deeplink_branch_host",
-       "/settings"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/gratitude-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/packs/feeds"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/subscribe"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/language"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/program"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
+       "@string/deeplink_app_www_host",
        "/packs/class"
       ],
       [
        "http",
-       "@string/deeplink_branch_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/session-history"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/meditate"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/profile"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/upsell"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
+       "@string/deeplink_app_www_host",
        "/checkin"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/movement"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/player"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/masterclass"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/music"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/signup"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/jay-shetty"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/daily-reminder"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/story"
-      ],
-      [
-       "http",
-       "@string/deeplink_branch_host",
-       "/homepage"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/breathe"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/story-player-demo"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/goal-setup"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/settings"
       ],
       [
        "http",
@@ -1870,37 +1540,7 @@
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/subscribe"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/language"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/program"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/packs/class"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "http",
@@ -1910,22 +1550,7 @@
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "http",
@@ -1935,22 +1560,12 @@
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "http",
@@ -1960,42 +1575,27 @@
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/music"
+       "/program"
       ],
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "http",
        "@string/deeplink_app_www_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_app_www_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "http",
@@ -2005,17 +1605,252 @@
       [
        "http",
        "@string/deeplink_app_www_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
        "/homepage"
       ],
       [
        "http",
-       "@string/deeplink_www_host",
+       "@string/deeplink_app_www_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_app_www_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
        "/breathe"
       ],
       [
        "http",
-       "@string/deeplink_www_host",
+       "@string/deeplink_branch_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
        "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_branch_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/signup"
       ],
       [
        "http",
@@ -2025,7 +1860,12 @@
       [
        "http",
        "@string/deeplink_www_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/checkin"
       ],
       [
        "http",
@@ -2040,37 +1880,7 @@
       [
        "http",
        "@string/deeplink_www_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/subscribe"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/language"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/program"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/packs/class"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "http",
@@ -2080,22 +1890,7 @@
       [
        "http",
        "@string/deeplink_www_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "http",
@@ -2105,22 +1900,12 @@
       [
        "http",
        "@string/deeplink_www_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "http",
        "@string/deeplink_www_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "http",
@@ -2130,42 +1915,27 @@
       [
        "http",
        "@string/deeplink_www_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "http",
        "@string/deeplink_www_host",
-       "/music"
+       "/program"
       ],
       [
        "http",
        "@string/deeplink_www_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "http",
        "@string/deeplink_www_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "http",
        "@string/deeplink_www_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "http",
@@ -2175,17 +1945,82 @@
       [
        "http",
        "@string/deeplink_www_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
        "/homepage"
       ],
       [
        "http",
-       "@string/deeplink_www_dev_1_host",
-       "/breathe"
+       "@string/deeplink_www_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_host",
+       "/jay-shetty"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/story-player-demo"
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/signup"
       ],
       [
        "http",
@@ -2195,7 +2030,12 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/checkin"
       ],
       [
        "http",
@@ -2210,37 +2050,7 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/subscribe"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/language"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/program"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/packs/class"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "http",
@@ -2250,22 +2060,7 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "http",
@@ -2275,22 +2070,12 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "http",
@@ -2300,42 +2085,27 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/music"
+       "/program"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "http",
        "@string/deeplink_www_dev_1_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_1_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "http",
@@ -2345,17 +2115,252 @@
       [
        "http",
        "@string/deeplink_www_dev_1_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
        "/homepage"
       ],
       [
        "http",
-       "@string/deeplink_www_dev_host",
+       "@string/deeplink_www_dev_1_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_1_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/signup"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/goal-setup"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/checkin"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/gratitude-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/packs/feeds"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/guest-pass"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/meditate"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
        "/breathe"
       ],
       [
        "http",
-       "@string/deeplink_www_dev_host",
+       "@string/deeplink_host",
+       "/upsell"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/daily-reminder"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/freetrial"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/player"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/session"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/program"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/sleep"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/login"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/daily-jay"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/story"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
        "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_host",
+       "/jay-shetty"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/work"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/session-history"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/signup"
       ],
       [
        "http",
@@ -2365,7 +2370,12 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/settings"
+       "/packs/class"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/checkin"
       ],
       [
        "http",
@@ -2380,37 +2390,7 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/scenes"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/subscribe"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/language"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/program"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/packs/class"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/freetrial"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/session-history"
+       "/guest-pass"
       ],
       [
        "http",
@@ -2420,22 +2400,7 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/sleep"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/daily-jay"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/login"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/profile"
+       "/breathe"
       ],
       [
        "http",
@@ -2445,22 +2410,12 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/checkin"
+       "/daily-reminder"
       ],
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/work"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/session"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/movement"
+       "/freetrial"
       ],
       [
        "http",
@@ -2470,42 +2425,27 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/masterclass"
+       "/session"
       ],
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/music"
+       "/program"
       ],
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/signup"
+       "/sleep"
       ],
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/jay-shetty"
+       "/login"
       ],
       [
        "http",
        "@string/deeplink_www_dev_host",
-       "/guest-pass"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/mood-check-in"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/search"
-      ],
-      [
-       "http",
-       "@string/deeplink_www_dev_host",
-       "/daily-reminder"
+       "/daily-jay"
       ],
       [
        "http",
@@ -2515,7 +2455,67 @@
       [
        "http",
        "@string/deeplink_www_dev_host",
+       "/profile"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/settings"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/masterclass"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/subscribe"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/search"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/scenes"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
        "/homepage"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/music"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/story-player-demo"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/mood-check-in"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/movement"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/language"
+      ],
+      [
+       "http",
+       "@string/deeplink_www_dev_host",
+       "/jay-shetty"
       ]
      ],
      "is_browsable": true
@@ -2541,33 +2541,33 @@
    "exported": true,
    "permission": null,
    "deeplinks": [
-    "calm-auth://oneid-dev-1.calm.com/android/com.calm.android/callback",
     "calm-auth://oneid-dev-1.calm.com/android/com.calm.android.staging/callback",
     "calm-auth://oneid-dev-1.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-4.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-1.calm.com/android/com.calm.android/callback",
     "calm-auth://oneid-dev-4.calm.com/android/com.calm.android.staging/callback",
     "calm-auth://oneid-dev-4.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid-dev.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid-dev.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android/callback",
-    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.staging/callback",
-    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.dev/callback",
-    "calm-auth://oneid-dev-5.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-4.calm.com/android/com.calm.android/callback",
     "calm-auth://oneid-dev-5.calm.com/android/com.calm.android.staging/callback",
     "calm-auth://oneid-dev-5.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-5.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-2.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-7.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-6.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid.calm.com/android/com.calm.android/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.staging/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android.dev/callback",
+    "calm-auth://oneid-dev-3.calm.com/android/com.calm.android/callback",
     "calm-auth://oneid.calm.com/android/com.calm.android/callback"
    ],
    "is_launcher": false,
@@ -2580,11 +2580,6 @@
       [
        "calm-auth",
        "oneid-dev-1.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-1.calm.com",
        "/android/com.calm.android.staging/callback"
       ],
       [
@@ -2594,52 +2589,7 @@
       ],
       [
        "calm-auth",
-       "oneid-dev-2.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-2.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-2.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-6.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-6.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-6.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-4.calm.com",
+       "oneid-dev-1.calm.com",
        "/android/com.calm.android/callback"
       ],
       [
@@ -2654,52 +2604,7 @@
       ],
       [
        "calm-auth",
-       "oneid-dev-7.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-7.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-7.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-3.calm.com",
-       "/android/com.calm.android/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-3.calm.com",
-       "/android/com.calm.android.staging/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-3.calm.com",
-       "/android/com.calm.android.dev/callback"
-      ],
-      [
-       "calm-auth",
-       "oneid-dev-5.calm.com",
+       "oneid-dev-4.calm.com",
        "/android/com.calm.android/callback"
       ],
       [
@@ -2711,6 +2616,101 @@
        "calm-auth",
        "oneid-dev-5.calm.com",
        "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-5.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-2.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-7.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-6.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid.calm.com",
+       "/android/com.calm.android/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android.staging/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android.dev/callback"
+      ],
+      [
+       "calm-auth",
+       "oneid-dev-3.calm.com",
+       "/android/com.calm.android/callback"
       ]
      ],
      "is_browsable": true
@@ -3604,7 +3604,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.calm.android.ui.webview.WebviewActivity",
@@ -3621,7 +3622,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.iterable.iterableapi.IterableWebView",
@@ -3638,7 +3640,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.auth.apple.SignInWebViewDialogFragment",
@@ -3652,7 +3655,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.androidbrowserhelper.trusted.WebViewFallbackActivity",
@@ -3666,7 +3670,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.perimeterx.mobile_sdk.block.PXBlockActivity",
@@ -3689,7 +3694,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.internal.WebDialog",
@@ -3702,7 +3708,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.perimeterx.mobile_sdk.PerimeterX",
@@ -3724,7 +3731,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.core.text.util.LinkifyCompat",
@@ -3735,7 +3743,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.perimeterx.mobile_sdk.web_view_interception.c",
@@ -3746,7 +3755,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.perimeterx.mobile_sdk.web_view_interception.l",
@@ -3757,7 +3767,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.perimeterx.mobile_sdk.web_view_interception.m",
@@ -3771,7 +3782,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.perimeterx.mobile_sdk.block.e",
@@ -3784,7 +3796,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.internal.FacebookWebFallbackDialog",
@@ -3797,7 +3810,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.appevents.AppEventsLogger",
@@ -3808,7 +3822,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.exoplayer2.ui.WebViewSubtitleOutput",
@@ -3819,7 +3834,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iterable.iterableapi.IterableWebChromeClient",
@@ -3830,7 +3846,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iterable.iterableapi.IterableWebViewClient",
@@ -3841,7 +3858,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.util.CalmWebViewClient",
@@ -3852,7 +3870,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.databinding.ActivityWebSubscriptionBinding",
@@ -3863,7 +3882,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.databinding.ActivityWebviewBindingImpl",
@@ -3874,7 +3894,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.databinding.ActivityWebSubscriptionBindingImpl",
@@ -3885,7 +3906,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.databinding.ActivityWebviewBinding",
@@ -3896,7 +3918,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.calm.android.auth.apple.SignInWebViewClient",
@@ -3909,7 +3932,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [

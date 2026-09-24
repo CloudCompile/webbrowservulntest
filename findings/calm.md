@@ -231,8 +231,8 @@ addJavascriptInterface(pXJavaScriptInterface, "pxCaptcha")
 
 | kind | name | exported | deeplinks |
 |------|------|----------|-----------|
-| activity | `com.calm.android.ui.splash.SplashActivity` | True | @string/deeplink_scheme://*<br>https://@string/deeplink_links_calm_com/a/<br>http://@string/deeplink_links_calm_com/a/<br>https://@string/deeplink_host/breathe |
-| activity | `com.auth0.android.provider.RedirectActivity` | True | calm-auth://oneid-dev-1.calm.com/android/com.calm.android/callback<br>calm-auth://oneid-dev-1.calm.com/android/com.calm.android.staging/callback<br>calm-auth://oneid-dev-1.calm.com/android/com.calm.android.dev/callback<br>calm-auth://oneid-dev-2.calm.com/android/com.calm.android/callback |
+| activity | `com.calm.android.ui.splash.SplashActivity` | True | @string/deeplink_scheme://*<br>https://@string/deeplink_links_calm_com/a/<br>http://@string/deeplink_links_calm_com/a/<br>https://@string/deeplink_app_www_host/work |
+| activity | `com.auth0.android.provider.RedirectActivity` | True | calm-auth://oneid-dev-1.calm.com/android/com.calm.android.staging/callback<br>calm-auth://oneid-dev-1.calm.com/android/com.calm.android.dev/callback<br>calm-auth://oneid-dev-1.calm.com/android/com.calm.android/callback<br>calm-auth://oneid-dev-4.calm.com/android/com.calm.android.staging/callback |
 | activity | `com.calm.android.ui.home.MainActivity` | False |  |
 | activity | `com.calm.android.ui.intro.OnboardingActivity` | False |  |
 | activity | `com.calm.android.ui.login.LoginActivity` | False |  |

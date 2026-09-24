@@ -397,7 +397,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "expo.modules.webview.DomWebView",
@@ -430,7 +431,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ServiceWorkerWebSettingsImpl",
@@ -444,7 +446,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForN",
@@ -458,7 +461,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "expo.modules.logbox.ExpoLogBoxWebViewWrapper",
@@ -485,7 +489,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.ProcessGlobalConfig",
@@ -496,7 +501,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewRenderProcessClient",
@@ -507,7 +513,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewCompat",
@@ -518,7 +525,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewBuilder",
@@ -529,7 +537,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewClientCompat",
@@ -540,7 +549,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.core.text.util.LinkifyCompat",
@@ -551,7 +561,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForP",
@@ -562,7 +573,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessClientFrameworkAdapter",
@@ -573,7 +585,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewProviderAdapter",
@@ -584,7 +597,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForO",
@@ -595,7 +609,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewProviderFactoryAdapter",
@@ -606,7 +621,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewGlueCommunicator",
@@ -617,7 +633,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForOMR1",
@@ -628,7 +645,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForQ",
@@ -639,7 +657,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewProviderFactory",
@@ -650,7 +669,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebMessageListenerAdapter",
@@ -661,7 +681,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessClientAdapter",
@@ -672,7 +693,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForM",
@@ -683,7 +705,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessImpl",
@@ -694,7 +717,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.IncompatibleApkWebViewProviderFactory",
@@ -705,7 +729,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.swmansion.rnscreens.Screen",
@@ -716,7 +741,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.react.uimanager.ReactAccessibilityDelegate",
@@ -727,7 +753,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebViewWrapper",
@@ -738,7 +765,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebView",
@@ -751,7 +779,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebViewClient",
@@ -762,7 +791,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebViewModuleImpl",
@@ -773,7 +803,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebViewConfig",
@@ -784,7 +815,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.RNCWebChromeClient",
@@ -795,7 +827,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
@@ -806,7 +839,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
@@ -817,7 +851,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
@@ -828,7 +863,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
@@ -839,7 +875,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
@@ -850,7 +887,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface",
@@ -861,7 +899,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [

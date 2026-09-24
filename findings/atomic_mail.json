@@ -31,8 +31,8 @@
    "permission": null,
    "deeplinks": [
     "atomicmail://stripe-return",
-    "atomicmail://stripe-success",
-    "atomicmail://stripe-cancel"
+    "atomicmail://stripe-cancel",
+    "atomicmail://stripe-success"
    ],
    "is_launcher": true,
    "filters": [
@@ -48,12 +48,12 @@
       ],
       [
        "atomicmail",
-       "stripe-success",
+       "stripe-cancel",
        null
       ],
       [
        "atomicmail",
-       "stripe-cancel",
+       "stripe-success",
        null
       ]
      ],
@@ -515,7 +515,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "K0.e",
@@ -526,7 +527,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.c",
@@ -537,7 +539,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.i",
@@ -548,7 +551,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.n",
@@ -559,7 +563,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.v",
@@ -570,7 +575,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.e",
@@ -581,7 +587,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.u",
@@ -592,7 +599,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "L0.s",
@@ -603,7 +611,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.swmansion.rnscreens.C2137w",
@@ -614,7 +623,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.react.uimanager.C1038a0",
@@ -625,7 +635,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.d",
@@ -649,7 +660,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.c",
@@ -660,7 +672,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.h",
@@ -671,7 +684,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.g",
@@ -682,7 +696,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.reactnativecommunity.webview.p",
@@ -693,7 +708,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
@@ -704,7 +720,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
@@ -715,7 +732,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
@@ -726,7 +744,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
@@ -737,7 +756,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
@@ -748,7 +768,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface",
@@ -759,7 +780,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [

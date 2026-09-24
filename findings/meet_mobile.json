@@ -649,7 +649,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbe",
@@ -664,7 +665,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfvd",
@@ -679,7 +681,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.active.passport2.webview.LoginFragment",
@@ -695,7 +698,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.util.zzn",
@@ -709,7 +713,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.util.zzs",
@@ -723,7 +728,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.internal.WebDialog",
@@ -736,7 +742,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzs",
@@ -749,7 +756,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfva",
@@ -762,7 +770,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "gb.g0",
@@ -773,7 +782,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "q2.d",
@@ -784,7 +794,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "q2.l",
@@ -795,7 +806,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "q2.k",
@@ -806,7 +818,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "p2.d",
@@ -817,7 +830,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "p2.e",
@@ -828,7 +842,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.appcompat.widget.g0",
@@ -839,7 +854,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.active.passport2.webview.a",
@@ -852,7 +868,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.active.passport2.webview.c",
@@ -863,7 +880,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.active.aps.meetmobile.lib.basic.view.activity.WebViewActivity",
@@ -874,7 +892,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.internal.FacebookWebFallbackDialog",
@@ -888,7 +907,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.appevents.AppEventsLogger",
@@ -899,7 +919,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.facebook.appevents.AppEventsLoggerImpl",
@@ -910,7 +931,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.bumptech.glide.f",
@@ -921,7 +943,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.MobileAds",
@@ -932,7 +955,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzo",
@@ -943,7 +967,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.h5.H5AdsWebViewClient",
@@ -954,7 +979,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzap",
@@ -965,7 +991,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zza",
@@ -976,7 +1003,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zze",
@@ -987,7 +1015,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.TaggingLibraryJsInterface",
@@ -998,7 +1027,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzj",
@@ -1009,7 +1039,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzda",
@@ -1024,7 +1055,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbx",
@@ -1035,7 +1067,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbv",
@@ -1046,7 +1079,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbev",
@@ -1057,7 +1091,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftn",
@@ -1068,7 +1103,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcjy",
@@ -1079,7 +1115,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckv",
@@ -1090,7 +1127,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftv",
@@ -1101,7 +1139,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftx",
@@ -1112,7 +1151,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbet",
@@ -1125,7 +1165,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzclo",
@@ -1136,7 +1177,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfuz",
@@ -1147,7 +1189,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbqe",
@@ -1158,7 +1201,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfup",
@@ -1169,7 +1213,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcly",
@@ -1180,7 +1225,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfvc",
@@ -1191,7 +1237,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfwb",
@@ -1202,7 +1249,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzclm",
@@ -1213,7 +1261,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcln",
@@ -1224,7 +1273,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbpr",
@@ -1235,7 +1285,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckx",
@@ -1246,7 +1297,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfvb",
@@ -1257,7 +1309,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzekn",
@@ -1268,7 +1321,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfuq",
@@ -1279,7 +1333,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcjz",
@@ -1290,7 +1345,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzekm",
@@ -1301,7 +1357,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbzd",
@@ -1312,7 +1369,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckk",
@@ -1323,7 +1381,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
@@ -1334,7 +1393,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
@@ -1345,7 +1405,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
@@ -1356,7 +1417,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
@@ -1367,7 +1429,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
@@ -1378,7 +1441,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [

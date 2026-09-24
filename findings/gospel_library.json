@@ -66,18 +66,18 @@
    "permission": null,
    "deeplinks": [
     "gospellibrary://*",
-    "http://www.lds.org/study",
-    "http://www.lds.org/general-conference",
-    "http://www.lds.org/scriptures",
-    "https://www.lds.org/study",
     "https://www.lds.org/general-conference",
+    "https://www.lds.org/study",
     "https://www.lds.org/scriptures",
-    "http://www.churchofjesuschrist.org/study",
-    "http://www.churchofjesuschrist.org/general-conference",
-    "http://www.churchofjesuschrist.org/scriptures",
-    "https://www.churchofjesuschrist.org/study",
+    "http://www.lds.org/general-conference",
+    "http://www.lds.org/study",
+    "http://www.lds.org/scriptures",
     "https://www.churchofjesuschrist.org/general-conference",
-    "https://www.churchofjesuschrist.org/scriptures"
+    "https://www.churchofjesuschrist.org/study",
+    "https://www.churchofjesuschrist.org/scriptures",
+    "http://www.churchofjesuschrist.org/general-conference",
+    "http://www.churchofjesuschrist.org/study",
+    "http://www.churchofjesuschrist.org/scriptures"
    ],
    "is_launcher": false,
    "filters": [
@@ -100,32 +100,32 @@
      ],
      "bindings": [
       [
-       "http",
-       "www.lds.org",
-       "/study"
-      ],
-      [
-       "http",
+       "https",
        "www.lds.org",
        "/general-conference"
       ],
       [
-       "http",
+       "https",
+       "www.lds.org",
+       "/study"
+      ],
+      [
+       "https",
        "www.lds.org",
        "/scriptures"
       ],
       [
-       "https",
-       "www.lds.org",
-       "/study"
-      ],
-      [
-       "https",
+       "http",
        "www.lds.org",
        "/general-conference"
       ],
       [
-       "https",
+       "http",
+       "www.lds.org",
+       "/study"
+      ],
+      [
+       "http",
        "www.lds.org",
        "/scriptures"
       ]
@@ -138,32 +138,32 @@
      ],
      "bindings": [
       [
-       "http",
-       "www.churchofjesuschrist.org",
-       "/study"
-      ],
-      [
-       "http",
+       "https",
        "www.churchofjesuschrist.org",
        "/general-conference"
       ],
       [
-       "http",
+       "https",
+       "www.churchofjesuschrist.org",
+       "/study"
+      ],
+      [
+       "https",
        "www.churchofjesuschrist.org",
        "/scriptures"
       ],
       [
-       "https",
-       "www.churchofjesuschrist.org",
-       "/study"
-      ],
-      [
-       "https",
+       "http",
        "www.churchofjesuschrist.org",
        "/general-conference"
       ],
       [
-       "https",
+       "http",
+       "www.churchofjesuschrist.org",
+       "/study"
+      ],
+      [
+       "http",
        "www.churchofjesuschrist.org",
        "/scriptures"
       ]
@@ -741,7 +741,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.ldssa.ui.web.ContentWebView",
@@ -765,7 +766,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
@@ -780,7 +782,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.recaptcha.internal.zzda",
@@ -802,7 +805,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.documentedit.widget.DocumentEditorWebView",
@@ -824,7 +828,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewCompat",
@@ -835,7 +840,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.compose.ui.geometry.RectKt",
@@ -846,7 +852,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForO",
@@ -857,7 +864,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.recaptcha.internal.zzw",
@@ -868,7 +876,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.recaptcha.internal.zzbc",
@@ -879,7 +888,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.recaptcha.internal.zzcs",
@@ -890,7 +900,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.exoplayer2.ui.WebViewSubtitleOutput",
@@ -901,7 +912,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
@@ -912,7 +924,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
@@ -923,7 +936,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
@@ -934,7 +948,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
@@ -945,7 +960,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
@@ -956,7 +972,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.documentedit.widget.DocumentEditor",
@@ -967,7 +984,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.ldssa.ux.content.item.web.ContentItemWebFragment",
@@ -978,7 +996,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.ldssa.ux.content.item.web.ContentItemWebFragment$setupViewModelObservers$lambda$20$$inlined$collectWhenStarted$5",
@@ -989,7 +1008,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.ldssa.ui.web.Hilt_ContentWebView",
@@ -1000,7 +1020,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.ldssa.ui.web.ContentWebViewClient",
@@ -1011,7 +1032,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.mobile.about.util.FeedbackUtil",
@@ -1022,7 +1044,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.mobile.about.ux.about.NewAcknowledgmentsWebViewClient",
@@ -1033,7 +1056,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.mobile.about.ux.about.AcknowledgmentsWebViewClient",
@@ -1044,7 +1068,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.lds.mobile.about.ux.about.AcknowledgementsKt",
@@ -1055,7 +1080,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [

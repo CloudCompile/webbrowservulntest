@@ -705,6 +705,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.locuslabs.sdk.javascriptintegration.JavaScriptEnvironment`
@@ -797,6 +801,7 @@ addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 - settings:
   - `dom_storage_enabled` = `True`
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt$UserAuthWebView$1`
 - sources: smali
@@ -838,6 +843,7 @@ addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 - sources: smali
 - settings:
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)`
 
 ### `com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView`
 - sources: smali
@@ -848,6 +854,7 @@ addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 - sources: smali
 - settings:
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.delta.mobile.android.merchandise.MerchandiseDetailsActivity`
 - sources: smali
@@ -856,11 +863,13 @@ addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 - JS bridges: `coverageDetailInterface`
 - loaded URLs:
   - `file:///android_asset/html/merchandise/insuranceCoverage.html`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.delta.mobile.android.citydetail.CityAirportMapDetail`
 - sources: smali
 - settings:
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.delta.mobile.android.extras.TermsAndConditions`
 - sources: smali
@@ -885,6 +894,7 @@ addJavascriptInterface(new zzun(this), "GoogleJsInterface")
 - settings:
   - `javascript_enabled` = `True`
 - JS bridges: `fsrTracker`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.dynatrace.android.agent.Dynatrace`
 - sources: smali

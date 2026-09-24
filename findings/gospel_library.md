@@ -159,6 +159,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(this.documentEditorJsInterface, "documentEditorInterface")
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.adobe.marketing.mobile.AndroidFullscreenMessage$MessageFullScreenRunner`
@@ -202,7 +206,7 @@ addJavascriptInterface(this.documentEditorJsInterface, "documentEditorInterface"
 | activity | `org.lds.ldssa.ux.main.MainActivity` | True | gospellibraryapp://* |
 | activity | `org.lds.ldssa.ux.signin.SignInActivity` | False |  |
 | activity | `org.lds.ldssa.ux.annotations.links.LinksActivity` | True |  |
-| activity | `org.lds.ldssa.ui.activity.UriRouterActivity` | True | gospellibrary://*<br>http://www.lds.org/study<br>http://www.lds.org/general-conference<br>http://www.lds.org/scriptures |
+| activity | `org.lds.ldssa.ui.activity.UriRouterActivity` | True | gospellibrary://*<br>https://www.lds.org/general-conference<br>https://www.lds.org/study<br>https://www.lds.org/scriptures |
 | activity | `org.lds.ldssa.ux.video.VideoPlayerActivity` | False |  |
 | activity | `org.lds.ldssa.ux.video.LegacyVideoPlayerActivity` | False |  |
 | activity | `org.lds.ldssa.ux.studyplans.wizard.StudyPlanWizardActivity` | False |  |

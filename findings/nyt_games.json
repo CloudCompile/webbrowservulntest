@@ -61,56 +61,56 @@
     "nytxwd://trophy-case/wordle",
     "nytxwd://trophy-case/connections",
     "nytxwd://create/wordle",
-    "http://www.nytimes.com/games/strands",
-    "http://www.nytimes.com/pips",
-    "http://www.nytimes.com/games/badges/wordle",
-    "http://www.nytimes.com/games/badges/strands",
-    "http://www.nytimes.com/interactive/2024/upshot/connections-bot",
-    "http://www.nytimes.com/crosswords/game/midi",
-    "http://www.nytimes.com/games/bonus",
-    "http://www.nytimes.com/puzzles/sudoku",
-    "http://www.nytimes.com/games/create/wordle",
-    "http://www.nytimes.com/games/collection",
-    "http://www.nytimes.com/games/connections",
-    "http://www.nytimes.com/puzzles/tiles",
     "http://www.nytimes.com/games/wordle",
-    "http://www.nytimes.com/crosswords/game/mini",
-    "http://www.nytimes.com/crosswords/archive",
-    "http://www.nytimes.com/crosswords",
-    "http://www.nytimes.com/crosswords/game/by-id",
-    "http://www.nytimes.com/crosswords/game/daily",
+    "http://www.nytimes.com/games/connections",
     "http://www.nytimes.com/games/badges/connections",
-    "http://www.nytimes.com/puzzles/spelling-bee",
     "http://www.nytimes.com/games/badges/spelling-bee",
+    "http://www.nytimes.com/games/create/wordle",
     "http://www.nytimes.com/games/pips",
+    "http://www.nytimes.com/puzzles/spelling-bee",
     "http://www.nytimes.com/interactive/2022/upshot/wordle-bot",
+    "http://www.nytimes.com/games/badges/strands",
+    "http://www.nytimes.com/crosswords/game/by-id",
+    "http://www.nytimes.com/crosswords/archive",
+    "http://www.nytimes.com/games/strands",
+    "http://www.nytimes.com/crosswords/game/midi",
+    "http://www.nytimes.com/interactive/2024/upshot/connections-bot",
+    "http://www.nytimes.com/games/bonus",
     "http://www.nytimes.com/crosswords/apps",
+    "http://www.nytimes.com/crosswords/game/daily",
+    "http://www.nytimes.com/pips",
+    "http://www.nytimes.com/puzzles/sudoku",
+    "http://www.nytimes.com/crosswords/game/mini",
+    "http://www.nytimes.com/games/collection",
+    "http://www.nytimes.com/crosswords",
     "http://www.nytimes.com/wordle",
-    "https://www.nytimes.com/games/strands",
-    "https://www.nytimes.com/pips",
-    "https://www.nytimes.com/games/badges/wordle",
-    "https://www.nytimes.com/games/badges/strands",
-    "https://www.nytimes.com/interactive/2024/upshot/connections-bot",
-    "https://www.nytimes.com/crosswords/game/midi",
-    "https://www.nytimes.com/games/bonus",
-    "https://www.nytimes.com/puzzles/sudoku",
-    "https://www.nytimes.com/games/create/wordle",
-    "https://www.nytimes.com/games/collection",
-    "https://www.nytimes.com/games/connections",
-    "https://www.nytimes.com/puzzles/tiles",
+    "http://www.nytimes.com/games/badges/wordle",
+    "http://www.nytimes.com/puzzles/tiles",
     "https://www.nytimes.com/games/wordle",
-    "https://www.nytimes.com/crosswords/game/mini",
-    "https://www.nytimes.com/crosswords/archive",
-    "https://www.nytimes.com/crosswords",
-    "https://www.nytimes.com/crosswords/game/by-id",
-    "https://www.nytimes.com/crosswords/game/daily",
+    "https://www.nytimes.com/games/connections",
     "https://www.nytimes.com/games/badges/connections",
-    "https://www.nytimes.com/puzzles/spelling-bee",
     "https://www.nytimes.com/games/badges/spelling-bee",
+    "https://www.nytimes.com/games/create/wordle",
     "https://www.nytimes.com/games/pips",
+    "https://www.nytimes.com/puzzles/spelling-bee",
     "https://www.nytimes.com/interactive/2022/upshot/wordle-bot",
+    "https://www.nytimes.com/games/badges/strands",
+    "https://www.nytimes.com/crosswords/game/by-id",
+    "https://www.nytimes.com/crosswords/archive",
+    "https://www.nytimes.com/games/strands",
+    "https://www.nytimes.com/crosswords/game/midi",
+    "https://www.nytimes.com/interactive/2024/upshot/connections-bot",
+    "https://www.nytimes.com/games/bonus",
     "https://www.nytimes.com/crosswords/apps",
+    "https://www.nytimes.com/crosswords/game/daily",
+    "https://www.nytimes.com/pips",
+    "https://www.nytimes.com/puzzles/sudoku",
+    "https://www.nytimes.com/crosswords/game/mini",
+    "https://www.nytimes.com/games/collection",
+    "https://www.nytimes.com/crosswords",
     "https://www.nytimes.com/wordle",
+    "https://www.nytimes.com/games/badges/wordle",
+    "https://www.nytimes.com/puzzles/tiles",
     "nytxwd://statsigoverride",
     "http://nytimes.onelink.me/IM32",
     "https://nytimes.onelink.me/IM32"
@@ -632,92 +632,12 @@
       [
        "http",
        "www.nytimes.com",
-       "/games/strands"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/pips"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/badges/wordle"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/badges/strands"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/interactive/2024/upshot/connections-bot"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/crosswords/game/midi"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/bonus"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/puzzles/sudoku"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/create/wordle"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/collection"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/games/connections"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/puzzles/tiles"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
        "/games/wordle"
       ],
       [
        "http",
        "www.nytimes.com",
-       "/crosswords/game/mini"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/crosswords/archive"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/crosswords"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/crosswords/game/by-id"
-      ],
-      [
-       "http",
-       "www.nytimes.com",
-       "/crosswords/game/daily"
+       "/games/connections"
       ],
       [
        "http",
@@ -727,12 +647,12 @@
       [
        "http",
        "www.nytimes.com",
-       "/puzzles/spelling-bee"
+       "/games/badges/spelling-bee"
       ],
       [
        "http",
        "www.nytimes.com",
-       "/games/badges/spelling-bee"
+       "/games/create/wordle"
       ],
       [
        "http",
@@ -742,7 +662,47 @@
       [
        "http",
        "www.nytimes.com",
+       "/puzzles/spelling-bee"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
        "/interactive/2022/upshot/wordle-bot"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/strands"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/by-id"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/archive"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/strands"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/midi"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/interactive/2024/upshot/connections-bot"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/bonus"
       ],
       [
        "http",
@@ -752,65 +712,45 @@
       [
        "http",
        "www.nytimes.com",
-       "/wordle"
+       "/crosswords/game/daily"
       ],
       [
-       "https",
-       "www.nytimes.com",
-       "/games/strands"
-      ],
-      [
-       "https",
+       "http",
        "www.nytimes.com",
        "/pips"
       ],
       [
-       "https",
-       "www.nytimes.com",
-       "/games/badges/wordle"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/games/badges/strands"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/interactive/2024/upshot/connections-bot"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/crosswords/game/midi"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/games/bonus"
-      ],
-      [
-       "https",
+       "http",
        "www.nytimes.com",
        "/puzzles/sudoku"
       ],
       [
-       "https",
+       "http",
        "www.nytimes.com",
-       "/games/create/wordle"
+       "/crosswords/game/mini"
       ],
       [
-       "https",
+       "http",
        "www.nytimes.com",
        "/games/collection"
       ],
       [
-       "https",
+       "http",
        "www.nytimes.com",
-       "/games/connections"
+       "/crosswords"
       ],
       [
-       "https",
+       "http",
+       "www.nytimes.com",
+       "/wordle"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/wordle"
+      ],
+      [
+       "http",
        "www.nytimes.com",
        "/puzzles/tiles"
       ],
@@ -822,27 +762,7 @@
       [
        "https",
        "www.nytimes.com",
-       "/crosswords/game/mini"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/crosswords/archive"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/crosswords"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/crosswords/game/by-id"
-      ],
-      [
-       "https",
-       "www.nytimes.com",
-       "/crosswords/game/daily"
+       "/games/connections"
       ],
       [
        "https",
@@ -852,12 +772,12 @@
       [
        "https",
        "www.nytimes.com",
-       "/puzzles/spelling-bee"
+       "/games/badges/spelling-bee"
       ],
       [
        "https",
        "www.nytimes.com",
-       "/games/badges/spelling-bee"
+       "/games/create/wordle"
       ],
       [
        "https",
@@ -867,7 +787,47 @@
       [
        "https",
        "www.nytimes.com",
+       "/puzzles/spelling-bee"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
        "/interactive/2022/upshot/wordle-bot"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/strands"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/by-id"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/archive"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/strands"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/midi"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/interactive/2024/upshot/connections-bot"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/bonus"
       ],
       [
        "https",
@@ -877,7 +837,47 @@
       [
        "https",
        "www.nytimes.com",
+       "/crosswords/game/daily"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/pips"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/puzzles/sudoku"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/mini"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/collection"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
        "/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/puzzles/tiles"
       ]
      ],
      "is_browsable": true
@@ -1859,7 +1859,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity",
@@ -1877,7 +1878,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": true
+   "is_exported_component": true,
+   "intent_url_source": "intent extras -> getString(url) -> loadUrl"
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.HybridWebViewConfigurer",
@@ -1895,7 +1897,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdViewUtils$Companion",
@@ -1912,7 +1915,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcko",
@@ -1933,7 +1937,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.HybridWebView",
@@ -1950,7 +1955,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdViewUtils",
@@ -1966,7 +1972,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfub",
@@ -1981,7 +1988,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.publisher.b",
@@ -1996,7 +2004,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbc",
@@ -2011,7 +2020,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.statsig.androidsdk.DebugView$Companion",
@@ -2028,7 +2038,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.statsig.androidsdk.DebugView",
@@ -2047,7 +2058,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "co.datadome.sdk.ChallengeActivity",
@@ -2070,7 +2082,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.util.zzn",
@@ -2084,7 +2097,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.util.zzs",
@@ -2098,7 +2112,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.core.activity.PurrCookiedWebActivity",
@@ -2112,7 +2127,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)"
   },
   {
    "name": "co.datadome.sdk.DataDomeWebView",
@@ -2125,7 +2141,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzs",
@@ -2138,7 +2155,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfty",
@@ -2151,7 +2169,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.publisher.a",
@@ -2164,7 +2183,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iteratehq.iterate.view.SurveyView",
@@ -2188,7 +2208,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.composeui.webview.WebviewScreenKt",
@@ -2201,7 +2222,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.view.BaseHybridFragment",
@@ -2214,7 +2236,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.devsettings.GamesHybridDevSettingFactory$devSettings$2",
@@ -2227,7 +2250,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "co.datadome.sdk.p.a",
@@ -2238,7 +2262,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewRenderProcessClient",
@@ -2249,7 +2274,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewCompat",
@@ -2260,7 +2286,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.WebViewClientCompat",
@@ -2271,7 +2298,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForP",
@@ -2282,7 +2310,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessClientFrameworkAdapter",
@@ -2293,7 +2322,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForO",
@@ -2304,7 +2334,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewProviderFactoryAdapter",
@@ -2315,7 +2346,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForQ",
@@ -2326,7 +2358,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewProviderFactory",
@@ -2337,7 +2370,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebMessageListenerAdapter",
@@ -2348,7 +2382,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessClientAdapter",
@@ -2359,7 +2394,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.ApiHelperForM",
@@ -2370,7 +2406,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.WebViewRenderProcessImpl",
@@ -2381,7 +2418,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.webkit.internal.IncompatibleApkWebViewProviderFactory",
@@ -2392,7 +2430,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.internal.h",
@@ -2405,7 +2444,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.adsession.AdSessionContext",
@@ -2416,7 +2456,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.adsession.JavaScriptSessionService",
@@ -2427,7 +2468,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.weakreference.b",
@@ -2438,7 +2480,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.utils.i",
@@ -2449,7 +2492,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iab.omid.library.amazon.publisher.AdSessionStatePublisher",
@@ -2460,7 +2504,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.iteratehq.iterate.databinding.SurveyViewBinding",
@@ -2471,7 +2516,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewSupportClient",
@@ -2482,7 +2528,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewClientListener",
@@ -2493,7 +2540,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdViewBase",
@@ -2504,7 +2552,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewSupportClientBase",
@@ -2515,7 +2564,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdViewImpl",
@@ -2535,7 +2585,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.aps.ads.util.adview.ApsAdViewFetchUtils",
@@ -2546,7 +2597,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.amazon.device.ads.DtbOmSdkSessionManager",
@@ -2557,7 +2609,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.subauth.ui.purr.ui.screens.TCFScreensKt",
@@ -2568,7 +2621,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.subauth.ui.ui.screens.LireContainerScreenKt",
@@ -2579,7 +2633,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.AsyncEvaluator",
@@ -2590,7 +2645,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.ScriptInjector",
@@ -2601,7 +2657,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.AsyncEvaluatorImpl",
@@ -2612,7 +2669,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.WebViewClientProxy",
@@ -2623,7 +2681,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.AsyncEvaluatorImpl$callAsync$2",
@@ -2634,7 +2693,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.composeui.webview.WebViewScreenClient",
@@ -2645,7 +2705,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.client.HybridWebViewClient",
@@ -2656,7 +2717,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridgecommands.ReportABExposureBridgeCommand",
@@ -2667,7 +2729,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.NativeToWebCommand",
@@ -2678,7 +2741,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.PageHeightCommand$run$2",
@@ -2689,7 +2753,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.PageHeightCommand",
@@ -2700,7 +2765,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.SetPTREnabledCommand",
@@ -2711,7 +2777,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.BridgeCommand",
@@ -2722,7 +2789,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.PingCommand",
@@ -2733,7 +2801,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.bridge.NativeBridge",
@@ -2755,7 +2824,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.util.webview.WebViewScriptExecutor",
@@ -2766,7 +2836,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.util.webview.WebViewRenderProcessClient$webViewResponsiveStateFlow$webViewResponsiveStateFlow$1",
@@ -2777,7 +2848,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.util.webview.WebViewScriptExecutor$runScript$2",
@@ -2788,7 +2860,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.hybrid.util.webview.WebViewRenderProcessClient",
@@ -2799,7 +2872,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.HybridAdUtils",
@@ -2810,7 +2884,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl",
@@ -2821,7 +2896,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl$updateAdTargeting$1",
@@ -2832,7 +2908,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl$updatePageViewId$1",
@@ -2843,7 +2920,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.HybridAdManager",
@@ -2854,7 +2932,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.core.data.utils.AdExtensionsKt",
@@ -2865,7 +2944,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.android.ads.hybrid.bridge.commands.AdCommBridgeCommand",
@@ -2876,7 +2956,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.core.CrosswordApplicationBase",
@@ -2887,7 +2968,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.core.databinding.PurrCookiedWebActivityBinding",
@@ -2898,7 +2980,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.GamesHybridWebView",
@@ -2909,7 +2992,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.HybridWebViewClient",
@@ -2922,7 +3006,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer",
@@ -2933,7 +3018,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer$onContentLoaded$1",
@@ -2944,7 +3030,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer$loadData$1",
@@ -2955,7 +3042,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GamesSetNativeColorTheme",
@@ -2966,7 +3054,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetContextIdCommand",
@@ -2977,7 +3066,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.CacheRefreshCommand",
@@ -2988,7 +3078,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.SendAnalyticBridgeCommand",
@@ -2999,7 +3090,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.SendEmailCommand",
@@ -3010,7 +3102,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.HybridConfigBridgeCommand",
@@ -3021,7 +3114,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetAllCookiesCommand",
@@ -3032,7 +3126,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.ShareCommand",
@@ -3043,7 +3138,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetPageViewIdCommand",
@@ -3054,7 +3150,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetUserDetailsCommand",
@@ -3065,7 +3162,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.AuthenticateUserCommand",
@@ -3076,7 +3174,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.BackToHubCommand",
@@ -3087,7 +3186,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GameInitializedStateCommand",
@@ -3098,7 +3198,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.nytimes.games.features.me.badges.details.BadgeDetailScreenKt",
@@ -3109,7 +3210,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.MobileAds",
@@ -3120,7 +3222,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzo",
@@ -3131,7 +3234,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.h5.H5AdsWebViewClient",
@@ -3142,7 +3246,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzau",
@@ -3153,7 +3258,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzf",
@@ -3164,7 +3270,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzo",
@@ -3175,7 +3282,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.TaggingLibraryJsInterface",
@@ -3186,7 +3294,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzj",
@@ -3197,7 +3306,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbt",
@@ -3208,7 +3318,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzct",
@@ -3223,7 +3334,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.consent_sdk.zzbv",
@@ -3234,7 +3346,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzejv",
@@ -3245,7 +3358,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftz",
@@ -3256,7 +3370,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftn",
@@ -3267,7 +3382,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzftx",
@@ -3278,7 +3394,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbpp",
@@ -3289,7 +3406,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcjl",
@@ -3300,7 +3418,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfto",
@@ -3311,7 +3430,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfsl",
@@ -3322,7 +3442,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbpq",
@@ -3333,7 +3454,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckj",
@@ -3344,7 +3466,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfuz",
@@ -3355,7 +3478,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzejw",
@@ -3366,7 +3490,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfst",
@@ -3377,7 +3502,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfua",
@@ -3388,7 +3514,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzclk",
@@ -3399,7 +3526,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcjk",
@@ -3410,7 +3538,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckh",
@@ -3421,7 +3550,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbyp",
@@ -3432,7 +3562,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzfsv",
@@ -3443,7 +3574,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbee",
@@ -3454,7 +3586,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbpd",
@@ -3465,7 +3598,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcla",
@@ -3476,7 +3610,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzbec",
@@ -3489,7 +3624,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcky",
@@ -3500,7 +3636,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzckz",
@@ -3511,7 +3648,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzcjw",
@@ -3522,7 +3660,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
@@ -3533,7 +3672,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
@@ -3544,7 +3684,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
@@ -3555,7 +3696,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
@@ -3566,7 +3708,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
@@ -3577,7 +3720,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [
@@ -3684,6 +3828,14 @@
    "location": "smali_classes6/com/nytimes/games/integrations/hybrid/devsettings/GamesHybridDevSettingFactory$devSettings$2.smali:123 (invokeSuspend)",
    "evidence": "invoke-static {p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V\n\n    invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
    "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-023",
+   "title": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity: exported entry point loads an Intent-supplied URL into a WebView",
+   "location": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity",
+   "evidence": "exported=true; intent extras -> getString(url) -> loadUrl",
+   "detail": "This exported activity derives the URL it displays from the Intent that started it (extra, data, or an extra's URL field) and passes it straight to WebView.loadUrl. Any app on the device can start it with an explicit intent and an arbitrary URL \u2014 no intent-filter is required, and no in-app user action is involved \u2014 so attacker-controlled web content renders inside the app's own WebView."
   },
   {
    "severity": "MEDIUM",

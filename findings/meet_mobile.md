@@ -137,6 +137,10 @@ setSupportMultipleWindows(true) is required for popups/new tabs.
     invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.google.android.gms.internal.ads.zzclc`

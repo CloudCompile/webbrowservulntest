@@ -197,7 +197,7 @@ addJavascriptInterface((s76) nv9Var.f, "brilliantBridge")
 
 | kind | name | exported | deeplinks |
 |------|------|----------|-----------|
-| activity | `org.brilliant.android.ui.common.MainActivity` | True | http://click.brilliant.org<br>http://brilliant.org<br>https://click.brilliant.org<br>https://brilliant.org |
+| activity | `org.brilliant.android.ui.common.MainActivity` | True | https://click.brilliant.org<br>https://brilliant.org<br>http://click.brilliant.org<br>http://brilliant.org |
 | activity | `com.facebook.FacebookActivity` | False |  |
 | activity | `com.shakebugs.shake.ui.ShakeActivity` | False |  |
 | activity | `com.shakebugs.shake.ui.permissions.RequestPermissionActivity` | False |  |

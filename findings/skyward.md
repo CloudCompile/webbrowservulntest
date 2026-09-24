@@ -303,6 +303,10 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(new Object() { // from class: expo.modules.logbox.ExpoLogBoxWebViewWrapper$webVi, "rawMessage")  methods=['postMessage']
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.reactnativecommunity.webview.RNCWebViewManagerImpl`

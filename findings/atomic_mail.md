@@ -201,7 +201,7 @@ addJavascriptInterface(eVar, "ReactNativeWebView")  methods=['postMessage']
 
 | kind | name | exported | deeplinks |
 |------|------|----------|-----------|
-| activity | `com.atomicmail.MainActivity` | True | atomicmail://stripe-return<br>atomicmail://stripe-success<br>atomicmail://stripe-cancel |
+| activity | `com.atomicmail.MainActivity` | True | atomicmail://stripe-return<br>atomicmail://stripe-cancel<br>atomicmail://stripe-success |
 | activity | `com.android.billingclient.api.ProxyBillingActivity` | False |  |
 | activity | `com.android.billingclient.api.ProxyBillingActivityV2` | False |  |
 | activity | `com.google.android.gms.auth.api.signin.internal.SignInHubActivity` | False |  |

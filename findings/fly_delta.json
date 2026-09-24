@@ -33,23 +33,23 @@
     "@string/check_in_schema://*",
     "@string/today_mode_schema://*",
     "@string/flight_search_schema://*",
-    "@string/schema_deep_link://@string/host_deep_link@string/find_trip_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/news_feed_deep_link_for_manifest",
     "@string/schema_deep_link://@string/host_deep_link@string/home_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/fly_ready_check_in_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/trip_summary_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_search_deep_link_for_manifest",
     "@string/schema_deep_link://@string/host_deep_link@string/preselect_meals_deep_link_action_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/modify_flight_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/fly_ready_check_in_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_flight_info_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_results_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/find_trip_deep_link_for_manifest",
     "@string/schema_deep_link://@string/host_deep_link@string/flight_status_results_deep_link_for_manifest",
     "@string/schema_deep_link://@string/host_deep_link@string/trip_overview_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/my_trips_seat_map_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_search_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/flight_status_flight_info_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/news_feed_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/modify_flight_deep_link_for_manifest",
     "@string/schema_deep_link://@string/host_deep_link@string/same_day_change_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/host_deep_link@string/flight_search_results_deep_link_for_manifest",
-    "@string/schema_deep_link://@string/branch_link",
+    "@string/schema_deep_link://@string/host_deep_link@string/trip_summary_deep_link_for_manifest",
+    "@string/schema_deep_link://@string/host_deep_link@string/my_trips_seat_map_deep_link_for_manifest",
     "@string/schema_deep_link://@string/branch_alternate_link",
+    "@string/schema_deep_link://@string/branch_link",
     "@string/link_attribution_schema://*"
    ],
    "is_launcher": true,
@@ -114,7 +114,12 @@
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
-       "@string/find_trip_deep_link_for_manifest"
+       "@string/flight_search_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/news_feed_deep_link_for_manifest"
       ],
       [
        "@string/schema_deep_link",
@@ -124,17 +129,37 @@
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
-       "@string/fly_ready_check_in_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
-       "@string/trip_summary_deep_link_for_manifest"
+       "@string/flight_status_search_deep_link_for_manifest"
       ],
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
        "@string/preselect_meals_deep_link_action_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/modify_flight_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/fly_ready_check_in_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_status_flight_info_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/flight_search_results_deep_link_for_manifest"
+      ],
+      [
+       "@string/schema_deep_link",
+       "@string/host_deep_link",
+       "@string/find_trip_deep_link_for_manifest"
       ],
       [
        "@string/schema_deep_link",
@@ -149,42 +174,17 @@
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
-       "@string/my_trips_seat_map_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
-       "@string/flight_status_search_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
-       "@string/flight_status_flight_info_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
-       "@string/news_feed_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
-       "@string/modify_flight_deep_link_for_manifest"
-      ],
-      [
-       "@string/schema_deep_link",
-       "@string/host_deep_link",
        "@string/same_day_change_link_for_manifest"
       ],
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
-       "@string/flight_search_deep_link_for_manifest"
+       "@string/trip_summary_deep_link_for_manifest"
       ],
       [
        "@string/schema_deep_link",
        "@string/host_deep_link",
-       "@string/flight_search_results_deep_link_for_manifest"
+       "@string/my_trips_seat_map_deep_link_for_manifest"
       ]
      ],
      "is_browsable": true
@@ -196,12 +196,12 @@
      "bindings": [
       [
        "@string/schema_deep_link",
-       "@string/branch_link",
+       "@string/branch_alternate_link",
        null
       ],
       [
        "@string/schema_deep_link",
-       "@string/branch_alternate_link",
+       "@string/branch_link",
        null
       ]
      ],
@@ -2624,7 +2624,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzass",
@@ -2641,7 +2642,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzari",
@@ -2669,7 +2671,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.bridge.WebViewPage",
@@ -2740,7 +2743,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage$MessageFullScreenRunner",
@@ -2755,7 +2759,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.services.ui.MessageWebViewRunner",
@@ -2770,7 +2775,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.booking.checkout.viewmodel.TripInsuranceViewModel",
@@ -2785,7 +2791,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.AndroidFullscreenMessage",
@@ -2800,7 +2807,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.cardinalcommerce.cardinalmobilesdk.a.c.a$1",
@@ -2814,7 +2822,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.DeltaEmbeddedWeb",
@@ -2828,7 +2837,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt$UserAuthWebView$1",
@@ -2842,7 +2852,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.foresee.sdk.common.ui.a.c",
@@ -2856,7 +2867,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaky",
@@ -2870,7 +2882,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaku",
@@ -2884,7 +2897,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt",
@@ -2898,7 +2912,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.cardinalcommerce.cardinalmobilesdk.a.c.a",
@@ -2912,7 +2927,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.WebPage",
@@ -2925,7 +2941,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)"
   },
   {
    "name": "com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView",
@@ -2938,7 +2955,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.traveling.AircraftLayout",
@@ -2951,7 +2969,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.delta.mobile.android.merchandise.MerchandiseDetailsActivity",
@@ -2975,7 +2994,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.delta.mobile.android.citydetail.CityAirportMapDetail",
@@ -2988,7 +3008,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.delta.mobile.android.extras.TermsAndConditions",
@@ -3001,7 +3022,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.feeds.fragments.NewsFragment",
@@ -3016,7 +3038,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.checkin.view.AmexView",
@@ -3040,7 +3063,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.foresee.sdk.cxMeasure.tracker.app.survey.SurveyActivity",
@@ -3062,7 +3086,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": "intent extra -> get*Url() -> loadUrl"
   },
   {
    "name": "com.dynatrace.android.agent.Dynatrace",
@@ -3075,7 +3100,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzbp",
@@ -3088,7 +3114,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "io.branch.referral.BranchViewHandler",
@@ -3101,7 +3128,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "androidx.core.text.util.LinkifyCompat",
@@ -3112,7 +3140,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.foresee.sdk.common.utils.Util",
@@ -3123,7 +3152,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.foresee.sdk.common.ui.a.a",
@@ -3134,7 +3164,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.locuslabs.sdk.maps.implementation.DefaultMap",
@@ -3145,7 +3176,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.locuslabs.sdk.internal.maps.view.DefaultMapViewController",
@@ -3156,7 +3188,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.bridge.WebViewFragment",
@@ -3167,7 +3200,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.bridge.WebViewActivity",
@@ -3178,7 +3212,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.JsInjectableWebPage",
@@ -3189,7 +3224,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.DeltaWebViewClient",
@@ -3200,7 +3236,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.AircraftLayoutWebViewClient",
@@ -3211,7 +3248,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.DeltaChromeClient",
@@ -3222,7 +3260,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.AirportMapWebViewClient",
@@ -3233,7 +3272,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.DeltaPartnersWebViewClient",
@@ -3244,7 +3284,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.DeltaPartnersLandingPageEmbeddedWebViewClient",
@@ -3257,7 +3298,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.webview.DeltaEmbeddedWebViewClient",
@@ -3268,7 +3310,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": true,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.databinding.ExpressCheckoutTripProtectionBinding",
@@ -3279,7 +3322,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.databinding.ExpressCheckoutTripProtectionBindingImpl",
@@ -3290,7 +3334,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.booking.expresscheckout.ExpressCheckoutActivity",
@@ -3301,7 +3346,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.booking.checkout.CheckoutActivity",
@@ -3312,7 +3358,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.booking.checkout.TripProtectionActions",
@@ -3323,7 +3370,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.booking.checkout.viewmodel.CheckoutTripInsuranceViewModel",
@@ -3334,7 +3382,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.todaymode.composables.ConnectedCabinPasscodeViewKt$UserAuthWebView$1$1$2",
@@ -3347,7 +3396,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.delta.mobile.android.todaymode.views.TourContentFragment",
@@ -3358,7 +3408,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.services.ui.AEPMessage",
@@ -3369,7 +3420,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.services.ui.MessageWebViewClient",
@@ -3380,7 +3432,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.services.ui.MessageWebView",
@@ -3391,7 +3444,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.adobe.marketing.mobile.services.ui.WebViewGestureListener",
@@ -3402,7 +3456,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzy",
@@ -3413,7 +3468,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.ads.internal.zzbq",
@@ -3424,7 +3480,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzart",
@@ -3435,7 +3492,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaqx",
@@ -3446,7 +3504,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzasv",
@@ -3459,7 +3518,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzakk",
@@ -3470,7 +3530,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaru",
@@ -3481,7 +3542,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaqw",
@@ -3492,7 +3554,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzasj",
@@ -3503,7 +3566,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzgk",
@@ -3514,7 +3578,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzark",
@@ -3525,7 +3590,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzast",
@@ -3536,7 +3602,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaan",
@@ -3547,7 +3614,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzaqo",
@@ -3558,7 +3626,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzasq",
@@ -3578,7 +3647,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzgm",
@@ -3591,7 +3661,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzasy",
@@ -3604,7 +3675,8 @@
    ],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzarh",
@@ -3615,7 +3687,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzarv",
@@ -3626,7 +3699,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   },
   {
    "name": "com.google.android.gms.internal.ads.zzuf",
@@ -3646,7 +3720,8 @@
    "injected_script": [],
    "unrestricted_navigation": false,
    "ssl_proceed": false,
-   "is_exported_component": false
+   "is_exported_component": false,
+   "intent_url_source": ""
   }
  ],
  "findings": [
