@@ -87,6 +87,21 @@ An exported activity with an `http`/`https` `<data android:scheme=...>` and no
 `android:host` accepts **any** URL. Trace where it sends the URL: an in-app
 navigation stack (interesting) or a browser `ACTION_VIEW` (less so).
 
+Also check the inverse trap: a handler whose intent-filter **does** pin a host
+but whose code routes on `Uri.getPath()` alone. An intent-filter only constrains
+*implicit* intents; an explicit intent (`setComponent`/`setClassName`) from any
+other app on the device reaches the component regardless of its filters. So a
+pinned filter gives no protection if the handler trusts the path. Grep the
+handler for `getHost`/`getAuthority`:
+
+```bash
+grep -c 'Landroid/net/Uri;->getHost\|Landroid/net/Uri;->getAuthority' <out>/work/smali*/**/Handler.smali
+```
+
+Zero host reads plus several `getPath`/`getPathSegments` reads means another app
+can drive a privileged route (OAuth confirm, payment, account edit chains) with
+an attacker-chosen origin. The analyzer reports this as `CORR-022`.
+
 ### 6. Report
 
 State each finding with `file:line` evidence, the concrete reachability path,

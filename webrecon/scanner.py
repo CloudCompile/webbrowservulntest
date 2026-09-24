@@ -67,6 +67,21 @@ class Bridge:
 
 
 @dataclass
+class IntentFilter:
+    """One <intent-filter>, with its <data> attributes merged per Android rules.
+
+    Android ANDs the attributes within a single <data> element and ORs across
+    separate <data> elements. So `scheme=https` in one and `host=x.com` in
+    another means "https://x.com/...", NOT "any https host". Each entry below is
+    one resolved binding: (scheme, host, path).
+    """
+
+    actions: List[str] = field(default_factory=list)
+    bindings: List[tuple] = field(default_factory=list)
+    is_browsable: bool = False
+
+
+@dataclass
 class Component:
     kind: str
     name: str
@@ -74,6 +89,7 @@ class Component:
     permission: Optional[str]
     deeplinks: List[str] = field(default_factory=list)
     is_launcher: bool = False
+    filters: List[IntentFilter] = field(default_factory=list)
 
 
 @dataclass
@@ -105,6 +121,8 @@ class Report:
     findings: List[dict] = field(default_factory=list)
     native_webview_libs: List[str] = field(default_factory=list)
     errors: List[str] = field(default_factory=list)
+    # exported deep-link handlers whose routing reads only the URL path
+    path_only_handlers: List[dict] = field(default_factory=list)
 
     def to_json(self) -> str:
         return json.dumps(asdict(self), indent=2, default=str)
@@ -237,22 +255,51 @@ def parse_manifest(manifest: Path, apk: Optional[Path] = None) -> dict:
                 perm = e.get(ANDROID_NS + "permission")
                 deeplinks: List[str] = []
                 is_launcher = False
+                parsed_filters: List[IntentFilter] = []
                 for f in filters:
-                    actions = [a.get(ANDROID_NS + "name") for a in f.iter("action")]
+                    actions = [a.get(ANDROID_NS + "name") for a in f.findall("action")]
+                    cats = [c.get(ANDROID_NS + "name") for c in f.findall("category")]
                     if "android.intent.action.MAIN" in actions:
                         is_launcher = True
-                    for d in f.iter("data"):
-                        scheme = d.get(ANDROID_NS + "scheme")
-                        host = d.get(ANDROID_NS + "host")
-                        path = (
-                            d.get(ANDROID_NS + "path")
-                            or d.get(ANDROID_NS + "pathPrefix")
-                            or d.get(ANDROID_NS + "pathPattern")
+                    # Android merges all <data> attributes in one filter: the URI
+                    # must match the union of schemes AND the union of hosts. A
+                    # filter with scheme=https and no host matches ANY https URL;
+                    # one that also lists hosts matches only those hosts.
+                    schemes, hosts, paths = set(), set(), set()
+                    for d in f.findall("data"):
+                        for key, bucket in (
+                            ("scheme", schemes),
+                            ("host", hosts),
+                            ("path", paths),
+                            ("pathPrefix", paths),
+                            ("pathPattern", paths),
+                        ):
+                            v = d.get(ANDROID_NS + key)
+                            if v:
+                                bucket.add(v)
+                    if not (schemes or hosts):
+                        continue
+                    # no host constraint -> wildcard host
+                    eff_hosts = hosts or {"*"}
+                    bindings = []
+                    for scheme in (schemes or {"*"}):
+                        for host in eff_hosts:
+                            if paths:
+                                for path in paths:
+                                    bindings.append((scheme, host, path))
+                            else:
+                                bindings.append((scheme, host, None))
+                    parsed_filters.append(
+                        IntentFilter(
+                            actions=actions,
+                            bindings=bindings,
+                            is_browsable="android.intent.category.BROWSABLE" in cats,
                         )
-                        if scheme or host:
-                            deeplinks.append(f"{scheme or '*'}://{host or '*'}{path or ''}")
+                    )
+                    for scheme, host, path in bindings:
+                        deeplinks.append(f"{scheme or '*'}://{host or '*'}{path or ''}")
                 components.append(
-                    Component(tag, name, exported, perm, deeplinks, is_launcher)
+                    Component(tag, name, exported, perm, deeplinks, is_launcher, parsed_filters)
                 )
     return {"info": info, "components": components}
 
@@ -672,32 +719,48 @@ def build_findings(report: Report) -> List[dict]:
                 host.name,
             )
 
-    # 4. deep links that hand arbitrary URLs to a WebView-capable component.
-    # Only report when the app is known to render web content (so this is not a
-    # false positive on a component that just forwards to a browser).
-    webview_app = bool(report.hosts)
-    if webview_app:
-        for c in report.components:
-            if not c.exported:
+    # 4. exported, browsable deep links that accept arbitrary web URLs.
+    # A filter is only a finding if it declares http/https AND leaves the host
+    # unpinned (host '*') — a filter that lists specific hosts is correctly
+    # scoped and must not be reported.
+    for c in report.components:
+        if not c.exported:
+            continue
+        for flt in c.filters:
+            if not flt.is_browsable:
                 continue
-            for link in c.deeplinks:
-                scheme, _, rest = link.partition("://")
-                host = rest.split("/", 1)[0]
-                # scheme-only (host '*') http/https filters accept any URL
-                if scheme in ("http", "https") and host in ("*", ""):
+            for scheme, host, path in flt.bindings:
+                if scheme in ("http", "https") and host in ("*", None):
                     add(
                         "MEDIUM",
                         "CORR-021",
                         f"Exported component accepts arbitrary http(s) URLs: {c.name}",
-                        link,
-                        "An intent-filter declares an http/https scheme without pinning "
-                        "a host, so any web URL can be handed to this exported "
-                        "component. Combined with the in-app browser surface above, an "
-                        "attacker-controlled link can be routed into the app's own "
-                        "navigation stack (an open-redirect / arbitrary-navigation "
-                        "primitive) instead of being confined to a browser.",
+                        f"{scheme}://{'*' if host in ('*', None) else host}{path or ''}",
+                        "An exported browsable intent-filter declares an http/https "
+                        "scheme without pinning a host, so any web URL can be handed "
+                        "to this component. Combined with the in-app browser surface "
+                        "above, an attacker-controlled link can be routed into the "
+                        "app's own navigation stack instead of being confined to a "
+                        "browser.",
                         c.name,
                     )
+                    break
+    # 5. exported deep-link handlers that trust the URL path but not the host.
+    # The intent-filter's host pinning only applies to implicit intents; an
+    # explicit intent from another app reaches the component anyway.
+    for h in getattr(report, "path_only_handlers", []) or []:
+        add(
+            "MEDIUM",
+            "CORR-022",
+            f"Deep-link handler validates path but not host: {h['name']}",
+            f"{h['path_reads']} path reads, no getHost()/getAuthority() check",
+            "This exported, browsable component routes incoming deep links purely on "
+            "Uri.getPath() and never verifies the host. Its intent-filter host list "
+            "does not help: any app can send an explicit intent with an arbitrary URL "
+            "and a matching path (e.g. an OAuth-confirm or payment route), bypassing "
+            "the intended origin. Treat the path as attacker-controlled.",
+            h["name"],
+        )
     return findings
 
 
@@ -713,6 +776,44 @@ def scan(target: Path, work: Path, skip_decompile: bool = False) -> Report:
     if not skip_decompile:
         paths = decompile(apk_dir, work, raw)
     return analyze(paths["work"], raw, str(target), apk_dir, report)
+
+
+def _smali_file_for(class_name: str, smali_roots: Iterable[Path]) -> Optional[Path]:
+    rel = class_name.replace(".", "/") + ".smali"
+    for root in smali_roots:
+        p = root / rel
+        if p.exists():
+            return p
+    return None
+
+
+def _dispatches_on_path_only(class_name: str, smali_roots: Iterable[Path]) -> Optional[int]:
+    """True when an exported deep-link handler pivots on the URL path but never
+    checks the host.
+
+    Intent-filters pin hosts, but that only constrains *implicit* intents. An
+    explicit intent (ComponentName set) reaches the component regardless of its
+    filters, and this handler drives its routing entirely off Uri.getPath(),
+    returning no getHost()/getAuthority() check. So any app on the device can
+    hand it an arbitrary URL whose path matches a privileged route.
+    """
+    p = _smali_file_for(class_name, smali_roots)
+    if p is None:
+        return None
+    try:
+        lines = p.read_text(errors="ignore").splitlines()
+    except OSError:
+        return None
+    path_like = 0
+    host_check = 0
+    for i, line in enumerate(lines):
+        if "->getPath(" in line or "->getPathSegments(" in line or "->getLastPathSegment(" in line:
+            path_like += 1
+        if "->getHost(" in line or "->getAuthority(" in line or "->getScheme(" in line:
+            host_check += 1
+    if path_like >= 3 and host_check == 0:
+        return path_like
+    return None
 
 
 def analyze(
@@ -767,6 +868,16 @@ def analyze(
         h.injected_script = sorted(set(h.injected_script))
 
     report.hosts = sorted(hosts.values(), key=lambda h: len(h.settings), reverse=True)
+
+    # exported deep-link handlers that route on path only (no host check)
+    for c in report.components:
+        if not c.exported or not c.filters:
+            continue
+        if not any(f.is_browsable for f in c.filters):
+            continue
+        n = _dispatches_on_path_only(c.name, smali_roots)
+        if n:
+            report.path_only_handlers.append({"name": c.name, "path_reads": n})
 
     # raw setting hits as findings
     findings: List[dict] = []

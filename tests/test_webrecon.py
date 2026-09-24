@@ -29,6 +29,33 @@ MANIFEST = """<?xml version="1.0" encoding="utf-8"?>
             </intent-filter>
         </activity>
         <activity android:name="com.example.SafeActivity" android:exported="false" />
+        <activity android:name="com.example.PinnedActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="connect.example.com" />
+                <data android:pathPrefix="/app/home" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.PathOnlyHandler" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="connect.example.com" />
+                <data android:pathPrefix="/oauth2Confirm" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.HostCheckedHandler" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="connect.example.com" />
+                <data android:pathPrefix="/oauth2Confirm" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
 """
@@ -81,6 +108,44 @@ HARDENED_SMALI = """.class public Lcom/example/Hardened;
 
     const/4 v2, 0x0
     invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V
+
+    return-void
+.end method
+"""
+
+PATH_ONLY_SMALI = """.class public Lcom/example/PathOnlyHandler;
+.super Ljava/lang/Object;
+
+.method public route(Landroid/net/Uri;)V
+    .locals 3
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    move-result-object v1
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+    move-result-object v2
+
+    return-void
+.end method
+"""
+
+HOST_CHECKED_SMALI = """.class public Lcom/example/HostCheckedHandler;
+.super Ljava/lang/Object;
+
+.method public route(Landroid/net/Uri;)V
+    .locals 3
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+    move-result-object v0
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+    move-result-object v1
+
+    invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    move-result-object v2
 
     return-void
 .end method
@@ -140,6 +205,8 @@ def build_work_dir(base: Path) -> Path:
     (work / "res" / "xml" / "network_security_config.xml").write_text(NSC)
     (work / "smali_classes3" / "com" / "example" / "Vuln.smali").write_text(VULN_SMALI)
     (work / "smali_classes3" / "com" / "example" / "Hardened.smali").write_text(HARDENED_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "PathOnlyHandler.smali").write_text(PATH_ONLY_SMALI)
+    (work / "smali_classes3" / "com" / "example" / "HostCheckedHandler.smali").write_text(HOST_CHECKED_SMALI)
     (work / "java" / "com" / "example" / "Vuln.java").write_text(VULN_JAVA)
     (work / "java" / "com" / "example" / "BadTls.java").write_text(SSL_PROCEED_JAVA)
     return work
@@ -216,9 +283,32 @@ class TestWebrecon(unittest.TestCase):
         self.assertIn("CORR-021", rule_set(self.report))
         self.assertTrue(any("HandlerActivity" in t for t in titles_for(self.report, "CORR-021")))
 
+    def test_host_pinned_filter_is_not_flagged(self):
+        # scheme=https + host=connect.example.com in one filter is correctly
+        # scoped; only the host-less HandlerActivity filter should fire.
+        self.assertFalse(
+            any("PinnedActivity" in t for t in titles_for(self.report, "CORR-021")),
+            "a host-pinned intent-filter must not be reported as accepting any URL",
+        )
+        pinned = next(c for c in self.report.components if c.name == "com.example.PinnedActivity")
+        # merged binding should carry both scheme and host
+        self.assertIn("https://connect.example.com/app/home", pinned.deeplinks)
+        self.assertNotIn("https://*/app/home", pinned.deeplinks)
+
     def test_remote_debuggable_reported(self):
         self.assertIn("WV-SET-010", rule_set(self.report))
         self.assertIn("CORR-004", rule_set(self.report))
+
+    def test_path_only_handler_flagged(self):
+        self.assertIn("CORR-022", rule_set(self.report))
+        titles = titles_for(self.report, "CORR-022")
+        self.assertTrue(any("PathOnlyHandler" in t for t in titles))
+
+    def test_host_checked_handler_not_flagged(self):
+        self.assertFalse(
+            any("HostCheckedHandler" in t for t in titles_for(self.report, "CORR-022")),
+            "a handler that reads getHost() must not be reported as path-only",
+        )
 
     # -- report integration -------------------------------------------------
     def test_json_and_markdown_render(self):

@@ -51,6 +51,7 @@ Outputs `report.md` (human) and `report.json` (machine) in the `-o` directory.
 | `CORR-005` | MEDIUM | `shouldOverrideUrlLoading` forwards every URL in-app, no host allowlist |
 | `CORR-010` | MEDIUM | cleartext HTTP permitted globally in the network security config |
 | `CORR-021` | MEDIUM | exported component accepts arbitrary `http(s)` URLs |
+| `CORR-022` | MEDIUM | exported deep-link handler routes on URL path without checking host |
 | `WV-SET-00x` | varies | individual `WebSettings` hardening failures (literal-aware) |
 | `WV-SINK-004` | INFO | JS bridge exposed via `addJavascriptInterface` |
 
