@@ -56,6 +56,9 @@ MANIFEST = """<?xml version="1.0" encoding="utf-8"?>
                 <data android:pathPrefix="/oauth2Confirm" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.IntentUrlActivity" android:exported="true" />
+        <activity android:name="com.example.ConstUrlActivity" android:exported="true" />
+        <activity android:name="com.example.PrivateIntentUrlActivity" android:exported="false" />
     </application>
 </manifest>
 """
@@ -270,6 +273,47 @@ public class BadTls extends WebViewClient {
 }
 """
 
+# Exported, filter-less activity that loads a URL read straight from the Intent
+# — the reachability chain (CORR-023). Mirrors org.prebid...AdBrowserActivity.
+INTENT_URL_ACTIVITY_JAVA = """package com.example;
+
+import android.os.Bundle;
+import android.webkit.WebView;
+
+public class IntentUrlActivity extends android.app.Activity {
+    private final String bridge = "1";
+    private WebView webView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        WebView webView = new WebView(this);
+        webView.getSettings().setJavaScriptEnabled(true);
+        String url = getIntent().getStringExtra("EXTRA_URL");
+        webView.addJavascriptInterface(new Object(), "intentBridge");
+        webView.loadUrl(url);
+    }
+}
+"""
+
+# Same shape but hardened: the URL comes from a hardcoded constant, so nothing
+# about it is attacker-controlled.
+CONST_URL_ACTIVITY_JAVA = """package com.example;
+
+import android.os.Bundle;
+import android.webkit.WebView;
+
+public class ConstUrlActivity extends android.app.Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        WebView webView = new WebView(this);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("https://www.example.com/home");
+    }
+}
+"""
+
 
 def build_work_dir(base: Path) -> Path:
     work = base / "work"
@@ -289,6 +333,11 @@ def build_work_dir(base: Path) -> Path:
     (work / "smali_classes3" / "com" / "example" / "PinnedOwner.smali").write_text(PINNED_OWNER_SMALI)
     (work / "java" / "com" / "example" / "Vuln.java").write_text(VULN_JAVA)
     (work / "java" / "com" / "example" / "BadTls.java").write_text(SSL_PROCEED_JAVA)
+    (work / "java" / "com" / "example" / "IntentUrlActivity.java").write_text(INTENT_URL_ACTIVITY_JAVA)
+    (work / "java" / "com" / "example" / "ConstUrlActivity.java").write_text(CONST_URL_ACTIVITY_JAVA)
+    (work / "java" / "com" / "example" / "PrivateIntentUrlActivity.java").write_text(
+        INTENT_URL_ACTIVITY_JAVA
+    )
     return work
 
 
@@ -401,6 +450,31 @@ class TestWebrecon(unittest.TestCase):
             "a handler that reads getHost() must not be reported as path-only",
         )
 
+    # -- reachability (CORR-023) -------------------------------------------
+    def test_exported_intent_url_is_reported(self):
+        # the whole point: an exported, filter-less activity that loads an
+        # intent-supplied URL is reachable by any app on the device.
+        titles = titles_for(self.report, "CORR-023")
+        self.assertTrue(any("IntentUrlActivity" in t for t in titles))
+        host = next(h for h in self.report.hosts if h.name == "com.example.IntentUrlActivity")
+        self.assertIn("loadUrl", host.intent_url_source)
+
+    def test_intent_url_with_bridge_is_critical(self):
+        f = next(f for f in self.report.findings
+                 if f["rule"] == "CORR-023" and "IntentUrlActivity" in f["title"])
+        self.assertEqual(f["severity"], "CRITICAL")
+
+    def test_constant_url_not_flagged(self):
+        # a hardcoded URL is not attacker-controlled; must not fire CORR-023.
+        self.assertFalse(any("ConstUrlActivity" in t for t in titles_for(self.report, "CORR-023")))
+
+    def test_non_exported_intent_url_not_flagged(self):
+        # reachability requires the exported flag; a private activity is not
+        # drivable by other apps.
+        self.assertFalse(
+            any("PrivateIntentUrlActivity" in t for t in titles_for(self.report, "CORR-023"))
+        )
+
     # -- report integration -------------------------------------------------
     def test_json_and_markdown_render(self):
         from webrecon import report as report_mod
@@ -410,6 +484,8 @@ class TestWebrecon(unittest.TestCase):
         md = report_mod.render(self.report)
         self.assertIn("# WebView / in-app browser recon", md)
         self.assertIn("CORR-021", md)
+        self.assertIn("## Reachability", md)
+        self.assertIn("adb shell am start", md)
 
 
 if __name__ == "__main__":

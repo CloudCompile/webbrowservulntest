@@ -50,6 +50,20 @@ To reuse a decompile across runs, symlink `smali*`, `java`, `res` and
 
 ## Gotchas
 
+- This runtime restarts under memory pressure, and a restart wipes `/usr` and
+  `/tmp` but preserves `/workspace`. Install the toolchain into
+  `/workspace/toolchain` (`jdk/`, `jadx/`, `apktool.jar`, `bin/apktool`,
+  `bin/jadx`, `venv/`) rather than relying on `install_sdk.sh`, then run with
+  `PATH=/workspace/toolchain/bin:$PATH` and
+  `/workspace/toolchain/venv/bin/python`. `/workspace/run_one.sh <name> <file>`
+  does this for one app.
+- Run **one** app per `webrecon` invocation in the background and poll. Large
+  XAPKs (BAND, 225 MB) OOM-killed the container twice when run concurrently;
+  `du -sh` on the venv/analysis sizes before adding parallelism.
+- `xapk` is a misnomer for some mirrors' plain APKs and vice versa. Confirm with
+  `zipfile`/`unzip -l` before scanning: a `.xapk` with a top-level
+  `AndroidManifest.xml` is really an APK and must be renamed (`webrecon` reports
+  "no .apk inside" otherwise).
 - `apktool`'s decoded `AndroidManifest.xml` **drops versionCode/versionName and
   uses-sdk**. `parse_manifest()` merges `androguard`'s binary-manifest decode for
   those fields and keeps apktool for the component tree and symbolic

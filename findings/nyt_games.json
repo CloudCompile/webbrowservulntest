@@ -1,0 +1,4164 @@
+{
+ "target": "samples/nyt_games.xapk",
+ "package": "com.nytimes.crossword",
+ "version_name": "6.43.0",
+ "version_code": "6427643",
+ "min_sdk": "29",
+ "target_sdk": "36",
+ "facts": {
+  "package": "com.nytimes.crossword",
+  "version_name": "6.43.0",
+  "version_code": "6427643",
+  "min_sdk": "29",
+  "target_sdk": "36",
+  "uses_cleartext": null,
+  "nsc": null,
+  "debuggable": null
+ },
+ "components": [
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.MainActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "nytxwd://featured",
+    "nytxwd://packs",
+    "nytxwd://spelling-bee",
+    "nytxwd://tiles",
+    "nytxwd://sudoku",
+    "nytxwd://mini",
+    "nytxwd://midi",
+    "nytxwd://subscribe",
+    "nytxwd://archive",
+    "nytxwd://welcome-moment",
+    "nytxwd://crossword",
+    "nytxwd://p/.*",
+    "nytxwd://puzzle/.*",
+    "nytxwd://bonus/.*",
+    "nytxwd://crosswords/apps",
+    "nytxwd://wordle",
+    "nytxwd://pips",
+    "nytxwd://wordle/archive",
+    "nytxwd://connections",
+    "nytxwd://connections/archive",
+    "nytxwd://wordle-bot",
+    "nytxwd://connections-bot",
+    "nytxwd://daily",
+    "nytxwd://strands/archive",
+    "nytxwd://letter-boxed",
+    "nytxwd://strands",
+    "nytxwd://iterate",
+    "nytxwd://abra",
+    "nytxwd://me",
+    "nytxwd://home",
+    "nytxwd://friends",
+    "nytxwd://profile/edit",
+    "nytxwd://badge_details",
+    "nytxwd://collection",
+    "nytxwd://trophy-case",
+    "nytxwd://trophy-case/spelling-bee",
+    "nytxwd://trophy-case/wordle",
+    "nytxwd://trophy-case/connections",
+    "nytxwd://create/wordle",
+    "http://www.nytimes.com/games/wordle",
+    "http://www.nytimes.com/games/connections",
+    "http://www.nytimes.com/games/badges/connections",
+    "http://www.nytimes.com/games/badges/spelling-bee",
+    "http://www.nytimes.com/games/create/wordle",
+    "http://www.nytimes.com/games/pips",
+    "http://www.nytimes.com/puzzles/spelling-bee",
+    "http://www.nytimes.com/interactive/2022/upshot/wordle-bot",
+    "http://www.nytimes.com/games/badges/strands",
+    "http://www.nytimes.com/crosswords/game/by-id",
+    "http://www.nytimes.com/crosswords/archive",
+    "http://www.nytimes.com/games/strands",
+    "http://www.nytimes.com/crosswords/game/midi",
+    "http://www.nytimes.com/interactive/2024/upshot/connections-bot",
+    "http://www.nytimes.com/games/bonus",
+    "http://www.nytimes.com/crosswords/apps",
+    "http://www.nytimes.com/crosswords/game/daily",
+    "http://www.nytimes.com/pips",
+    "http://www.nytimes.com/puzzles/sudoku",
+    "http://www.nytimes.com/crosswords/game/mini",
+    "http://www.nytimes.com/games/collection",
+    "http://www.nytimes.com/crosswords",
+    "http://www.nytimes.com/wordle",
+    "http://www.nytimes.com/games/badges/wordle",
+    "http://www.nytimes.com/puzzles/tiles",
+    "https://www.nytimes.com/games/wordle",
+    "https://www.nytimes.com/games/connections",
+    "https://www.nytimes.com/games/badges/connections",
+    "https://www.nytimes.com/games/badges/spelling-bee",
+    "https://www.nytimes.com/games/create/wordle",
+    "https://www.nytimes.com/games/pips",
+    "https://www.nytimes.com/puzzles/spelling-bee",
+    "https://www.nytimes.com/interactive/2022/upshot/wordle-bot",
+    "https://www.nytimes.com/games/badges/strands",
+    "https://www.nytimes.com/crosswords/game/by-id",
+    "https://www.nytimes.com/crosswords/archive",
+    "https://www.nytimes.com/games/strands",
+    "https://www.nytimes.com/crosswords/game/midi",
+    "https://www.nytimes.com/interactive/2024/upshot/connections-bot",
+    "https://www.nytimes.com/games/bonus",
+    "https://www.nytimes.com/crosswords/apps",
+    "https://www.nytimes.com/crosswords/game/daily",
+    "https://www.nytimes.com/pips",
+    "https://www.nytimes.com/puzzles/sudoku",
+    "https://www.nytimes.com/crosswords/game/mini",
+    "https://www.nytimes.com/games/collection",
+    "https://www.nytimes.com/crosswords",
+    "https://www.nytimes.com/wordle",
+    "https://www.nytimes.com/games/badges/wordle",
+    "https://www.nytimes.com/puzzles/tiles",
+    "nytxwd://statsigoverride",
+    "http://nytimes.onelink.me/IM32",
+    "https://nytimes.onelink.me/IM32"
+   ],
+   "is_launcher": true,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "featured",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "packs",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "spelling-bee",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "tiles",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "sudoku",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "mini",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "midi",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "subscribe",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "archive",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "welcome-moment",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "crossword",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "p",
+       "/.*"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "puzzle",
+       "/.*"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "bonus",
+       "/.*"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "crosswords",
+       "/apps"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "wordle",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "pips",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "wordle",
+       "/archive"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "connections",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "connections",
+       "/archive"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "wordle-bot",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "connections-bot",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "daily",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "strands",
+       "/archive"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "letter-boxed",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "strands",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "iterate",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "abra",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "me",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "home",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "friends",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "profile",
+       "/edit"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "badge_details",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "collection",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "trophy-case",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "trophy-case",
+       "/spelling-bee"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "trophy-case",
+       "/wordle"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "trophy-case",
+       "/connections"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "create",
+       "/wordle"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/wordle"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/connections"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/connections"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/spelling-bee"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/create/wordle"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/pips"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/puzzles/spelling-bee"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/interactive/2022/upshot/wordle-bot"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/strands"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/by-id"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/archive"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/strands"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/midi"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/interactive/2024/upshot/connections-bot"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/bonus"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/apps"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/daily"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/pips"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/puzzles/sudoku"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords/game/mini"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/collection"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/crosswords"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/wordle"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/games/badges/wordle"
+      ],
+      [
+       "http",
+       "www.nytimes.com",
+       "/puzzles/tiles"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/connections"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/connections"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/spelling-bee"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/create/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/pips"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/puzzles/spelling-bee"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/interactive/2022/upshot/wordle-bot"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/strands"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/by-id"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/archive"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/strands"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/midi"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/interactive/2024/upshot/connections-bot"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/bonus"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/apps"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/daily"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/pips"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/puzzles/sudoku"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords/game/mini"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/collection"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/crosswords"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/games/badges/wordle"
+      ],
+      [
+       "https",
+       "www.nytimes.com",
+       "/puzzles/tiles"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "statsigoverride",
+       null
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "http",
+       "nytimes.onelink.me",
+       "/IM32"
+      ],
+      [
+       "https",
+       "nytimes.onelink.me",
+       "/IM32"
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.PackDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.GameActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.IntentFilterActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.PuzzleInfoActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.ProductLandingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.AboutActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.ThemeSettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.LicenseActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.TeamRosterActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.SubscriptionDetailsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.SettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.AnalyticsLoggerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.GamesHybridHostActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "nytxwd://games/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "games",
+       "/"
+      ]
+     ],
+     "is_browsable": false
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.activity.PurrCookiedWebActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.core.subauth.SubauthLIREFeedbackHelperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.subauth.ui.purr.webview.PurrUIWebViewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.subauth.ui.login.SubauthLoginActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "nytmobile://authorize/games",
+    "nytxwd://login"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytmobile",
+       "authorize",
+       "/games"
+      ]
+     ],
+     "is_browsable": true
+    },
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "login",
+       null
+      ]
+     ],
+     "is_browsable": true
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.hybrid.components.vanilla.VanillaGameComponentActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [
+    "nytxwd://vanilla-games/"
+   ],
+   "is_launcher": false,
+   "filters": [
+    {
+     "actions": [
+      "android.intent.action.VIEW"
+     ],
+     "bindings": [
+      [
+       "nytxwd",
+       "vanilla-games",
+       "/"
+      ]
+     ],
+     "is_browsable": false
+    }
+   ]
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.me.profile.ProfileManagementPlaygroundActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.me.badges.BadgeComponentPlaygroundActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.comments.ViewingCommentsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.comments.writenewcomment.WriteNewCommentActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.integrations.push.ui.settings.PushSettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.home.DynamicCrossplayCardPlaygroundActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.home.CardExpansionPlaygroundActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.home.HeadlineCardsPlaygroundActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.postoffer.ui.view.PostRegiLoginOfferActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.games.features.maintenance.MaintenanceActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.poisonpill.devsettings.PoisonPillDevBlockerActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.eventtracker.devsettings.logviewer.ET2EventViewerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.eventtracker.devsettings.logviewer.EventGateEventViewerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.devsettings.home.DevSettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.devsettings.home.DevSettingsXmlActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.devsettings.utils.ProcessPhoenix",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.subauth.ui.accountdelete.AccountDeleteActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.subauth.ui.purr.privacysettings.PrivacySettingsActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.poisonpill.ui.PoisonPillActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.growthui.landingpage.LandingPageActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.growthui.postauth.PostAuthActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.growthui.postfreemonthoffer.PostFreeMonthInterstitialActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.bugreporting.BugReportingWebViewActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.nytimes.android.bugreporting.BugReportingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.AdActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.ads.NotificationHandlerActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.airbnb.android.showkase.ui.ShowkaseBrowserActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.compose.ui.tooling.PreviewActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "co.datadome.sdk.ChallengeActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.credentials.playservices.controllers.identityauth.HiddenActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.gms.common.api.GoogleApiActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.amazon.aps.ads.activity.ApsInterstitialActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "activity",
+   "name": "com.amazon.device.ads.DTBInterstitialActivity",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.nytimes.android.internal.pushmessaging.fcmprovider.FCMService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.nytimes.android.eventtracker.buffer.EventReporterService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.ads.AdService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.background.systemjob.SystemJobService",
+   "exported": true,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.work.impl.foreground.SystemForegroundService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.room.MultiInstanceInvalidationService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.components.ComponentDiscoveryService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.firebase.messaging.FirebaseMessagingService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "androidx.credentials.playservices.CredentialProviderMetadataHolder",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementService",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+   "exported": true,
+   "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "service",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+   "exported": false,
+   "permission": "android.permission.BIND_JOB_SERVICE",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.nytimes.games.core.util.InstallReferrerReceiver",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.nytimes.android.eventtracker.worker.EventReporterReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+   "exported": true,
+   "permission": "com.google.android.c2dm.permission.SEND",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "androidx.profileinstaller.ProfileInstallReceiver",
+   "exported": true,
+   "permission": "android.permission.DUMP",
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "receiver",
+   "name": "com.instacart.library.truetime.BootCompletedBroadcastReceiver",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.startup.InitializationProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "androidx.core.content.FileProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.nytimes.android.subauth.core.auth.provider.CrossAppLoginProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.nytimes.android.subauth.core.auth.provider.CrossAppAnonProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.android.gms.ads.MobileAdsInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.google.firebase.provider.FirebaseInitProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.nytimes.android.sharedkeyvalue.provider.SharedKeyValueContentProvider",
+   "exported": true,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  },
+  {
+   "kind": "provider",
+   "name": "com.datadog.android.rum.DdRumContentProvider",
+   "exported": false,
+   "permission": null,
+   "deeplinks": [],
+   "is_launcher": false,
+   "filters": []
+  }
+ ],
+ "hosts": [
+  {
+   "name": "com.nytimes.games.features.hybrid.components.vanilla.VanillaGameComponentActivityKt",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "js_can_open_windows_automatically": false,
+    "dom_storage_enabled": true,
+    "allow_file_access_from_file_urls": true,
+    "allow_universal_access_from_file_urls": true,
+    "support_multiple_windows": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": false,
+    "js_can_open_windows_automatically": false,
+    "dom_storage_enabled": false,
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false,
+    "support_multiple_windows": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": true,
+   "intent_url_source": "intent extras -> getString(url) -> loadUrl"
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.HybridWebViewConfigurer",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "js_can_open_windows_automatically": false,
+    "dom_storage_enabled": true,
+    "allow_file_access_from_file_urls": true,
+    "allow_universal_access_from_file_urls": true,
+    "support_multiple_windows": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdViewUtils$Companion",
+   "source": "smali",
+   "settings": {
+    "web_contents_debugging": null,
+    "javascript_enabled": true,
+    "allow_content_access": true,
+    "dom_storage_enabled": true,
+    "allow_file_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcko",
+   "source": "smali",
+   "settings": {
+    "allow_file_access": false,
+    "javascript_enabled": true,
+    "support_multiple_windows": true,
+    "js_can_open_windows_automatically": true,
+    "mixed_content_mode": "2"
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "about:blank"
+   ],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.HybridWebView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "js_can_open_windows_automatically": false,
+    "dom_storage_enabled": true,
+    "allow_file_access_from_file_urls": true,
+    "allow_universal_access_from_file_urls": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdViewUtils",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "allow_content_access": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfub",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_content_access": false,
+    "allow_file_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.publisher.b",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_content_access": false,
+    "allow_file_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbc",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access": false,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.statsig.androidsdk.DebugView$Companion",
+   "source": "smali",
+   "settings": {
+    "js_can_open_windows_automatically": true,
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "https://console.statsig.com/client_sdk_debugger_redirect?sdkKey="
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.statsig.androidsdk.DebugView",
+   "source": "java",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true,
+    "js_can_open_windows_automatically": true
+   },
+   "bridges": [],
+   "loaded_urls": [
+    "https://console.statsig.com/client_sdk_debugger_redirect?sdkKey="
+   ],
+   "injected_script": [
+    "window.__StatsigAndroidDebug=true;"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "co.datadome.sdk.ChallengeActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "allow_file_access_from_file_urls": false
+   },
+   "bridges": [
+    {
+     "name": "android",
+     "java_class": "co.datadome.sdk.ChallengeActivity",
+     "line": 437,
+     "exposed_object": "new JavascriptInterfaceDataDomeListener(new h(stringExtra))",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.util.zzn",
+   "source": "smali",
+   "settings": {
+    "dom_storage_enabled": true,
+    "allow_content_access": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.util.zzs",
+   "source": "smali",
+   "settings": {
+    "allow_file_access_from_file_urls": false,
+    "allow_universal_access_from_file_urls": false
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.core.activity.PurrCookiedWebActivity",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true,
+    "dom_storage_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": "intent.getStringExtra(...) -> stringExtra -> loadUrl(stringExtra)"
+  },
+  {
+   "name": "co.datadome.sdk.DataDomeWebView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzs",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfty",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.publisher.a",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iteratehq.iterate.view.SurveyView",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [
+    {
+     "name": "message",
+     "java_class": "com.iteratehq.iterate.view.SurveyView",
+     "line": 232,
+     "exposed_object": "new Object() { // from class: com.iteratehq.iterate.view.SurveyView$setupView$2$",
+     "has_getdata": false,
+     "methods": [
+      "postMessage"
+     ]
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.composeui.webview.WebviewScreenKt",
+   "source": "smali",
+   "settings": {
+    "javascript_enabled": true
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.view.BaseHybridFragment",
+   "source": "smali",
+   "settings": {
+    "web_contents_debugging": null
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.devsettings.GamesHybridDevSettingFactory$devSettings$2",
+   "source": "smali",
+   "settings": {
+    "web_contents_debugging": null
+   },
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "co.datadome.sdk.p.a",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.WebViewRenderProcessClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.WebViewCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.WebViewClientCompat",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForP",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessClientFrameworkAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForO",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewProviderFactoryAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForQ",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewProviderFactory",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebMessageListenerAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessClientAdapter",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.ApiHelperForM",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.WebViewRenderProcessImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "androidx.webkit.internal.IncompatibleApkWebViewProviderFactory",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.internal.h",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript: "
+   ],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.adsession.AdSessionContext",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.adsession.JavaScriptSessionService",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.weakreference.b",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.utils.i",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iab.omid.library.amazon.publisher.AdSessionStatePublisher",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.iteratehq.iterate.databinding.SurveyViewBinding",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewSupportClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewClientListener",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdViewBase",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdWebViewSupportClientBase",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdViewImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "amzn_bridge",
+     "java_class": "com.amazon.aps.ads.util.adview.ApsAdViewImpl",
+     "line": 453,
+     "exposed_object": "apsAdViewWebBridge",
+     "has_getdata": false,
+     "methods": []
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.aps.ads.util.adview.ApsAdViewFetchUtils",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.amazon.device.ads.DtbOmSdkSessionManager",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.subauth.ui.purr.ui.screens.TCFScreensKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.subauth.ui.ui.screens.LireContainerScreenKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.AsyncEvaluator",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.ScriptInjector",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.AsyncEvaluatorImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.WebViewClientProxy",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.AsyncEvaluatorImpl$callAsync$2",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.composeui.webview.WebViewScreenClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.client.HybridWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridgecommands.ReportABExposureBridgeCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.NativeToWebCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.PageHeightCommand$run$2",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.PageHeightCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.SetPTREnabledCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.BridgeCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.PingCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.bridge.NativeBridge",
+   "source": "java",
+   "settings": {},
+   "bridges": [
+    {
+     "name": "NYTG",
+     "java_class": "com.nytimes.android.hybrid.bridge.NativeBridge",
+     "line": 80,
+     "exposed_object": "this",
+     "has_getdata": false,
+     "methods": [
+      "enqueue"
+     ]
+    }
+   ],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.util.webview.WebViewScriptExecutor",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.util.webview.WebViewRenderProcessClient$webViewResponsiveStateFlow$webViewResponsiveStateFlow$1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.util.webview.WebViewScriptExecutor$runScript$2",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.hybrid.util.webview.WebViewRenderProcessClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.HybridAdUtils",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl$updateAdTargeting$1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.HybridAdManagerImpl$updatePageViewId$1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.HybridAdManager",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.core.data.utils.AdExtensionsKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.android.ads.hybrid.bridge.commands.AdCommBridgeCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.core.CrosswordApplicationBase",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.core.databinding.PurrCookiedWebActivityBinding",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.GamesHybridWebView",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.HybridWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() {\\n    if (!window.performance || !window.performance.timing) {\\n        return [];\\n    }\\n    \\n    var tti = window.performance.timing.domInteractive - window.performance.timing\\n      "
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer$onContentLoaded$1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.WebViewInitializer$loadData$1",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GamesSetNativeColorTheme",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetContextIdCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.CacheRefreshCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.SendAnalyticBridgeCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.SendEmailCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.HybridConfigBridgeCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetAllCookiesCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.ShareCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetPageViewIdCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GetUserDetailsCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.AuthenticateUserCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.BackToHubCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.integrations.hybrid.bridgecommands.GameInitializedStateCommand",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.nytimes.games.features.me.badges.details.BadgeDetailScreenKt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.MobileAds",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.internal.zzo",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.h5.H5AdsWebViewClient",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzau",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzf",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzo",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.TaggingLibraryJsInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.ads.nonagon.signalgeneration.zzj",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbt",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzct",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [
+    "javascript:"
+   ],
+   "injected_script": [
+    "(function(){})()"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.consent_sdk.zzbv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzejv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftz",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftn",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzftx",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbpp",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcjl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfto",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfsl",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbpq",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckj",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfuz",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzejw",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfst",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfua",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzclk",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcjk",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckh",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbyp",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzfsv",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbee",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbpd",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcla",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzbec",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [
+    "(function() { return  {text:document.body.innerText}})();"
+   ],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcky",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzckz",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "com.google.android.gms.internal.ads.zzcjw",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  },
+  {
+   "name": "org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface",
+   "source": "java",
+   "settings": {},
+   "bridges": [],
+   "loaded_urls": [],
+   "injected_script": [],
+   "unrestricted_navigation": false,
+   "ssl_proceed": false,
+   "is_exported_component": false,
+   "intent_url_source": ""
+  }
+ ],
+ "findings": [
+  {
+   "severity": "CRITICAL",
+   "rule": "WV-SET-004",
+   "title": "file:// pages may load arbitrary remote origins (True)",
+   "location": "smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:152 (<init>)",
+   "evidence": ".line 18\n    invoke-virtual {p0, p2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V",
+   "detail": "setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "WV-SET-004",
+   "title": "file:// pages may load arbitrary remote origins (True)",
+   "location": "smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:997 (j)",
+   "evidence": "invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V",
+   "detail": "setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "WV-SET-004",
+   "title": "file:// pages may load arbitrary remote origins (True)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:106 (a)",
+   "evidence": "invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V",
+   "detail": "setAllowUniversalAccessFromFileURLs(true) lets a file:// page make cross-origin requests to any host, leaking local file contents to a remote server."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "CORR-001",
+   "title": "com.nytimes.games.features.hybrid.components.vanilla.VanillaGameComponentActivityKt: file:// pages can reach any remote origin with JS on",
+   "location": "com.nytimes.games.features.hybrid.components.vanilla.VanillaGameComponentActivityKt",
+   "evidence": "setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)",
+   "detail": "A local file rendered in this WebView can exfiltrate itself to any attacker-controlled host. This is the worst-case WebView configuration."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "CORR-001",
+   "title": "com.nytimes.games.integrations.hybrid.HybridWebViewConfigurer: file:// pages can reach any remote origin with JS on",
+   "location": "com.nytimes.games.integrations.hybrid.HybridWebViewConfigurer",
+   "evidence": "setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)",
+   "detail": "A local file rendered in this WebView can exfiltrate itself to any attacker-controlled host. This is the worst-case WebView configuration."
+  },
+  {
+   "severity": "CRITICAL",
+   "rule": "CORR-001",
+   "title": "com.nytimes.android.hybrid.HybridWebView: file:// pages can reach any remote origin with JS on",
+   "location": "com.nytimes.android.hybrid.HybridWebView",
+   "evidence": "setAllowUniversalAccessFromFileURLs(true) + setJavaScriptEnabled(true)",
+   "detail": "A local file rendered in this WebView can exfiltrate itself to any attacker-controlled host. This is the worst-case WebView configuration."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (argument unresolved)",
+   "location": "smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:446 (e)",
+   "evidence": "move-result p1\n\n    invoke-static {p1}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-009",
+   "title": "Mixed content allowed (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:307 (<init>)",
+   "evidence": "if-eqz p3, :cond_1\n\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V",
+   "detail": "setMixedContentMode(ALWAYS_ALLOW) permits loading http:// subresources inside an https:// page, enabling network attackers to inject script."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (True)",
+   "location": "smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:149 (<init>)",
+   "evidence": ".line 17\n    invoke-virtual {p0, p2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (True)",
+   "location": "smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:995 (j)",
+   "evidence": "invoke-virtual {p1, p4}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-003",
+   "title": "file:// pages may load other file:// resources (True)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:104 (a)",
+   "evidence": "invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V",
+   "detail": "setAllowFileAccessFromFileURLs(true) lets a file:// page read other local files via XMLHttpRequest/fetch."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (argument unresolved)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/view/BaseHybridFragment.smali:2569 (h3)",
+   "evidence": "move-result p0\n\n    invoke-static {p0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "WV-SET-010",
+   "title": "WebView remote debugging enabled app-wide (argument unresolved)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/devsettings/GamesHybridDevSettingFactory$devSettings$2.smali:123 (invokeSuspend)",
+   "evidence": "invoke-static {p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V\n\n    invoke-static {v0}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V",
+   "detail": "WebView.setWebContentsDebuggingEnabled(true) is a static, process-wide switch. Any WebView in the app becomes attachable over adb (chrome://inspect) without the debuggable build flag. On a production build this exposes live page content and JS bridges to anyone with USB debugging, and is a ready-made dynamic-instrumentation ramp."
+  },
+  {
+   "severity": "HIGH",
+   "rule": "CORR-023",
+   "title": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity: exported entry point loads an Intent-supplied URL into a WebView",
+   "location": "com.nytimes.games.features.hybrid.components.base.HybridComponentActivity",
+   "evidence": "exported=true; intent extras -> getString(url) -> loadUrl",
+   "detail": "This exported activity derives the URL it displays from the Intent that started it (extra, data, or an extra's URL field) and passes it straight to WebView.loadUrl. Any app on the device can start it with an explicit intent and an arbitrary URL \u2014 no intent-filter is required, and no in-app user action is involved \u2014 so attacker-controlled web content renders inside the app's own WebView."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/co/datadome/sdk/DataDomeWebView.smali:254 (<init>)",
+   "evidence": "move-result-object p1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/co/datadome/sdk/ChallengeActivity.smali:889 (setupWebview)",
+   "evidence": "move-result-object v3\n\n    invoke-virtual {v3, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:450 (e)",
+   "evidence": "const/4 p1, 0x1\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-005",
+   "title": "content:// access enabled (True)",
+   "location": "smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:452 (e)",
+   "evidence": "invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V",
+   "detail": "setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/ads/internal/zzs.smali:67 (<init>)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:265 (<init>)",
+   "evidence": ":try_start_0\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n    :try_end_0",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:287 (<init>)",
+   "evidence": "invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V\n\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzfty.smali:28 (<init>)",
+   "evidence": "const/4 v0, 0x1\n\n    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzfub.smali:54 (a)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/iab/omid/library/amazon/publisher/a.smali:29 (<init>)",
+   "evidence": "const/4 v0, 0x1\n\n    invoke-virtual {p1, v0}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/iab/omid/library/amazon/publisher/b.smali:189 (t)",
+   "evidence": "const/4 v1, 0x1\n\n    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/iteratehq/iterate/view/SurveyView.smali:861 (o3)",
+   "evidence": "const/4 v3, 0x1\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/nytimes/android/composeui/webview/WebviewScreenKt.smali:1811 (t)",
+   "evidence": "const/4 p9, 0x1\n\n    invoke-virtual {p1, p9}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes4/com/google/android/gms/internal/consent_sdk/zzbc.smali:318 (g)",
+   "evidence": "const/4 v3, 0x1\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:135 (<init>)",
+   "evidence": ".line 13\n    invoke-virtual {p0, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:228 (onCreate)",
+   "evidence": "const/4 v3, 0x1\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:977 (j)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:84 (a)",
+   "evidence": "const/4 p1, 0x1\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:104 (getConfiguredWebView)",
+   "evidence": "const/4 p2, 0x1\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:106 (getConfiguredWebView)",
+   "evidence": "invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.amazon.aps.ads.util.adview.ApsAdViewUtils",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-005",
+   "title": "content:// access enabled (True)",
+   "location": "com.amazon.aps.ads.util.adview.ApsAdViewUtils",
+   "evidence": "access -> True",
+   "detail": "setAllowContentAccess(true) lets the WebView follow content:// URLs, widening the reachable data set."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-001",
+   "title": "JavaScript enabled in WebView (True)",
+   "location": "com.statsig.androidsdk.DebugView",
+   "evidence": "enabled -> True",
+   "detail": "setJavaScriptEnabled(true) turns the WebView into a script-capable browser. Expected for web apps, but it is a precondition for every other JS-related issue and must be paired with an allowlist."
+  },
+  {
+   "severity": "MEDIUM",
+   "rule": "WV-SET-007",
+   "title": "Scripts may open windows without user interaction (True)",
+   "location": "com.statsig.androidsdk.DebugView",
+   "evidence": "automatically -> True",
+   "detail": "setJavaScriptCanOpenWindowsAutomatically(true) lets page script spawn windows unprompted, useful for phishing or driving native bridges."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes2/com/amazon/aps/ads/util/adview/ApsAdViewUtils$Companion.smali:454 (e)",
+   "evidence": "invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes3/com/google/android/gms/ads/internal/util/zzn.smali:55 (call)",
+   "evidence": "invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V\n\n    invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes3/com/google/android/gms/internal/ads/zzcko.smali:285 (<init>)",
+   "evidence": "invoke-virtual {p2, p5}, Landroid/webkit/WebSettings;->setSavePassword(Z)V\n\n    invoke-virtual {p2, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/nytimes/android/hybrid/HybridWebView.smali:146 (<init>)",
+   "evidence": ".line 16\n    invoke-virtual {p0, p2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/nytimes/games/core/activity/PurrCookiedWebActivity.smali:230 (onCreate)",
+   "evidence": "invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V\n\n    invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:985 (j)",
+   "evidence": "invoke-virtual {p1, p4}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes5/com/nytimes/games/features/hybrid/components/vanilla/VanillaGameComponentActivityKt.smali:999 (j)",
+   "evidence": "invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:92 (a)",
+   "evidence": "invoke-virtual {p0, v0}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-008",
+   "title": "Multiple windows supported (True)",
+   "location": "smali_classes6/com/nytimes/games/integrations/hybrid/HybridWebViewConfigurer.smali:108 (a)",
+   "evidence": "invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V\n\n    invoke-virtual {p0, p1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V",
+   "detail": "setSupportMultipleWindows(true) is required for popups/new tabs."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "smali_classes6/com/statsig/androidsdk/DebugView$Companion.smali:110 (getConfiguredWebView)",
+   "evidence": "invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V\n\n    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.amazon.aps.ads.util.adview.ApsAdViewUtils",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "LOW",
+   "rule": "WV-SET-006",
+   "title": "DOM storage enabled (True)",
+   "location": "com.statsig.androidsdk.DebugView",
+   "evidence": "enabled -> True",
+   "detail": "setDomStorageEnabled(true) persists origin-scoped localStorage."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `android` exposed by co.datadome.sdk.ChallengeActivity",
+   "location": "co.datadome.sdk.ChallengeActivity:437",
+   "evidence": "addJavascriptInterface(new JavascriptInterfaceDataDomeListener(new h(stringExtra)), \"android\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `message` exposed by com.iteratehq.iterate.view.SurveyView",
+   "location": "com.iteratehq.iterate.view.SurveyView:232",
+   "evidence": "addJavascriptInterface(new Object() { // from class: com.iteratehq.iterate.view.SurveyView$setupView$2$, \"message\")  methods=['postMessage']",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `amzn_bridge` exposed by com.amazon.aps.ads.util.adview.ApsAdViewImpl",
+   "location": "com.amazon.aps.ads.util.adview.ApsAdViewImpl:453",
+   "evidence": "addJavascriptInterface(apsAdViewWebBridge, \"amzn_bridge\")",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  },
+  {
+   "severity": "INFO",
+   "rule": "WV-SINK-004",
+   "title": "JS bridge `NYTG` exposed by com.nytimes.android.hybrid.bridge.NativeBridge",
+   "location": "com.nytimes.android.hybrid.bridge.NativeBridge:80",
+   "evidence": "addJavascriptInterface(this, \"NYTG\")  methods=['enqueue']",
+   "detail": "addJavascriptInterface exposes a native object to page script. A bridge reachable from an untrusted origin defeats the WebView sandbox."
+  }
+ ],
+ "native_webview_libs": [],
+ "errors": [],
+ "path_only_handlers": []
+}
